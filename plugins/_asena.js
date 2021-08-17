@@ -14,12 +14,6 @@ const Lang = Language.getString('_asena');
 if (Config.WORKTYPE == 'private') {
     
     Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-        {
-            
-            var image = await axios.get (Config.PIC, {responseType: 'arraybuffer'})
-       
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
-    }
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -128,7 +122,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'help ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-        
+
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
