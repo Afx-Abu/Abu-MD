@@ -17,7 +17,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var THERI_off = ''
    
     if (config.LANG == 'EN') {
-        l_dsc = 'To remove members when they use bad language'        
+        l_dsc = 'To remove members when they use bad words'        
         THERI_on = 'ʙᴀᴅ ᴡᴏʀᴅ ʀᴇᴍᴏᴠɪɴɢ ɪꜱ ᴛᴜʀɴᴇᴅ ᴏɴ'
         THERI_off = 'ʙᴀᴅ ᴡᴏʀᴅ ʀᴇᴍᴏᴠɪɴɢ ɪꜱ ᴛᴜʀɴᴇᴅ ᴏꜰꜰ'
     }
