@@ -137,21 +137,21 @@
         "memes": {
             "MEMES_DESC": "Photo memes you replied to.",
             "NEED_REPLY": "*Reply to a photo!*",
-            "DOWNLOADING": "```Downloading media & making meme...```"
+            "DOWNLOADING": "*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴍᴇᴅɪᴀ & ᴍᴀᴋɪɴɢ ᴍᴇᴍᴇ...*"
         },
         "ocr": {
             "OCR_DESC": "Reads the text on the photo you have replied.",
-            "NEED_REPLY": "*Reply to a photo!*",
+            "NEED_REPLY": "*ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ...*",
             "DOWNLOADING": "```Media is downloading & reading...```",
             "ERROR": "```I couldn't read this :/```\n*Error:*```{}```",
             "RESULT": "*Language:* ```{}```\n*Here is what I read:* ```{}```"
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
-            "KICKME": "```Bye bye! I am going 🤠```",
+            "KICKME": "*ʙʏᴇ ʙʏᴇ ɪ ᴀᴍ ɢᴏɪɴɢ...*",
             "PP_DESC": "Makes the profile photo what photo you reply.",
             "NEED_PHOTO": "*Give me a photo!*",
-            "PPING": "```Setting profile photo...```",
+            "PPING": "*sᴇᴛᴛɪɴɢ ᴘʀᴏғɪʟᴇ ᴘʜᴏᴛᴏ...*",
             "BLOCK_DESC": "Block user.",
             "UNBLOCK_DESC": "Unblock user.",
             "BLOCKED": "blocked",
@@ -196,7 +196,7 @@
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
             "NOT_FOUND": "*I couldn't find anything :(*",
-            "SEARCHING": "* 🔎 Searching...*",
+            "SEARCHING": "*🔎sᴇᴀʀᴄʜɪɴɢ...*",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
@@ -204,7 +204,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Nissaram🧞‍♂️```"
+            "DOWNLOADING": "*ɴɪssᴀʀᴀᴍ🧞‍♂️*"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
