@@ -21,16 +21,16 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*•━━━━╼⤏FidhaMwol⤎╾━━━•*
  
 
-        *Github link        _http://github.com/Hypersir/Fidha-Mwol_*
+        *ɢɪᴛʜᴜʙ ʟɪɴᴋ        _http://github.com/Hypersir/Fidha-Mwol_*
  
 
-       *Bot making video    _https://youtu.be/WGfDEHJyV1I_*
+       *ʙᴏᴛ ᴍᴀᴋɪɴɢ ᴠɪᴅᴇᴏ    _https://youtu.be/WGfDEHJyV1I_*
  
  
-       *Owner number        _http://Wa.me/+917025967090_*
+       *ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ        _http://Wa.me/+917025967090_*
   
   
-      *Github profile link _https://github.com/Hypersir_*
+      *ɢɪᴛʜᴜʙ ᴘʀᴏғɪʟᴇ ʟɪɴᴋ _https://github.com/Hypersir_*
 `}) 
 
 })); 
