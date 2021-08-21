@@ -1,17 +1,31 @@
 const Asena = require('../events');
-const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
-const fs = require('fs');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
-const Config = require('../config');
+
+const Language = require('../language');
+const Lang = Language.getString('gitlink');
+
+Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message, match) => {
+
+    var r_text = new Array ();
+    
+    
+   
+  r_text[0] = "https://i.imgur.com/3UjTtji.jpeg";
+    
+    
+    var i = Math.floor(1*Math.random())
+
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*•━━━━╼⤏FidhaMwol⤎╾━━━•*
 
 
-Asena.addCommand({pattern: 'git', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
-        
-    var r_text = new Array ();    
-r_text[0] = "•━━━━╼⤏FidhaMwol⤎╾━━━•\n\n ɢɪᴛʜᴜʙ:http://github.com/Hypersir/Fidha-Mwol\n\nʙᴏᴛ ᴍᴀᴋɪɴɢ ᴠɪᴅᴇᴏ ʟɪɴᴋ:https://youtu.be/WGfDEHJyV1I \n\n ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ:Wa.me/+917025967090";
-r_text[1] = "•━━━━╼⤏FidhaMwol⤎╾━━━•\n ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʜʏᴘᴇʀꜱɪʀ \n\n to know how to deploy click on the link given below \n\n https://youtu.be/WGfDEHJyV1I \n\n contact ʜʏᴘᴇʀꜱɪʀ \n Wa.me/+917025967090 ";
-  var i = Math.floor(2*Math.random())
+*ɢɪᴛʜᴜʙ*:http://github.com/Hypersir/Fidha-Mwol
 
-await message.sendMessage(r_text[i]);
+*ʙᴏᴛ ᴍᴀᴋɪɴɢ ᴠɪᴅᴇᴏ ʟɪɴᴋ*:https://youtu.be/WGfDEHJyV1I
 
-}));
+*ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ*:Wa.me/+917025967090
+`}) 
+
+})); 
