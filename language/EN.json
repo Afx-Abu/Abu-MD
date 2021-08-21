@@ -186,8 +186,8 @@
             "ISONG_DESC": "Uploads the song you wrote for ios users.",
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": Config.SONGD,
-            "UPLOADING_SONG": Config.SONGU,
+            "DOWNLOADING_SONG": 'Config.SONGD',
+            "UPLOADING_SONG": 'Config.SONGU',
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "*Downloading*",
@@ -204,7 +204,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": Config.STICKERD
+            "DOWNLOADING": 'Config.STICKERD'
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
