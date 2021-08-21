@@ -19,13 +19,18 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*•━━━━╼⤏FidhaMwol⤎╾━━━•*
+ 
 
+        *Github link        _http://github.com/Hypersir/Fidha-Mwol_*
+ 
 
-*ɢɪᴛʜᴜʙ*:http://github.com/Hypersir/Fidha-Mwol
-
-*ʙᴏᴛ ᴍᴀᴋɪɴɢ ᴠɪᴅᴇᴏ ʟɪɴᴋ*:https://youtu.be/WGfDEHJyV1I
-
-*ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ*:Wa.me/+917025967090
+       *Bot making video    _https://youtu.be/WGfDEHJyV1I_*
+ 
+ 
+       *Owner number        _http://Wa.me/+917025967090_*
+  
+  
+      *Github profile link _https://github.com/Hypersir_*
 `}) 
 
 })); 
