@@ -64,7 +64,7 @@ $ node julie.js
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/CyYOlnReUTT9aIqnf0Umf9)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/FWn4XalXReUCn8eq6N8yPg)
   <div align="center">
        
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Hypersir&repo=Fidhamwol&theme=nightowl)](https://github.com/Hypersir/Fidha-mwol)
