@@ -3,12 +3,13 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const IG_DESC = "Downloads Image/Video From Instagram"
 
+
 Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
-//if(match[1] == '') return await message.sendMessage(infoMessage(Lang.LOADING))
+//if(match[1] == '') return 
     let { data, type } = await instaGram(match[1], '208c3e1637c946a6');
-//if(match[1] == '') return await message.sendMessage(infoMessage(Lang.LOADING)) 
-    if (type === 'image') { await message.sendMessage(data, MessageType.image, { caption: "Made By JulieMwol" }) }
-    else if (type === 'video') { await message.sendMessage(data, MessageType.video, { caption: "Made By JulieMwol" }) }
+//if(match[1] == '') return 
+    if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data,},{ caption: "Made By JulieMwol" }) }
+    else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data}, { caption: "Made By JulieMwol" }) }
 });
 //const axios = require('axios')
 async function instaGram(url, key){

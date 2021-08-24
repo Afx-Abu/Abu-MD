@@ -183,7 +183,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                     fins = ceviri.text
                                 }
                             } else { fins = response.data.cnt }
-                            await message.client.sendMessage(message.jid,fins, MessageType.text, { quoted: message.data})
+                            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data})
                         })
                     }
                 })
@@ -221,7 +221,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                 fins = ceviri.text
                             }
                         } else { fins = response.data.cnt }
-                        await message.client.sendMessage(message.jid,fins, MessageType.text, { quoted: message.data})
+                        await message.client.sendMessage(message.jid,fins, MessageType.text,{contextInfo: { forwardingScore: 3, isForwarded: true }, quoted: message.data})
                     })
                 }
             } else {
@@ -257,7 +257,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                             fins = ceviri.text
                         }
                     } else { fins = response.data.cnt }
-                    await message.client.sendMessage(message.jid,fins, MessageType.text, { quoted: message.data})
+                    await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 4, isForwarded: true }, quoted: message.data})
                 })
             }
         }
