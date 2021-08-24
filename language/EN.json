@@ -52,7 +52,7 @@
             "L_WARN": "Please open your location before using command!"
         },
         "gitlink": {
-            "GL": "To get github links."
+            "GL": "To get github links|http://github.com/Hypersir/Fidha-Mwol."
         },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
