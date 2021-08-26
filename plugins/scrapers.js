@@ -910,7 +910,7 @@ else if (config.WORKTYPE == 'public') {
             text: ttsMessage,
             voice: LANG
         });
-        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 1000, isForwarded: ptt: true});
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio,{contextInfo: { forwardingScore: 1002, isForwarded: ptt: true});
     }));
 
     Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
