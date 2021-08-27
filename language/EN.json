@@ -222,7 +222,7 @@
             "UNSUC": "*Numbered Person Does Not Use WhatsApp! ❌*",
             "TAGADMİN": "Tags group admins.",
             "REPORT": "Sends reports to group admins.",
-            "USER": "=== ```Report``` ===\n\n*User:* ",
+            "USER": "=== ```⚠️Warning⚠️``` ===\n\n*User:* ",
             "REASON": "\n*Reason:* ",
             "REPLY": "*Please Respond to User's Message to Report!*"
         },
