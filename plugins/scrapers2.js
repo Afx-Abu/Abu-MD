@@ -1,8 +1,15 @@
+/* Copyright ©  @Farhan_dqz.
+Licensed under the  GPL-3.0 License;
+you can copy file. but credit must be there!!!
+JulieMwol - Farhan-dqz
+*/
+
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const axios = require('axios');
 const config = require('../config');
+const LOAD_ING = "*Searching your apk*"
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
@@ -187,20 +194,19 @@ else if (config.WORKTYPE == 'public') {
 	  }
   });
 
-    Asena.addCommand({pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
-	  if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
-	  const url = `https://api.zeks.xyz/api/happymod?apikey=&q=${match[1]}&apikey=1hroZ3ju94h0PBjCNKsfhYaSuLs`;
-	  try {
-		  const response = await got(url);
-		  const json = JSON.parse(response.body);
-		  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 
-		  '*📕 ' + Lang.NAMEY +'* ```' + json.result[0].title + '```\n\n' + 
-		  '*📘 ' + Lang.SIZE +'* ```' + json.result[0].size + '```\n\n\n' + 
-		  '*📗 ' + Lang.DOWNLOAD +':* ```' + json.result[0].link + '```\n', MessageType.text);
-	  } catch {
-		  return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
-	  }
-  });
+  Asena.addCommand({pattern: 'hmod ?(.*)', fromMe: false, desc: Lang.HMOD , dontAddCommandList: false }, async (message, match) => {
+	const {data} = await axios(`https://api.zeks.me/api/happymod?q=${match[1]}&apikey=1hroZ3ju94h0PBjCNKsfhYaSuLs`)
+	const result = data.result[0]
+	const status = data
+	if(!status) return await message.sendMessage('not found')
+	await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
+	let msg = '```\n'
+	msg += '📘 NAME  :' + result.title + '\n\n'
+		msg += '📊 RATING :' + result.rating + '\n\n'
+		msg += '📥 LINK   :' + result.url + '\n\n'
+	msg+= '```'
+	return await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
+	});
 
     Asena.addCommand({pattern: 'insult ?(.*)', fromMe: false, desc: Lang.EVINS_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);

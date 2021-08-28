@@ -5,11 +5,11 @@
     "AUTHOR": "AsenaDev",
     "STRINGS": {
         "_asena": {
-            "COMMAND": "Command",
-            "DESC": "Description",
-            "EXAMPLE": "Example",
+            "EXAMPLE": "Eg:- ",
             "NOT_FOUND": "*I couldnt find a command like this*",
+            "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "WARN": "Warn"
+            
         },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
@@ -35,6 +35,7 @@
             "ADD_DESC": "Adds someone to the group.",
             "ADDED": "added to the group!",
             "ALREADY_PROMOTED": "```How can I make someone admin who is already admin?```",
+            "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "PROMOTED": "```, admin role was given!```",
             "PROMOTE_DESC": "Makes any person an admin.",
             "DEMOTE_DESC": "Takes the authority of any admin.",
@@ -50,6 +51,9 @@
         "locate": {
             "L_DESC": "It send your location.",
             "L_WARN": "Please open your location before using command!"
+        },
+        "news": {
+            "NEWS_DESC": "It send News."
         },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
@@ -117,6 +121,7 @@
             "NEED_WELCOME_TEXT": "*You must write a message to set up the welcome message.*\n*Example:* ```.welcome hi && hi#how are you?```",
             "WELCOME_DELETED": "*✅ Welcome message has been deleted successfully!*",
             "WELCOME_SETTED": "*✅ Welcome message has been set successfully!*",
+            "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
             "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye bye && bye#see ya```",
             "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
@@ -174,8 +179,11 @@
             "TRANSLATE_USAGE": ".trt tr it (From Turkish to Italian)",
             "NEED_REPLY": "```Please reply to any message!```",
             "LANG": "Language",
+            "SING_DESC": "It sings song that you have written",
+            "CURRENCY_DESC": "It coverts currency",
             "FROM": "Translated Language",
             "RESULT": "Translate",
+            "DEVICE": "It shows the details of requested devices",
             "TRANSLATE_ERROR": "❌ An error occured while translating!*",
             "CURRENCY_ERROR": "```Syntax error! Example: .currency 1 TRY USD```",
             "INVALID_CURRENCY": "```Foreign currency transaction failed. You wrote wrong currency!```",
@@ -187,11 +195,16 @@
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "Downloading",
+            "NAMEY": "NAME",
+            "URL": "LINK",
+            "THUMB": "THUMB",
+            "RATING": "RATING",
             "UPLOADING_SONG": "*Uploading*",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "*Downloading*",
             "UPLOADING_VIDEO": "*Uploading*",
+            "LOADING": "*Downloading video*",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
@@ -217,6 +230,7 @@
             "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 90xxxx```",
             "SUC": "*Numbered Person Uses WhatsApp! ✅*",
             "UNSUC": "*Numbered Person Does Not Use WhatsApp! ❌*",
+            "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "TAGADMİN": "Tags group admins.",
             "REPORT": "Sends reports to group admins.",
             "USER": "=== ```Report``` ===\n\n*User:* ",
@@ -258,7 +272,17 @@
             "WEATHER_DESC": "Shows the weather.",
             "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather Bakü```",
             "LOCATION": "Location",
+            "HMOD": "Finds mod apps from happymod",
+            "QUOTE_DESC": "It shares famous quotes",
+            "CM_DESC": "It sends complimentry sentenses",
+            "EVINS_DESC": "It sends insulted words",
+            "JOKE_DESC": "It sends random jokes",
+            "APK_MOD": "It sends some special mod apks",
+            "CARBON_DESC": "It sends carbon picture",
             "TEMP": "Temperature",
+            "BOT_DESC": "Chat with Pinky.\n Use .molu <message>",
+            "BOT": ":",
+            "DEVICE": "It shows the details of device",
             "DESC": "Description",
             "HUMI": "Humidity",
             "WIND": "Wind Speed",
@@ -447,20 +471,18 @@
             "SUCCESSFULLY_DELETED": "Successfully deleted all your notes."
         },
         "instagram": {
-            "NEED_WORD": "*Enter Any Instagram Post Link!*",
+            "NEED_WORD": "*Please enter username of any instagram account.*",
             "USAGE": ".insta <userName>",
-            "DESC": "Downloads videos or photos from Instagram.",
-            "LOADING": "Fetching user data.. please wait.",
+            "DESC": "Fetches user informations from instagram",
+            "LOADING": "*Searching*",
             "USERNAME": "Username",
-            "NAME": "Name",
-            "BIO": "Biography",
-            "FİX": "*Carrying out maintenance work!*",
-            "FOLLOWERS": "Followers",
-            "FOLLOWS": "Follows",
+            "FULL_NAME": "Fullname",
+            "PRIVATE": "Private",
+            "VERIFIED": "Verified",
             "ACCOUNT": "Account privacy",
             "PUBLIC": "Public",
             "HIDDEN": "Hidden",
-            "NOT_FOUND": "*Media Not Found!*"
+            "NOT_FOUND":"User not found: "
         },
         "github": {
             "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",

@@ -10,7 +10,7 @@ const Config = require('../config');
 const dd = "Made by JulieMwol"
 
 const Language = require('../language');
-const Lang = Language.getString('log');
+const Lang = Language.getString('weather');
 
 
 if (Config.WORKTYPE == 'private') {
