@@ -100,7 +100,7 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     
 
@@ -126,7 +126,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('Installing plugins...')
+            chalk.blueBright.italic('⬇️Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -136,7 +136,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         });
 
         console.log(
-            chalk.green.bold('Julie Mwol working!')
+            chalk.green.bold('✅ Julie Mwol working!')
         );
     });
     

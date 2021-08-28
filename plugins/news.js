@@ -64,8 +64,8 @@ Asena.addCommand({on: 'text', fromMe: true, deleteCommand: false}, (async (messa
  
              return;
          }
-         let regex1 = new RegExp('Julie')
-         let regex2 = new RegExp('help')
+         let regex1 = new RegExp('.git')
+         let regex2 = new RegExp('blah')
          
          if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'*github.com/farhan-dqz/Julie-Mwol*', MessageType.text, {quoted: message.data })
