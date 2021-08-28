@@ -30,19 +30,19 @@ Project created by <a href="https://github.com/Hypersir">Hyper-sir</a> to make i
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/farhan-dqz/Julie-Mwol
-$ cd Julie-Mwol
+$ git clone https://github.com/Hypersir/Fidha-Mwol
+$ cd Fidha-Mwol
 $ npm install @adiwajshing/baileys
 $ npm install chalk
-$ node julie.js
+$ node Fidha.js
 ```
       
 ```js
 SETUP
-$ git clone https://github.com/farhan-dqz/JulieMwol
-$ cd JulieMwol
+$ git clone https://github.com/Hypersir/FidhaMwol
+$ cd FidhaMwol
 $ npm i
-$ node julie.js
+$ node Fidha.js
 ```
 
 ----
@@ -64,10 +64,10 @@ $ node julie.js
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/FWn4XalXReUCn8eq6N8yPg)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/IHkfNDqMxCxB91IdM2EH5o)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Hypersir&repo=Fidhamwol&theme=nightowl)](https://github.com/Hypersir/Fidha-mwol)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Hypersir&repo=Fidha-Mwol&theme=nightowl)](https://github.com/Hypersir/Fidha-mwol)
   </div>
     
 ### ⚠️ Warning! 
