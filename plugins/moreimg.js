@@ -306,6 +306,27 @@ if (match[1].includes(';')) {
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALL})
 
     }));
+
+    Asena.addCommand({pattern: '2glitch  ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+      var webimage = await axios.get(`https://zenzapi.xyz/api/photooxy/retrolol?text=${match[1]}&apikey=a9a05974d30e`, { responseType: 'arraybuffer' })
+  
+     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALL})
+  
+      }));
+
+    
+      Asena.addCommand({pattern: 'battle  ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+    
+        var webimage = await axios.get(`https://zenzapi.xyz/api/photooxy/battlefield?text=${match[1]}&apikey=a9a05974d30e`, { responseType: 'arraybuffer' })
+    
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALL})
+    
+        }));
   
   Asena.addCommand({pattern: '1917 ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 

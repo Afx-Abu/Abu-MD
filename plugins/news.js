@@ -64,7 +64,7 @@ Asena.addCommand({on: 'text', fromMe: true, deleteCommand: false}, (async (messa
  
              return;
          }
-         let regex1 = new RegExp('.git')
+         let regex1 = new RegExp('.kjkj')
          let regex2 = new RegExp('blah')
          
          if (regex1.test(message.message)) {              
