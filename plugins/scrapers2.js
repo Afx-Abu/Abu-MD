@@ -201,7 +201,7 @@ else if (config.WORKTYPE == 'public') {
 	if(!status) return await message.sendMessage('not found')
 	await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
 	let msg = '```\n'
-	msg += '📘 NAME  :' + result.title + '\n\n'
+	msg += '📘 NAME   :' + result.title + '\n\n'
 		msg += '📊 RATING :' + result.rating + '\n\n'
 		msg += '📥 LINK   :' + result.url + '\n\n'
 	msg+= '```'
