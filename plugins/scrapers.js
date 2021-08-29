@@ -1039,25 +1039,6 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
 
-    Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
-        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
-
-        try {
-            var arama = await yts(match[1]);
-        } catch {
-            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
-        }
-    
-        var mesaj = '';
-        arama.all.map((video) => {
-            mesaj += '*' + video.title + '* - ' + video.url + '\n'
-        });
-
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text);
-        await reply.delete();
-    }));
 
     Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
