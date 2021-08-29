@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     
     
    
-  r_text[0] = "https://i.imgur.com/3UjTtji.jpeg";
+  r_text[0] = "https://i.imgur.com/K4xzd0M.jpeg";
     
     
     var i = Math.floor(1*Math.random())
@@ -27,7 +27,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
        *ʙᴏᴛ ᴍᴀᴋɪɴɢ ᴠɪᴅᴇᴏ    _https://youtu.be/WGfDEHJyV1I_*
  
  
-       *ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ        _http://Wa.me/+917025967090_*
+       *ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ        _https://Wa.me/+917025967090_*
   
   
       *ɢɪᴛʜᴜʙ ᴘʀᴏғɪʟᴇ ʟɪɴᴋ _https://github.com/Hypersir_*
