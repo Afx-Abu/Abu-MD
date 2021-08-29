@@ -36,7 +36,7 @@
             "required": true,
             "value": "false"
         },
-        "AUTO_BİO": {
+        "AUTO_BIO": {
             "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
             "required": true,
             "value": "false"
