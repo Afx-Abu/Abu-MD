@@ -19,8 +19,8 @@ await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
 //if(match[1] == '') return 
     let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
 //if(match[1] == '') return 
-    if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data,},{ caption: "Made By JulieMwol" }) }
-    else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data}, { caption: "Made By JulieMwol" }) }
+    if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data,},{ caption: "Made By Amalser" }) }
+    else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data}, { caption: "Made By Amalser" }) }
 });
 //const axios = require('axios')
 async function instaGram(url, key){
@@ -36,8 +36,8 @@ else if (Config.WORKTYPE == 'public') {
   //if(match[1] == '') return 
       let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
   //if(match[1] == '') return 
-      if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data,},{ caption: "Made By JulieMwol" }) }
-      else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data}, { caption: "Made By JulieMwol" }) }
+      if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data,},{ caption: "Made By Amalser" }) }
+      else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data}, { caption: "Made By Amalser" }) }
   });
   //const axios = require('axios')
   async function instaGram(url, key){
