@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img border-radius: https://i.imgur.com/yCYYyEJ.jpeg"/>
+  <img border-radius:"https://i.imgur.com/yCYYyEJ.jpeg"/>
   <p align="center">
 <a href="#"><img title="Amalser_v2" src="https://img.shields.io/badge/Amalser_v2-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
