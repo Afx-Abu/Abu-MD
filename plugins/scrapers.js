@@ -887,11 +887,11 @@ else if (config.WORKTYPE == 'public') {
     }));
 
     
-    Asena.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if(match[1] === undefined || match[1] == "")
             return;
-
+    
         let 
             LANG = 'ml',
             ttsMessage = match[1],
@@ -905,7 +905,7 @@ else if (config.WORKTYPE == 'public') {
             SPEED = parseFloat(speedMatch[1])
             ttsMessage = ttsMessage.replace(speedMatch[0], "")
         }
-
+    
         var buffer = await googleTTS.synthesize({
             text: ttsMessage,
             voice: LANG
