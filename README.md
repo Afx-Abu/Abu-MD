@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img border-radius: "https://i.imgur.com/yCYYyEJ.jpeg"/>
+  <img border-radius: https://www.linkpicture.com/q/IMG-20210819-WA1189.jpg"/>
   <p align="center">
 <a href="#"><img title="Amalser_v2" src="https://img.shields.io/badge/Amalser_v2-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
@@ -30,8 +30,8 @@ Project created by <a href="https://github.com/cyberchekuthan">Amalser_v2</a> to
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/farhan-dqz/Julie-Mwol
-$ cd Julie-Mwol
+$ git clone https://github.com/cyberchekuthan/Amalser_v2
+$ cd Amalser_v2
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node julie.js
@@ -39,8 +39,8 @@ $ node julie.js
       
 ```js
 SETUP
-$ git clone https://github.com/farhan-dqz/JulieMwol
-$ cd JulieMwol
+$ git clone https://github.com/cyberchekuthan/Amalser_v2
+$ cd Amalser_v2
 $ npm i
 $ node julie.js
 ```
@@ -64,7 +64,7 @@ $ node julie.js
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BT0nNPBthyFI1ejoSr0i7W)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/Lvtl7GqERfP19Na6M2wndX)
   <div align="center">
        
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=farhan-dqz&repo=Julie-Mwol&theme=nightowl)](https://github.com/farhan-dqz/Julie-Mwol)
