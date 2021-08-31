@@ -262,7 +262,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     , MessageType.text);
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n'
+                                    '\n\n*💌 ' + error + '*\n'
                                     , MessageType.text);
                             }
                         }
