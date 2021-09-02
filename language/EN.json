@@ -217,7 +217,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Converting..🧭```"
+            "DOWNLOADING": "```Converting..✅️```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -233,8 +233,8 @@
             "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "TAGADMİN": "Tags group admins.",
             "REPORT": "Sends reports to group admins.",
-            "USER": "=== ```Report``` ===\n\n*User:* ",
-            "REASON": "\n*Reason:* ",
+            "USER": "*===== Warning ⚠️ =====*\n\n*User:* ",
+            "REASON": "\n*Warn 👉 :* ",
             "REPLY": "*Please Respond to User's Message to Report!*"
         },
         "updater": {
