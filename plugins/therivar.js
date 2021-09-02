@@ -29,15 +29,15 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         THERI_off = 'മോശം വാക്ക് നീക്കംചെയ്യൽ ഓഫാക്കി'
     }
    
-    Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
-        if (match[1] == 'yes') {
+    Asena.addCommand({pattern: 'antibadword ?(.*)', fromMe: true, desc: l_dsc, usage: '.antibadword on / off' }, (async (message, match) => {
+        if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['THERI_KICK']: 'false'
                     } 
                 });
                 await message.sendMessage(THERI_off)
-        } else if (match[1] == 'no') {
+        } else if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['THERI_KICK']: 'true'
