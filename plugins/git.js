@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
 
 *githublink : https://github.com/cyberchekuthan/Amalser_v2*
 
-*audio commads : https://github.com/cyberchekuthan/Amalser_v1/tree/master/uploads*
+*audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
 `}) 
 
 }));
