@@ -262,7 +262,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     , MessageType.text);
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
-                                    '\n\n*🌀Subcribe this channel other wise chance to get erorr:https://youtu.be/RlSG4ZgPls0 ' + error + '*\n'
+                                    '\n*🌀 Subcribe this channel other wise chance to get erorr: https://youtu.be/RlSG4ZgPls0*' +
+                                    '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
                         }
