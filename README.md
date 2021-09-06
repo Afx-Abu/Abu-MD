@@ -1,8 +1,12 @@
-
 <div align="center">
-  <img border-radius: 15px src="https://www.linkpicture.com/q/IMG-20210819-WA1189.jpg"/>
+
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+Amalser_v2+WA+Bot+repo;Created+by+Amal;This+is+a+Bgm+bot;With+more+features)](https://git.io/typing-svg)
+
+ </a>
+</p>
+<div align="center">
   <p align="center">
-<a href="#"><img title="Amalser_v2" src="https://img.shields.io/badge/Amalser_v2-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<img src="https://media.giphy.com/media/12r4pHjvAOv48o/giphy.gif" alt="GIF" width="250" height="200"/>
 </p>
   <p align="center">
 <a href="https://github.com/cyberchekuthan"><img title="Author" src="https://img.shields.io/badge/Author-cyberchekuthan/Amalser_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
