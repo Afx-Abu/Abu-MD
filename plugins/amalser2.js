@@ -229,7 +229,7 @@ if (Config.LANG == 'HI') medinfo = 'उत्तर दिए गए वीड�
 if (Config.LANG == 'PT') medinfo = 'Mostra as informações técnicas do vídeo respondido.'
 if (Config.LANG == 'RU') medinfo = 'Показывает техническую информацию о видео, на которое был дан ответ.'
 
-Asena.addCommand({pattern: 'mediainfom$', fromMe: wk, desc: medinfo}, (async (message, match) => {    
+Asena.addCommand({pattern: 'findvid$', fromMe: wk, desc: medinfo}, (async (message, match) => {    
     var id = message.jid
     if (message.reply_message.video) {
         var location = await message.client.downloadAndSaveMediaMessage({
