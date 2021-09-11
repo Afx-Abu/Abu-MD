@@ -158,7 +158,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
  
-Julie.addCommand({on: 'text', fromMe: false,onlyGroup: true}, (async (message, match) => {
+Asena.addCommand({on: 'text', fromMe: false,onlyGroup: true}, (async (message, match) => {
 
     if(Config.THERI_KICK){
     let banned = jid.find( Jid => Jid === message.jid);
@@ -186,7 +186,7 @@ filtreler.map(
     }
 );
 }));
- Julie.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
+ Asena.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
 
     if(Config.PLKS){
 const array = afnp 
