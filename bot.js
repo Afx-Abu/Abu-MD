@@ -121,7 +121,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
-         return;
+         return; //created by afnanplk
          }
 
         console.log(
