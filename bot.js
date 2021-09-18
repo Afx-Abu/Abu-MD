@@ -117,7 +117,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else {
+         else if (config.AFPLK !== 'AFAMK' || config.AFPLK !== 'afamk' || config.AFPLK !== 'Afamk' || config.AFPLK !== 'pinky') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
