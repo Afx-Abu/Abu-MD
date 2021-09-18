@@ -16,6 +16,10 @@
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 91xxxxxxxxx,0",
             "required": false
         },
+         "YT_PASSWORD": {
+            "description": "enter the password, to get password watch https://youtu.be/RlSG4ZgPls0 .",
+            "required": true
+        },
         "LANGUAGE": {
             "description": "Bot language.English => en",
             "required": true,
