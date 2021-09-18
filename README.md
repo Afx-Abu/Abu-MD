@@ -21,7 +21,12 @@ Project created by <a href="https://github.com/cyberchekuthan">Amalser_v2</a> to
 </p>
 
 ## Setup
-<div align="center">
+<div align="center"> 
+
+
+##Youtube link Watch full video and findout password in this video
+
+https://youtube.com/channel/UCT7x7a4HJ72bbMNx49Z9DTA
 
   ### Simple Method
   
