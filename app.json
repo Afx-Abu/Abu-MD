@@ -55,6 +55,11 @@
             "required": true,
             "value": "false"
         },
+              "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by SAIDALI",
+            "required": false,
+            "value": "39999600"
+        },
         "AUTO_BİO": {
             "description": " Set true for auto date, time in biography.",
             "required": true,
