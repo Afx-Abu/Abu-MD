@@ -19,7 +19,7 @@ var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 let td = Config.WORKTYPE == 'public' ? false : true
 
-Neotro.addCommand({pattern: 'bot', fromMe: td, desc: Lang.MENU}, (async (message, match) => {
+Neotro.addCommand({pattern: 'menu', fromMe: td, desc: Lang.MENU}, (async (message, match) => {
 // send a buttons message!
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: 'Hii ❣️'}, type: 1},
