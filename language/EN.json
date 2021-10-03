@@ -240,7 +240,7 @@
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/GOTMCTPCGBuKMeAReNKYuA*\n\nChanges:\n```",
+            "NEW_UPDATE": "*New update available for Bot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/CbRlEux876XFsWQfIlOKty*\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "Updating..💌",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
