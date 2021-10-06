@@ -35,6 +35,11 @@
             "required": false,
             "value": "true"
         },
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
+            "required": true,
+            "value": "false"
+        },
         "WELCOME": {
             "description": "You can select welcome as gif/pp",
             "required": false,
