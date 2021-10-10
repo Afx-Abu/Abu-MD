@@ -263,8 +263,8 @@ else if (config.WORKTYPE == 'public') {
   });
 
     Asena.addCommand({pattern: 'vava ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
-	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+	if (match[1] === ' ') return await message.reply(Lang.NEED_LOCATIONA);
+	const url = `https://api.simsimi.net/v2/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
