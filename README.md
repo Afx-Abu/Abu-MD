@@ -80,13 +80,23 @@ Click WA logo to Join Support Group 👇
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=farhan-dqz&repo=Julie-Mwol&theme=nightowl)](https://github.com/farhan-dqz/Julie-Mwol)
   </div>
     
-### ⚠️ Warning! 
+### ⚠ Warning ⚠
+
 ```
-Due to Userbot; Your WhatsApp account may be banned.
-This is an open source project, you are responsible for everything you do. 
-Absolutely, Asena executives do not accept responsibility.
-By establishing the Asena, you are deemed to have accepted these responsibilities.
+By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
+Amalser_v2 or we are not responsible for your account, 
+This bot is intended for the purpose of having fun with some fun commands 
+and group management with some helpfull commands.
+
+If  you ended up spamming groups, getting reported left and right, 
+and you ended up in being fight with WhatsApp
+and at the end WhatsApp Team deleted your account. DON'T BLAME US.
+
+No personal support will be provided / We won't spoon feed you. 
+If you need help
+you can contact 👇🏻👇🏻 
 ```
+**[![Amalser](https://www.linkpicture.com/q/WHTSPP-LOGO.png)](wa.me/919895828468?text=Can%20you%20help%20bro)**
 
 ## Developers
   <div align="center">
