@@ -96,7 +96,7 @@ No personal support will be provided / We won't spoon feed you.
 If you need help
 you can contact 👇🏻👇🏻 
 ```
-**[![Amalser](https://www.linkpicture.com/q/WHTSPP-LOGO.png)](wa.me/919895828468?text=Can%20you%20help%20bro)**
+**[![Amalser](https://www.linkpicture.com/q/WHTSPP-LOGO.png)](http://wa.me/919895828468?text=Can%20you%20help%20bro)**
 
 ## Developers
   <div align="center">
