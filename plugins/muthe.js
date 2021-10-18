@@ -20,8 +20,9 @@ var ddd = ggg.toString('utf-8')
 Neotro.addCommand({pattern: 'bot', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: Cofig.BTN1 }, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: Cofig.BTN2 }, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: 'Hii ❤️'}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'I am fine 🤩:}, type: 1},
+        {buttonId: 'id3', buttonText: {displayText: 'Welcome 🥳'}, type: 1}
       ]
       
       const buttonMessage = {
