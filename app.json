@@ -153,6 +153,11 @@
             "required": true,
             "value": "false"
         },
+        "OWNER_NAME": {
+            "description": "reply for .owner ! give your details, Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
             "required": false
