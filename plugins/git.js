@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
     
     
    
-  r_text[0] = "https://i.imgur.com/6G31RxX.jpeg";
+  r_text[0] = "https://i.imgur.com/w89FHm7.jpeg";
     
     
     var i = Math.floor(1*Math.random())
@@ -19,7 +19,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*creater Amal*
-*owner number wa.me/919895828468*
+*To check update .update   To update Bot .update now*
 
 *Bot making video : https://youtu.be/fd0KPblop-k*
 
