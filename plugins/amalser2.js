@@ -288,7 +288,7 @@ Asena.addCommand({pattern: 'pm ?(.*)', fromMe: true, desc: pmmm, onlyGroup: true
     await message.client.sendMessage(uspm, `${match[1]}`, MessageType.text);
     await message.client.sendMessage(message.jid, sucmsg, MessageType.text);
 }));
-Asena.addCommand({pattern: 'pmsend ?(.*)', fromMe: true, desc: psmm, onlyGroup: true}, (async (message, match) => {
+Asena.addCommand({pattern: 's ?(.*)', fromMe: true, desc: psmm, onlyGroup: true}, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,NLang.NEED_REPLY, MessageType.text);
     if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text);
     let 
