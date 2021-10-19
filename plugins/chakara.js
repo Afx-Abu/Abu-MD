@@ -1,13 +1,13 @@
 const asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
-const GM = "it sends good morning message"
-const GN = "it sends good night message"
+const GM = "warning message"
+const GN = "warning message"
 const Config = require('../config');
 
 
 
 if (Config.WORKTYPE == 'private') {
-asena.addCommand({pattern: 'reset warn', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+asena.addCommand({pattern: 'warn', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
