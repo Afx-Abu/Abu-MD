@@ -1,7 +1,7 @@
 const asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
-const GM = "Warning message"
-const GN = "warning message"
+const GM = "Warning message 0"
+const GN = "warning message 0"
 const Config = require('../config');
 
 
