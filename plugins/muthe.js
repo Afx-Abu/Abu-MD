@@ -17,17 +17,16 @@ var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 
-Neotro.addCommand({pattern: 'bot', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'btm', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: 'Hii ❤️'}, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: 'I am fine 🤩'}, type: 1},
-        {buttonId: 'id3', buttonText: {displayText: 'Welcome 🥳'}, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: Cofig.BTN1 }, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: Cofig.BTN2 }, type: 1}
       ]
       
       const buttonMessage = {
-          contentText: "Hi How are you ?",
-          footerText: 'owner  Amal  ©',
+          contentText: "Hi it's button message",
+          footerText: 'Hello World',
           buttons: buttons,
           headerType: 1
       }
