@@ -6,7 +6,7 @@
 </p>
 <div align="center">
   <p align="center">
-<img src="https://i.imgur.com/w89FHm7.jpeg>
+<img src=https://i.imgur.com/w89FHm7.jpeg>
 </p>
   <p align="center">
 <a href="https://github.com/cyberchekuthan"><img title="Author" src="https://img.shields.io/badge/Author-Amal-cyberchekuthan/Amalser_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
