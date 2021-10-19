@@ -70,6 +70,10 @@
             "required": true,
             "value": "false"
         },
+        "NUMBER": {
+            "description": "give your orginal phone number if you wish to add it in .number cmnd ",
+            "required": false
+        },
         "HANDLERS": {
             "description": "For commands.",
             "required": true,
