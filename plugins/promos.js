@@ -27,7 +27,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 }
 
 
-Skueletor.addCommand({ pattern: 'promos', fromMe: false, onlyGroup: true }, async (message, match) => {
+Asena.addCommand({ pattern: 'promos', fromMe: false, onlyGroup: true }, async (message, match) => {
     var im = await checkImAdmin(message);
     var userad = await checkAdmin(message);
     if (!userad) return await message.client.sendMessage(message.jid,Lang.USER_NOT_ADMIN,MessageType.text);
@@ -59,7 +59,7 @@ Skueletor.addCommand({ pattern: 'promos', fromMe: false, onlyGroup: true }, asyn
 })
 
 
-Skueletor.addCommand({ pattern: 'savepromo?(.*)', fromMe: false, onlyGroup: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'savepromo?(.*)', fromMe: false, onlyGroup: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
     var im = await checkImAdmin(message);
     var userad = await checkAdmin(message);
     if (!userad) return await message.client.sendMessage(message.jid,Lang.USER_NOT_ADMIN,MessageType.text);
@@ -111,7 +111,7 @@ Skueletor.addCommand({ pattern: 'savepromo?(.*)', fromMe: false, onlyGroup: true
     }
 })
 
-Skueletor.addCommand({ pattern: 'deletepromos', fromMe: false, onlyGroup: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'deletepromos', fromMe: false, onlyGroup: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
     var im = await checkImAdmin(message);
     var userad = await checkAdmin(message);
     if (!userad) return await message.client.sendMessage(message.jid,Lang.USER_NOT_ADMIN,MessageType.text);
