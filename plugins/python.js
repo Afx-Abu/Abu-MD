@@ -1,23 +1,17 @@
-const {MessageType, MessageOptions, Mimetype} = require("@adiwajshing/baileys");
-const Skueletor = require('../events');
-const Config = require('../config');
-const id = '51912545279@s.whatsapp.net' // el ID del WhatsApp
+WhatsAlexa.addCommand({pattern: 'btm', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+// send a buttons message!
+    const buttons = [
+        {buttonId: 'id1', buttonText: {displayText: 'Button 1'}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'Button 2'}, type: 1}
+      ]
+      
+      const buttonMessage = {
+          contentText: "Hi it's button message",
+          footerText: 'Hello World',
+          buttons: buttons,
+          headerType: 1
+      }
+      
+      await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
-const buttons = [
-    {buttonId: '51912545279@s.whatsapp.net', buttonText: {displayText: 'fine'}, type: 1},
-    {buttonId: '51912545279@s.whatsapp.net', buttonText: {displayText: 'welcome'}, type: 1}
-  ]
-  
-  const buttonMessage = {
-      contentText: "How are you 🥰",
-      footerText: 'Hello World',
-      buttons: buttons,
-      headerType: 1
-  }
-
-
-  Skueletor.addCommand({pattern: 'bot', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage)
-
-        }));
+}));
