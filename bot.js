@@ -149,7 +149,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('𝚙𝚒𝚗𝚔𝚢 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 now ' ));
+            chalk.green.bold('𝚙𝚒𝚗𝚔𝚢 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 👻'));
             await conn.sendMessage(conn.user.jid, "ᴘɪɴᴋʏ ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` WORKING```" , MessageType.text);
     });
