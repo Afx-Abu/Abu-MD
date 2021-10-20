@@ -149,10 +149,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Amalser working 💌')
-            await conn.sendMessage(conn.user.jid, "AMAL SER ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
-            await conn.sendMessage(conn.user.jid, "``` WORKING ```" , MessageType.text);
-        );
+            chalk.green.bold('𝚙𝚒𝚗𝚔𝚢 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 now ' ));
+            await conn.sendMessage(conn.user.jid, "ᴘɪɴᴋʏ ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
+            await conn.sendMessage(conn.user.jid, "``` WORKING```" , MessageType.text);
     });
     
     conn.on('chat-update', async m => {
