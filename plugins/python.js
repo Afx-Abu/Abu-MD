@@ -11,16 +11,17 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-WhatsAlexa.addCommand({pattern: 'btm', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+WhatsAlexa.addCommand({pattern: 'bot', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: 'Button 1'}, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: 'Button 2'}, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: 'i am fine 🥰'}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'Do you like Bot'}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'Hii'}, type: 1}
       ]
       
       const buttonMessage = {
-          contentText: "Hi it's button message",
-          footerText: 'Hello World',
+          contentText: "Hi How Are You ?",
+          footerText: 'owner Amalser  ©',
           buttons: buttons,
           headerType: 1
       }
