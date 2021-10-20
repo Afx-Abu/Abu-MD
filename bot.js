@@ -150,8 +150,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         console.log(
             chalk.green.bold('𝙰𝚖𝚊𝚕𝚜𝚎𝚛 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
-            await conn.sendMessage(conn.user.jid, "𝐀𝐦𝐚𝐥𝐬𝐞𝐫 ɪꜱ 𝐰𝐨𝐫𝐤𝐢𝐧𝐠", MessageType.text);
-            await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠```" , MessageType.text);
+            await conn.sendMessage(conn.user.jid, "𝐀𝐦𝐚𝐥𝐬𝐞𝐫 ɪꜱ 𝐚𝐥𝐥 𝐬𝐞𝐭 ✅️", MessageType.text);
+            await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
     });
     
     conn.on('chat-update', async m => {
