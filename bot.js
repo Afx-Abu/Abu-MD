@@ -151,6 +151,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         console.log(
             chalk.green.bold('Amalser working 💌')
+            await conn.sendMessage(conn.user.jid, "AMAL SER ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
+            await conn.sendMessage(conn.user.jid, "``` WORKING ```" , MessageType.text);
         );
     });
     
