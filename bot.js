@@ -280,7 +280,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                             await whats.delete(); 
                         }
 */
-    try {
+
+                        try {
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
