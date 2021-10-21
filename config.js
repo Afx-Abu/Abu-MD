@@ -30,7 +30,6 @@ module.exports = {
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
     ALL: process.env.ALL_CAPTION === undefined ? 'Made By Amalser' : process.env.ALL_CAPTION,
     MENTION: process.env.TAG_REPLY === undefined ? '919072790587@s.whatsapp.net' : process.env.TAG_REPLY,
-    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'recording' : process.env.BOT_PRESENCE,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     AFPLK: process.env.YT_PASSWORD === undefined ? false : process.env.YT_PASSWORD,
