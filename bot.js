@@ -153,6 +153,22 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.sendMessage(conn.user.jid, "𝐀𝐦𝐚𝐥𝐬𝐞𝐫 ɪꜱ 𝐚𝐥𝐥 𝐬𝐞𝐭 ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
     });
+    //Thanks to souravkl11
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 10 && getGMTm == 1) {
+            const {data} = await axios(`https://gist.github.com/cyberchekuthan/990794cbe26dd78db7e68c0d364a5c8c/raw`)
+            const { sken, skml } = data
+                        
+            var announce = ''
+            if (config.LANG == 'EN') announce = `${sken}`
+            if (config.LANG == 'ML') announce = `${skml}`
+            
+            return await conn.sendMessage(conn.user.jid, '[ DAILY ANNOUNCEMENTS ]\n\n' + announce, MessageType.text);
+        }
+    }, 50000);
 
     conn.on('chat-update', async m => {
         if (!m.hasNewMessage) return;
@@ -222,14 +238,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
                     && msg.message && msg.message.imageMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
-                        command.pattern.test(text_msg)))) || 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg)))) || 
                     (command.pattern !== undefined && command.pattern.test(text_msg)) || 
                     (command.on !== undefined && command.on === 'text' && text_msg) ||
                     // Video
                     (command.on !== undefined && (command.on === 'video')
                     && msg.message && msg.message.videoMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
                         command.pattern.test(text_msg))))) {
 
                     let sendMsg = false;
@@ -237,7 +253,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         
                     if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
@@ -304,4 +320,3 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 }
 
 whatsAsena();
-
