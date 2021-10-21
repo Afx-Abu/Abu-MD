@@ -154,22 +154,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
     });
     
-    conn.on('message-new', async msg => {
-        if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
-
-        if (config.BOT_PRESENCE == 'offline') {
-            await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
-        
-        } else if (config.BOT_PRESENCE == 'online') {
-            await conn.updatePresence(msg.key.remoteJid, Presence.available);
-        
-        } else if (config.BOT_PRESENCE == 'typing') {
-            await conn.updatePresence(msg.key.remoteJid, Presence.composing);
-        
-        } else if (config.BOT_PRESENCE == 'recording') {
-            await conn.updatePresence(msg.key.remoteJid, Presence.recording);
-        } 
-
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
 
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
