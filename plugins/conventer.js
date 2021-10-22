@@ -193,4 +193,45 @@ else if (Config.WORKTYPE == 'public') {
         })
     }));
 }
+var doc_desc = ''
+    var plk = ''
+    var afn = ''
+    var usge = ''
+     if (Config.LANG == 'EN') {
+        doc_desc = 'CONVERT TO DOCUMENT AND ADD GIVEN NAME'
+        plk = '```NAMING AND DOCIFYING```'
+        afn = '```PLEASE REPLY TO A AUDIO```'
+        usge = '```.doc pinky *replace pinky with desired name*```'
+    }
+    if (Config.LANG == 'ML') {
+        doc_desc = 'ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും നൽകിയപേര് ചേർക്കുകയും ചെയ്യുക'
+        afn = '```ഒരു ഓഡിയോയ്ക്ക് മറുപടി നൽകുക```'
+        plk = '```ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും പേര് നൽകുകയും ചെയ്യുന്നു```'
+        usge = '```.doc pinky```'
+    }
     
+     MyPnky.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
+      
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
+        const mid = message.jid
+        if (message.reply_message === false) return await message.client.sendMessage(mid,afn, MessageType.text);
+        var downloading = await message.client.sendMessage(mid,plk,MessageType.text);
+        var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        });
+
+        ffmpeg(location)    
+            .save('output.mp3')
+            .on('end', async () => {
+                await message.client.sendMessage(mid, fs.readFileSync('output.mp3'), MessageType.document, {filename: match[1] + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+            });
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+    }));
+
+}
+    
+}  
