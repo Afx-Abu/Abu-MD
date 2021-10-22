@@ -90,8 +90,8 @@
         },
         "NO_LOG": {
             "description": " Set true if you don't want to see error log.",
-            "required": true,
-            "value": "false"
+            "required": false,
+            "value": "true"
         },
         "SEND_READ": {
             "description": "Write true if you want to throw seen.",
