@@ -41,7 +41,7 @@ module.exports = {
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     BOT: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴀᴍᴀʟsᴇʀ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
-    NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
+    NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
