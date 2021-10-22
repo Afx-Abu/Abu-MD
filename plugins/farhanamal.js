@@ -33,7 +33,7 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
        
        const button = {
         buttonText: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
-        description: "𝐀𝐌𝐀𝐋𝐒𝐄𝐑  𝐁𝐎𝐓 🔰",
+        description: "sᴇʟᴇᴄᴛ ᴀɴʏ ᴏᴘᴛɪᴏɴ ғʀᴏᴍ ᴍᴇɴᴜ  ",
         sections: sections,
         listType: 1
        }
