@@ -158,7 +158,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
          
-        while (getGMTh == 10 && getGMTm == 1) {
+        while (getGMTh == 19 && getGMTm == 1) {
             const {data} = await axios(`https://gist.github.com/cyberchekuthan/990794cbe26dd78db7e68c0d364a5c8c/raw`)
             const { sken, skml } = data
                         
