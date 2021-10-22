@@ -192,8 +192,7 @@ else if (Config.WORKTYPE == 'public') {
             })
         })
     }));
-}
-var doc_desc = ''
+    var doc_desc = ''
     var plk = ''
     var afn = ''
     var usge = ''
@@ -210,7 +209,7 @@ var doc_desc = ''
         usge = '```.doc pinky```'
     }
     
-     MyPnky.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
+     Asena.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
       
         if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
         const mid = message.jid
