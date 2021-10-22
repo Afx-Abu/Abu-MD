@@ -162,13 +162,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             const {data} = await axios(`https://gist.github.com/cyberchekuthan/990794cbe26dd78db7e68c0d364a5c8c/raw`)
             const { sken, skml } = data
                         
-            if (config.LANG == 'EN') {
+            var announce = ''
+            if (config.LANG == 'EN') announce = sken
+            if (config.LANG == 'ML') announce = skml
             
-           return await conn.sendMessage(conn.user.jid, '[ *ANNOUNCEMENT* ]\n\n' + sken, MessageType.text);
-        }
-            if (config.LANG == 'ML') {
-            
-           return await conn.sendMessage(conn.user.jid, '[ *പ്രഖ്യാപനം* ]\n\n' + skml, MessageType.text);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS ]*\n\n' + announce, MessageType.text);
         }
     }, 50000);
 
