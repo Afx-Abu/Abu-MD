@@ -8,7 +8,7 @@
     "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
     "stack": "container",
     "env": {
-        "JULIE_SESSION": {
+        "AMALSER_CODE": {
             "description": "Type here yours Asena Session.",
             "required": true
         },
