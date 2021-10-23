@@ -9,7 +9,7 @@
     "stack": "container",
     "env": {
         "AMALSER_CODE": {
-            "description": "Type here yours Asena Session.",
+            "description": "Type the code when you got by scanning QR through WhatsApp.",
             "required": true
         },
         "SUDO": {
