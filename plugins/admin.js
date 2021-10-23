@@ -1562,7 +1562,7 @@ Asena.addCommand({pattern: 'rename ?(.*)', onlyGroup: true, fromMe: true,desc: A
     }
 ));
 
-Julie.addCommand({pattern: 'revoke', fromMe: true, onlyGroup: true, desc: jul.REVOKE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'revoke', fromMe: true, onlyGroup: true, desc: jul.REVOKE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
     await message.client.revokeInvite(message.jid)
