@@ -111,6 +111,19 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,tx, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
 }));
+var stag_dsc = ''
+if (Config.LANG !== 'ML') stag_dsc = 'Sends the replied message to all members in the group.'
+if (Config.LANG == 'ML') stag_dsc = 'ഗ്രൂപ്പിലെ എല്ലാ അംഗങ്ങൾക്കും മറുപടി സന്ദേശം അയയ്ക്കുന്നു.'
+
+Asena.addCommand({pattern: 'group bc$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
+    grup = await message.client.groupMetadata(message.jid);
+    var jids = [];
+    mesaj = '';
+    grup['participants'].map(async (uye) => {
+        await message.client.sendMessage(uye.jid, message.reply_message.text, MessageType.text)
+    })
+}));
 
 }
 
