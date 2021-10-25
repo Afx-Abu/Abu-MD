@@ -116,8 +116,8 @@ if (hrs >= 12 && hrs <= 17) wish = '*ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞*'
 if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
-if (config.FULLEVA == 'true') eva = 'On'
-if (config.FULLEVA == 'false') eva = 'Off'
+if (config.TALKING_PINKY == 'true') pinky = 'On'
+if (config.TALKING_PINKY == 'false') pinky = 'Off'
 if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
 
@@ -131,7 +131,7 @@ if (config.AUTOBİO == 'false') auto_bio = 'Off'
 ┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : Amal
 ┣𝕾⃝🌺 *BOT* : Amalser
 ┣𝕾⃝🌺 *ᴠᴇʀsɪᴏɴ* : 2.0.0
-┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + eva + `
+┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
 ┣𝕾⃝🌺 *ᴘʀᴇғɪx* : *. ; !*
