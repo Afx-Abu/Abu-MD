@@ -104,8 +104,10 @@ Amalser.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (
     var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
 
     var wish = ''
+  
+    var antilink = ''
      
-    var eva = ''
+    var pinky = ''
 
     var auto_bio = ''
 
@@ -132,7 +134,6 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 │
 ┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : Amal
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
-┣𝕾⃝🌺 *Autosticker* : ` + autosticker + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
