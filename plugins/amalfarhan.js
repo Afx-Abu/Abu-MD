@@ -122,8 +122,6 @@ if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
 if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
-if (config.STICKERP == 'true') autosticker = 'On'
-if (config.STICKERP == 'false') autosticker = 'Off'
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOT + `
