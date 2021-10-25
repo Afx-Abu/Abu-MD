@@ -120,7 +120,10 @@ if (config.TALKING_PINKY == 'true') pinky = 'On'
 if (config.TALKING_PINKY == 'false') pinky = 'Off'
 if (config.AUTOBİO == 'true') auto_bio = 'On'
 if (config.AUTOBİO == 'false') auto_bio = 'Off'
-if (config.Bot == 'Bot') botname = 'Amalser'
+if (config.ANTİLİNK == 'true') antilink = 'On'
+if (config.ANTİLİNK == 'false') antilink = 'Off'
+if (config.STICKERP == 'true') autosticker = 'On'
+if (config.STICKERP == 'false') autosticker = 'Off'
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOT + `
@@ -130,8 +133,8 @@ if (config.Bot == 'Bot') botname = 'Amalser'
 │         *⌚` + time + `*
 │
 ┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : Amal
-┣𝕾⃝🌺 *BOT* : ` + botname + `
-┣𝕾⃝🌺 *ᴠᴇʀsɪᴏɴ* : 2.0.0
+┣𝕾⃝🌺 *Antilink* : ` + antilink + `
+┣𝕾⃝🌺 *Autosticker* : ` + autosticker + `
 ┣𝕾⃝🌺 *ғᴜʟʟ ᴇᴠᴀ* : ` + pinky + `
 ┣𝕾⃝🌺 *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
 ┣𝕾⃝🌺 *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
