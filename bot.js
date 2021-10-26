@@ -173,7 +173,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     ); 
                 } 
           }
-    });
+    });//thanx afnanplk
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
