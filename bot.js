@@ -13,6 +13,7 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 const {Message, StringSession, Image, Video} = require('./julie/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
+const git = simpleGit();
 const axios = require('axios');
 const got = require('got');
 
