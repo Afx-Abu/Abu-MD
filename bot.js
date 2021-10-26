@@ -155,6 +155,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.sendMessage(conn.user.jid, "𝐀𝐦𝐚𝐥𝐬𝐞𝐫 ɪꜱ 𝐚𝐥𝐥 𝐬𝐞𝐭 ✅️", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 💌```" , MessageType.text);
     });
+    /*
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 if (config.WORKTYPE == 'public') {
                     await conn.sendMessage(conn.user.jid, 'bot is public', MessageType.text)
@@ -178,7 +179,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     ); 
                 } 
           }
-  */      
+    */
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
