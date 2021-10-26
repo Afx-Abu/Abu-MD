@@ -157,11 +157,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     
     
           if (config.LANG == 'EN' || config.LANG == 'ML') {
-                if (config.WORKTYPE == 'public') {
-                    await conn.sendMessage(conn.user.jid, 'bot is public', MessageType.text)
-                } else {
-                    await conn.sendMessage(conn.user.jid, 'bot is private', MessageType.text);
-                }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
