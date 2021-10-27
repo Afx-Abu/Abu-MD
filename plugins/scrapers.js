@@ -482,9 +482,9 @@ if (config.WORKTYPE == 'private') {
 
             const PLK = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + NUMBER.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + NUMBER.PHONE + ':' + NUMBER.PHONE + ' \n'
+            + 'FN:' + pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:Bot user;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + pinky.PHONE + ':' + pinky.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "Amal", vcard: PLK}, MessageType.contact);
 
@@ -1129,9 +1129,9 @@ else if (config.WORKTYPE == 'public') {
 
             const PLK = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + NUMBER.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + NUMBER.PHONE + ':' + NUMBER.PHONE + ' \n'
+            + 'FN:' + pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:Bot user;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + pinky.PHONE + ':' + pinky.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "Amal", vcard: PLK}, MessageType.contact);
 
