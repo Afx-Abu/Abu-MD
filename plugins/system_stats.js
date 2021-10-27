@@ -42,6 +42,20 @@ else if (Config.WORKTYPE == 'public') {
         const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var plk_here = new Date().toLocaleDateString(get_localized_date)
 	var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '```'
+
+{buttonId: 'id1', buttonText: {displayText: 'i am fine 🥰'}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'Do you like Bot'}, type: 1},
+        {buttonId: 'id3', buttonText: {displayText: 'Hii'}, type: 1}
+      ]
+      
+      const buttonMessage = {
+          contentText: "Hi How Are You ?",
+          footerText: 'owner Amalser  ©',
+          buttons: buttons,
+          headerType: 1
+      }
+      
+      await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 	   
 	   	     var r_text = new Array ();    
 r_text[0] = "The greatest glory in living lies not in never falling, but in rising every time we fall.\n           -Nelson Mandela";
