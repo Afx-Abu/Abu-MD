@@ -6,9 +6,9 @@ const axios = require('axios')
 const Axios = require('axios')
 
 
-Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, '*wait...*',async (message, match) => {
+Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true },async (message, match) => {
 	
-	await message.client.sendMessage(message.jid, MessageType.text, { quoted: message.data });
+	await message.client.sendMessage(message.jid, '*Wait*' MessageType.text, { quoted: message.data });
 	
 	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
 	
