@@ -22,7 +22,7 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`
-        msg +=  `DOWNLOADING LINK :${result.url}\n\n`
+        msg +=  `LINK : https://youtu.be/5MKycJxmA4c\n\n`       
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
         });
