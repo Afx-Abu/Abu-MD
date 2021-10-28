@@ -1,6 +1,7 @@
 const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const got = require('got');
+const LOAD_ING = "*Result found...*"
 const Config = require('../config');
 const axios = require('axios')
 const Axios = require('axios')
