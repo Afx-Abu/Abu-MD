@@ -147,13 +147,17 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 ╭──────────────────╯
 │ ◩ Bot Name: Amalser
  ──────────────────╯
+
 *To check update .update   To update Bot .update now*
+
 *Bot making video : https://youtu.be/fd0KPblop-k*
+
 *Yt_PASSWORD: _________(password on this video watch it full)*
+
 *githublink : https://github.com/cyberchekuthan/Amalser_v2*
+
 *audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
 
-   ──────────────────
 `}) 
 
 }));
