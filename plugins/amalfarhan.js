@@ -159,7 +159,7 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 │*audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
 │
 │ 
-│await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮ │ ` + config.BOT + ` 
+│ ` + config.BOT + ` 
 │   
 ╰──────────────────
 `}) 
