@@ -157,7 +157,6 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 *githublink : https://github.com/cyberchekuthan/Amalser_v2*
 
 *audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
-
 `}) 
 
 }));
