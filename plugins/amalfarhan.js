@@ -221,8 +221,9 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 ┣𝕾⃝🌺 .ɪɴᴠɪᴛᴇ
 ┣𝕾⃝🌺 .sᴇᴛᴠᴀʀ
 │ 
-│
-│   ❏🤪Amalser🤪❏
+│await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
+   ` + config.BOT + ` 
+│   
 ╰──────────────────╯
 `}) 
 
