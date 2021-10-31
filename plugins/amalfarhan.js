@@ -159,7 +159,7 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 │*audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
 │
 │ 
-│ ` + config.BOT + ` 
+│  
 │   
 ╰──────────────────
 `}) 
