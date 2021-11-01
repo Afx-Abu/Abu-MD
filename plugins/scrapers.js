@@ -1,5 +1,5 @@
 /* 
-plk
+plk -Amal
 */
 
 const MyPnky = require('../events');
