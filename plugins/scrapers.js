@@ -1291,4 +1291,6 @@ await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk
             );
         }
     }));
+
+}
     
