@@ -150,13 +150,13 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 
 *To check update .update   To update Bot .update now*
 
-*Bot making video : https://youtu.be/fd0KPblop-k*
+*Bot making video* : https://youtu.be/5MKycJxmA4c
 
 *Yt_PASSWORD: _________(password on this video watch it full)*
 
-*githublink : https://github.com/cyberchekuthan/Amalser_v2*
+*githublink* : https://github.com/cyberchekuthan/Amalser_v2
 
-*audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
+*audio commads* : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads
 `}) 
 
 }));
