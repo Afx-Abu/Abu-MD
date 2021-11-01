@@ -205,6 +205,10 @@
             "required": false,
             "value": "default"
         },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
             "required": false,
