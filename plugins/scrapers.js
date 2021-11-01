@@ -480,14 +480,13 @@ if (config.WORKTYPE == 'private') {
     }));
     Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
-            const PLK = 'BEGIN:VCARD\n'
+            const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:Bot user;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + pinky.PHONE + ':' + pinky.PHONE + ' \n'
+            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:pinky julie fam;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "Amal", vcard: PLK}, MessageType.contact);
-
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
   }));
     Asena.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
@@ -1127,13 +1126,13 @@ else if (config.WORKTYPE == 'public') {
     )
     Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
-            const PLK = 'BEGIN:VCARD\n'
+            const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:Bot user;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + pinky.PHONE + ':' + pinky.PHONE + ' \n'
+            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:pinky julie fam;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "Amal", vcard: PLK}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
 
   }));
 
