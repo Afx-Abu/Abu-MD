@@ -78,6 +78,11 @@
             "description": "give your orginal phone number if you wish to add it in .number cmnd ",
             "required": false
         },
+         "BAD_WORDS": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
+        },
         "HANDLERS": {
             "description": "For commands.",
             "required": true,
