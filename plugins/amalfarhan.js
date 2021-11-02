@@ -125,7 +125,7 @@ if (config.AUTOBİO == 'false') autobio = 'Off'
 if (config.ANTİLİNK == 'true') antilink = 'On'
 if (config.ANTİLİNK == 'false') antilink = 'Off'
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, detectLinks: true, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOT + `
 ╭──────────────────╯
 │
