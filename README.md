@@ -31,7 +31,7 @@ Project created by <a href="https://github.com/cyberchekuthan">Amalser_v2</a> to
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cyberchekuthan/Amalser_v2) 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@pppoplimfao/WhatsAsena-QR)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
   
 ### The Hard Method
 ```js
