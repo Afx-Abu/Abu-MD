@@ -72,11 +72,7 @@
         "AUTO_BİO": {
             "description": " Set true for auto date, time in biography.",
             "required": true,
-            "value": "false"
-        },
-        "NUMBER": {
-            "description": "give your orginal phone number if you wish to add it in .number cmnd ",
-            "required": false
+            "value": "false"        
         },
          "BAD_WORDS": {
             "description": "enter the word you dont allow in your group ",
@@ -203,11 +199,7 @@
         "KICKME_MESSAGE": {
             "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
-        },
-        "DEPLOYER": {
-            "description": "enter your name here",
-            "required": false
+            "value": "default"      
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
