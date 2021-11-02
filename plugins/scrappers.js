@@ -485,7 +485,7 @@ if (config.WORKTYPE == 'private') {
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
             + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
 
@@ -1132,7 +1132,7 @@ else if (config.WORKTYPE == 'public') {
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
             + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
 
