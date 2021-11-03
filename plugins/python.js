@@ -29,4 +29,4 @@ WhatsAlexa.addCommand({pattern: 'bot', fromMe: whb, dontAddCommandList: true}, (
       await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
-}
+
