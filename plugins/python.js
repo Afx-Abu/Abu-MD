@@ -29,3 +29,32 @@ WhatsAlexa.addCommand({pattern: 'bot', fromMe: whb, dontAddCommandList: true}, (
       await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
+}
+WhatsAlexa.addCommand({pattern: 'slot', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+  const sotoy = [
+		'🍊 : 🍒 : 🍐',
+		'🍒 : 🔔 : 🍊',
+		'🍇 : 🍒 : 🍐',
+		'🍊 : 🍋 : 🔔',
+		'🔔 : 🍒 : 🍐',
+		'🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',		
+		'🍐 : 🍒 : 🍋',
+		'🍐 : 🍐 : 🍐',
+		'🍊 : 🍒 : 🍒',
+		'🔔 : 🔔 : 🍇',
+		'🍌 : 🍒 : 🔔',
+		'🍐 : 🔔 : 🔔',
+		'🍊 : 🍋 : 🍒',
+		'🍋 : 🍋 : 🍌',
+		'🔔 : 🔔 : 🍇',
+		'🔔 : 🍐 : 🍇',
+		'🔔 : 🔔 : 🔔',
+		'🍒 : 🍒 : 🍒',
+		'🍌 : 🍌 : 🍌'
+		]
+        const somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
+        const mauri = `[  🎰 | SLOTS ]\n-----------------\n🍋 : 🍌 : 🍍\n${somtoy} <--\n🍋 : 🍌 : 🍍\n[  🎰 | SLOTS ]`)
+        await message.client.sendMessage(message.jid, mauri, MessageType.text)
+
+}));
