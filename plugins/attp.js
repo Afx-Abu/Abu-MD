@@ -16,6 +16,8 @@ const DESC_BOB = "Make text on sponge bob's board"
 
 const DESC_GURA = "Create gawr gura text"
 
+const DESC_SLOT = "Casino mini game"
+
 const Language = require('../language');
 const Lang = Language.getString('ttp');
 
@@ -45,6 +47,33 @@ var uria = encodeURI(match[1])
 var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/bot/gura?apikey=hardianto&nama=${uria}`, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
+       Asena.addCommand({ pattern: 'slot ?(.*)', fromMe: true, desc: DESC_SLOT }, (async (message) => {
+        const sotoy = [
+		'🍊 : 🍒 : 🍐',
+		'🍒 : 🔔 : 🍊',
+		'🍇 : 🍒 : 🍐',
+		'🍊 : 🍋 : 🔔',
+		'🔔 : 🍒 : 🍐',
+		'🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',		
+		'🍐 : 🍒 : 🍋',
+		'🍐 : 🍐 : 🍐',
+		'🍊 : 🍒 : 🍒',
+		'🔔 : 🔔 : 🍇',
+		'🍌 : 🍒 : 🔔',
+		'🍐 : 🔔 : 🔔',
+		'🍊 : 🍋 : 🍒',
+		'🍋 : 🍋 : 🍌',
+		'🔔 : 🔔 : 🍇',
+		'🔔 : 🍐 : 🍇',
+		'🔔 : 🔔 : 🔔',
+		'🍒 : 🍒 : 🍒',
+		'🍌 : 🍌 : 🍌'
+		]
+        const somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
+        const mauri = `[  🎰 | SLOTS ]\n-----------------\n🍋 : 🍌 : 🍍\n${somtoy} <--\n🍋 : 🍌 : 🍍\n[  🎰 | SLOTS ]`)
+        await message.client.sendMessage(message.jid, mauri, MessageType.text)
+}));
 }
 else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({ pattern: 'ttp ?(.*)', fromMe: false, desc: Lang.TTP_DESC }, (async (message, match) => {
@@ -72,5 +101,33 @@ if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NE
 var uria = encodeURI(match[1])
 var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/bot/gura?apikey=hardianto&nama=${uria}`, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
+}));
+    
+        Asena.addCommand({ pattern: 'slot ?(.*)', fromMe: true, desc: DESC_SLOT }, (async (message) => {
+        const sotoy = [
+		'🍊 : 🍒 : 🍐',
+		'🍒 : 🔔 : 🍊',
+		'🍇 : 🍒 : 🍐',
+		'🍊 : 🍋 : 🔔',
+		'🔔 : 🍒 : 🍐',
+		'🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',		
+		'🍐 : 🍒 : 🍋',
+		'🍐 : 🍐 : 🍐',
+		'🍊 : 🍒 : 🍒',
+		'🔔 : 🔔 : 🍇',
+		'🍌 : 🍒 : 🔔',
+		'🍐 : 🔔 : 🔔',
+		'🍊 : 🍋 : 🍒',
+		'🍋 : 🍋 : 🍌',
+		'🔔 : 🔔 : 🍇',
+		'🔔 : 🍐 : 🍇',
+		'🔔 : 🔔 : 🔔',
+		'🍒 : 🍒 : 🍒',
+		'🍌 : 🍌 : 🍌'
+		]
+        const somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
+        const mauri = `[  🎰 | SLOTS ]\n-----------------\n🍋 : 🍌 : 🍍\n${somtoy} <--\n🍋 : 🍌 : 🍍\n[  🎰 | SLOTS ]`)
+        await message.client.sendMessage(message.jid, mauri, MessageType.text)
 }));
 }
