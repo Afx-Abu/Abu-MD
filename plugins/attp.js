@@ -97,7 +97,7 @@ var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/ha
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
-Asena.addCommand({ pattern: 'rip ?(.*)', fromMe: true, desc: DESC_RIP }, (async (message, match) => {
+Asena.addCommand({ pattern: 'rip ?(.*)', fromMe: false, desc: DESC_RIP }, (async (message, match) => {
 if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD, MessageType.text);
 var uria = encodeURI(match[1])
 var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/rip?image=${uria}&apikey=hardianto`, { responseType: 'arraybuffer' })
