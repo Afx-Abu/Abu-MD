@@ -1,9 +1,9 @@
 {
-    "name": "Amalser_v2 ",
-    "description": "Amalser_v2 is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+    "name": "Amalser ",
+    "description": "Amalser is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
     "logo": "https://i.imgur.com/yCYYyEJ.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/cyberchekuthan/Amalser_v2",
+    "repository": "https://github.com/Amal-ser/Amalser",
     "website":   "https://github.com/farhan-dqz/Julie-Mwol",
     "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
     "stack": "container",
