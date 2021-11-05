@@ -154,9 +154,9 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 
 *Yt_PASSWORD: _________(password on this video watch it full)*
 
-*githublink* : https://github.com/cyberchekuthan/Amalser_v2
+*githublink* : https://github.com/Amal-ser/Amalser
 
-*audio commads* : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads
+Amalser New Acoount Git Link Old Account Is Flagged Hope you Enjoy This Thanku 🥰
 `}) 
 
 }));
