@@ -14,7 +14,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'amal ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'amal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
    
    var r_text = new Array ();
 
