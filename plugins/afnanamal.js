@@ -6,6 +6,7 @@ WhatsAsena - Yusuf Usta
 
 const Asena = require('../events');
 const Config = require('../config');
+const axios = require('axios');
 const {MessageType} = require('@adiwajshing/baileys');
 const fs = require("fs")
 
