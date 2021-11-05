@@ -7,7 +7,7 @@ const axios = require('axios')
 const Axios = require('axios')
 
 
-Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
+Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
 	
 	await message.client.sendMessage(message.jid, '*wait....*' , MessageType.text, { quoted: message.data });
 	
@@ -23,5 +23,6 @@ Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'play song' , dont
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`        
         msg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
+        return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b })
+        return await message.client.sendMessage(message.jid,Buffer.from(audioBuffer.data), MessageType.document, {filename: msg , mimetype: Mimetype.webma,  quoted : message.data }) 
         });
