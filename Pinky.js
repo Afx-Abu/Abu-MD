@@ -1,4 +1,4 @@
-/* codded by virus fucker
+/* codded by afnanplk
 */
 
 const { Sequelize } = require('sequelize');
@@ -11,8 +11,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-
- Z_NUMBER: process.env.NUMBER === undefined ? '+919895828468' : process.env.NUMBER,
- Z_OWNER: process.env.OWNER_NAME === undefined ? 'Amalser' : process.env.OWNER_NAME,
-
+ PLKAFN: process.env.BAD_WORDS === undefined ? false : process.env.BAD_WORDS,
+ PHONE: process.env.NUMBER === undefined ? '+919895828468' : process.env.NUMBER,   
+ OA_NAME: process.env.DEPLOYER === undefined ? 'Amalser' : process.env.DEPLOYER,    
 };
