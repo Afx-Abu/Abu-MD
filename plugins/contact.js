@@ -4,7 +4,7 @@ const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Pinky = require('../Pinky')
-Pinky.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+Pinky.addCommand({pattern: 'number ?(.*)', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 //coded by saidali
 const Pinky = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
