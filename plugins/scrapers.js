@@ -8,7 +8,7 @@ const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
-const Pinky = require('../Pinky');
+const Config = require('../config');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
 const Heroku = require('heroku-client');
@@ -482,13 +482,13 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
-            const Pinky = 'BEGIN:VCARD\n'
+            const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'FN:' + Config.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:Amalser;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: Pinky}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "Amalser", vcard: vcard}, MessageType.contact);
 
   }));
     
@@ -1130,13 +1130,13 @@ else if (config.WORKTYPE == 'public') {
     )
     Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
-            const Pinky = 'BEGIN:VCARD\n'
+            const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'FN:' + Config.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:Amalser;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: Pinky}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "Amalser", vcard: vcard}, MessageType.contact);
 
   }));
    
