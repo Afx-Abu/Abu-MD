@@ -90,7 +90,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
-    Julie.addCommand({ pattern: 'owner ?(.*)', fromMe: true, desc: 'change user number', usage: '.owner *Made by Amalser*' }, (async (message, match) => {
+    Julie.addCommand({ pattern: 'ownernumber ?(.*)', fromMe: true, desc: 'change user number', usage: '.ownernumber *Made by Amalser*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NUMBER 919895xxxx')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
