@@ -18,7 +18,6 @@ const Ktb = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
-const Julie = require('../Julie');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
 const Config = require('../config');
@@ -39,7 +38,7 @@ const Config = require('../config');
             ffmpeg(location)
                 .save('status.png')
                 .on('end', async () => {
-                    await message.client.sendMessage(message.jid,fs.readFileSync('status.png'), MessageType.image ,{caption: '```WHATSAPP STATUS 🍃```'  , mimetype: Mimetype.jpg, quoted: message.data,thumbnail: Julie.tm_b});
+                    await message.client.sendMessage(message.jid,fs.readFileSync('status.png'), MessageType.image ,{caption: '```WHATSAPP STATUS 🍃```'  , mimetype: Mimetype.jpg, quoted: message.data});
             });
         return 
         }
@@ -47,7 +46,7 @@ const Config = require('../config');
         ffmpeg(location)
             .save('status.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid,fs.readFileSync('status.mp4'), MessageType.video , {caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data,thumbnail: Julie.tm_b});
+                await message.client.sendMessage(message.jid,fs.readFileSync('status.mp4'), MessageType.video , {caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
     }));
@@ -70,7 +69,7 @@ const Config = require('../config');
             ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video ,{caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data,thumbnail: Julie.tm_b});
+                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video ,{caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
         }
@@ -78,7 +77,7 @@ const Config = require('../config');
         ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data,thumbnail: Julie.tm_b});
+                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '```WHATSAPP STATUS  🍃```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
     }));
