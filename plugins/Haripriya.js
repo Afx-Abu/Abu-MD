@@ -42,8 +42,7 @@ Ktb.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
              return;
          }
          let regex1 = new RegExp('Sticker')
-         let regex2 = new RegExp('Git')
-         let regex3 = new RegExp('https://youtu.be/')
+         let regex2 = new RegExp('https://youtu.be/')
          
          if (regex1.test(message.message)) {
               
@@ -79,20 +78,9 @@ Ktb.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                 await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker);
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.BOT, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./photo/amalser.png')}}}});
-}
-    
+}    
+
 if (regex2.test(message.message)) {
-
-    const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
-            + 'VERSION:3.0\n' 
-            + 'FN:Amal [AMALSER]\n' // full name
-            + 'ORG:Amalser;\n' // 
-            + 'TEL;type=CELL;type=VOICE;waid=918289968468:+91 9895828468\n' // WhatsApp ID + phone number
-            + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "Amal [AMALSER]", vcard: vcard}, MessageType.contact)
-}
-
-if (regex3.test(message.message)) {
 
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
 	
