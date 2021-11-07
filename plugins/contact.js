@@ -5,7 +5,7 @@ const os = require("os");
 const fs = require('fs');
 const config = require('../config');
 const Pinky = require('../pinky')
-Pinky.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Pinky.addCommand({ pattern: 'owner ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 const Amal = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
