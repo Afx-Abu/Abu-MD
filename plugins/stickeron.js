@@ -90,6 +90,26 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
+    Julie.addCommand({ pattern: 'owner ?(.*)', fromMe: true, desc: 'change user number', usage: '.owner *Made by Amalser*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('NEED A NUMBER 919895xxxx')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['NUMBER']: match[1]
+            }
+        });
+        await message.sendMessage("NEW USER NUMBER UPDATED")
+    }));
+
+    Julie.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *Made by Amalser*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('NEED A NAME')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['DEPLOYER']: match[1]
+            }
+        });
+        await message.sendMessage("NEW USERNAME UPDATED")
+    }));
+
     Julie.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
