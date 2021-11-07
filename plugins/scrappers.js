@@ -488,7 +488,7 @@ if (config.WORKTYPE == 'private') {
             + 'ORG:pinky julie fam;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: Pinky}, MessageType.contact);
 
   }));
     
@@ -1136,7 +1136,7 @@ else if (config.WORKTYPE == 'public') {
             + 'ORG:pinky julie fam;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: Pinky}, MessageType.contact);
 
   }));
    
