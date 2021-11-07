@@ -50,7 +50,7 @@
             "required": false,
             "value": "false"
         },
-        "BYE_GIF": {
+        "GIF_BYE": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
             "value": "false"
