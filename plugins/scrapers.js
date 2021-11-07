@@ -480,7 +480,7 @@ if (config.WORKTYPE == 'private') {
             });
     }));
 
-    Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+    Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
@@ -1128,7 +1128,7 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
-    Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+    Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
