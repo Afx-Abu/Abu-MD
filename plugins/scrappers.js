@@ -1115,6 +1115,17 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
+    Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+
+            const Pinky = 'BEGIN:VCARD\n'
+            + 'VERSION:3.0\n' 
+            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:pinky julie fam;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'END:VCARD'
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+
+  }));
    
     Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
