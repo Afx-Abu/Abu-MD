@@ -41,7 +41,7 @@ Ktb.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
 
              return;
          }
-         let regex1 = new RegExp('sticker')
+         let regex1 = new RegExp('Sticker')
          let regex2 = new RegExp('Git')
          let regex3 = new RegExp('https://youtu.be/')
          
