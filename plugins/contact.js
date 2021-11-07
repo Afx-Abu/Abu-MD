@@ -3,6 +3,8 @@ const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
+const config = require('../config');
+const Pinky = require('../pinky')
 Pinky.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 const Pinky = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
