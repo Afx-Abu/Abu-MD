@@ -192,6 +192,10 @@
             "required": false,
             "value": "919895828468"
         },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
             "required": false
