@@ -478,6 +478,18 @@ if (config.WORKTYPE == 'private') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
+
+    Asena.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+
+            const Pinky = 'BEGIN:VCARD\n'
+            + 'VERSION:3.0\n' 
+            + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
+            + 'ORG:pinky julie fam;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
+            + 'END:VCARD'
+await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+
+  }));
     
     Asena.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
