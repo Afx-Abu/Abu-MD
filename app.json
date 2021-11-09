@@ -133,6 +133,11 @@
             "required": true,
             "value": "🦸‍♂️"
         },
+        "EMOJI_EXAMPLE": {
+            "description": "You can change command list emojis.)",
+            "required": true,
+            "value": "💬"
+        },
         "EMOJI_WARNING": {
             "description": "You can change command list emojis.)",
             "required": true,
