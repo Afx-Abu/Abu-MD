@@ -8,12 +8,12 @@
             "COMMAND": "Comando",
             "DESC": "Descrição",
             "EXAMPLE": "Exemplo",
-            "NOT_FOUND": "*Não consegui encontrar um comando como este*",
+            "NOT_FOUND": "*Não achei este comando!!*",
             "WARN": "Atenção"
         },
         "_plugin": {
             "INSTALL_DESC": "Instale plugins externos.",
-            "NEED_URL": "Por favor insira um URL! Exemplo:",
+            "NEED_URL": "Por favor insira um link! Exemplo:",
             "UNOFF": "⚠️ *Atenção!* \n*O plugin que você instalou não é oficial!*",
             "INVALID_URL": "```Por favor, insira um URL válido!```",
             "INVALID_PLUGIN": "*❌ Seu plugin é inválido!*\n*Erro:*",
