@@ -1,13 +1,5 @@
-/* 
-      S
-        k
-          u
-            e
-              l
-                e
-                  t
-                    o
-                      r
+/*
+Credits to respective coders
 */
 
 const Skueletor = require('../events');
