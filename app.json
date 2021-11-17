@@ -42,8 +42,8 @@
         },
         "ANTI_FAKE": {
             "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
-            "required": true,
-            "value": "false"
+            "required": false,
+            "value": "true"
         },
         "WELCOME": {
             "description": "You can select welcome as gif/pp",
