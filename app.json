@@ -40,6 +40,11 @@
             "required": true,
             "value": "false"
         },
+        "ANTI_FAKE": {
+            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
+            "required": true,
+            "value": "false"
+        },
         "WELCOME": {
             "description": "You can select welcome as gif/pp",
             "required": false,
