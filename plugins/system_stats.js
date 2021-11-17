@@ -106,7 +106,7 @@ var i = Math.floor(31*Math.random())
 	   }
     }));
 
-Asena.addCommand({pattern: 'amb', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+Mypnky.addCommand({pattern: 'amb', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
