@@ -11,7 +11,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-WhatsAlexa.addCommand({pattern: 'aml', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+WhatsAlexa.addCommand({pattern: 'siya', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: '.menu'}, type: 1},
