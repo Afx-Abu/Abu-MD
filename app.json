@@ -35,21 +35,6 @@
             "required": false,
             "value": "true"
         },
-        "ALIVE_LOGO": {
-            "description": "Alive message image link(https://telegra.ph/)link.",
-            "required": true,
-            "value": "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg"
-        },
-        "LG_LOGO": {
-            "description": "LOGO list message image link(https://telegra.ph/)link.",
-            "required": true,
-            "value": "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg"
-        },
-        "LOGO_NAME": {
-            "description": "Set the logo list name",
-            "required": true,
-            "value": "Amalser ❤️"
-        },
         "INBO_BLOCK": {
             "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
             "required": true,
