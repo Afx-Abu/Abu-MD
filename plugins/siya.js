@@ -20,7 +20,7 @@ WhatsAlexa.addCommand({pattern: 'siya', fromMe: whb, dontAddCommandList: true}, 
       ]
       
       const buttonMessage = {
-          contentText: "*'+Config.BOT+'*",
+          contentText: +Config.BOT+,
           footerText: 'owner Amalser  ©',
           buttons: buttons,
           headerType: 1
