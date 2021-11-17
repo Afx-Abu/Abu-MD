@@ -8,6 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
+const Sourav = require('./config');
 const config = require('./config');
 const simpleGit = require('simple-git');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
