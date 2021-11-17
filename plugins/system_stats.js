@@ -106,6 +106,23 @@ var i = Math.floor(31*Math.random())
 	   }
     }));
 
+Asena.addCommand({pattern: 'amb', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+
+        if (Config.ALIVEMSG == 'default') {
+            
+            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+       
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```💕 Hey Bro!! I am still alive & kicking 😙 ) 🙂❤️```"})
+
+    }
+    else {
+            
+            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+       
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Made By Kaweesha Chamod*' })
+     }
+    }));
+
     MyPnky.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
