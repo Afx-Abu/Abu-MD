@@ -119,7 +119,7 @@ Asena.addCommand({pattern: 'amb', fromMe: false, desc: Lang.ALIVE_DESC}, (async 
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Made By Kaweesha Chamod*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Made By Amalser*' })
      }
     }));
 
