@@ -18,9 +18,9 @@ const Lang = Language.getString('system');
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'live', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
-        if (Config.ALIVEMSG == 'default') {
+        if (Config.LOGO_NAME == 'default') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
