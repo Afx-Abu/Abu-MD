@@ -292,10 +292,38 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             } else {
                    var group = await raganork.groupMetadata(msg.key.remoteJid)
                    await raganork.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', group.subject).replace('{count}', 'EXCLUDED CASE!').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpdesc}', group.desc).replace('{owner}', raganork.user.name), MessageType.text, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
-            }
-          }         
-            return;                               
-    }         
+             }
+			
+          }
+			}
+        // If anti fake is true, filter stub parameters by excluding given country codes   
+	// Auto fake remove - implemented for raganork by souravkl11
+        if (!msg.messageStubParameters[0].startsWith('91') && Sourav.AUTO_FAKE === 'true') {
+				async function checkImAdmin(message, user = raganork.user.jid) {
+    var grup = await raganork.groupMetadata(msg.key.remoteJid);
+    var sonuc = grup['participants'].map((member) => {
+        
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    return sonuc.includes(true);
+}
+                // If user isn't admin, return!
+		var im = await checkImAdmin(raganork);
+                if (!im) {
+		return;
+		}
+		   else {
+			return await raganork.groupRemove(msg.key.remoteJid, [msg.messageStubParameters[0]]);
+			}	
+	}}
+        if (Sourav.BLOCKCHAT !== false) {     
+        var abc = Sourav.BLOCKCHAT.split(',');                            
+        if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+    }
+    if (Sourav.SUPPORT == '919074309534-1632403322') {     
+        var sup = Sourav.SUPPORT.split(',');                            
+        if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+    }        
 
         events.commands.map(
             async (command) =>  {
