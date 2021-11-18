@@ -4,15 +4,16 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 Developer & Co-Founder - Phaticusthiccy
 re-edited by afnan plk
+re-edited by Amalser
 */
 
 const MyPnky = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
+const config = require('../config');
 const chalk = require('chalk');
 const axios = require('axios');
-
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
@@ -87,18 +88,8 @@ var i = Math.floor(31*Math.random())
 		   
 		   var a_plk = new Array ();
 
-        a_plk[0] = "https://i.imgur.com/w89FHm7.jpeg";
-        a_plk[1] = "https://mcdn.wallpapersafari.com/medium/20/69/juFNVl.jpg";
-        a_plk[2] = "https://cdn.wallpapersafari.com/51/57/WXxpck.jpg";
-        a_plk[3] = "https://cdn.wallpapersafari.com/72/42/nAdV2j.jpg";
-        a_plk[4] = "https://cdn.wallpapersafari.com/55/85/n5cLrp.jpg";
-        a_plk[5] = "https://i.imgur.com/w89FHm7.jpeg";
-        a_plk[6] = "https://mcdn.wallpapersafari.com/medium/55/25/KrvA7S.jpg";
-        a_plk[7] = "https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-        a_plk[8] = "https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-        a_plk[9] = "https://wallpapercave.com/wp/wp2957455.jpg";
-        a_plk[10] = "https://i.imgur.com/6G31RxX.jpeg";
-	 var p = Math.floor(11*Math.random())
+        a_plk[0] = Config.LG_LOGO
+	 var p = Math.floor(1*Math.random())
 
         var plk_alive = await axios.get(`${a_plk[p]}`, { responseType: 'arraybuffer' })
 
