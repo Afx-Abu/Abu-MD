@@ -6,6 +6,7 @@ dont change credit
 
 const Amalser= require('../events');
 const config = require('../config');
+const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
@@ -43,11 +44,11 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
 *To check update .update   To update Bot .update now*
 
-*Bot making video* : https://youtu.be/5MKycJxmA4c
+*Bot making video* :( *https://youtu.be/5MKycJxmA4c* )
 
 *Yt_PASSWORD: _________(password on this video watch it full)*
 
-*githublink* : https://github.com/Amal-ser/Amalser
+*githublink* :( *https://github.com/Amal-ser/Amalser* )
 
 Amalser New Acoount Git Link Old Account Is Flagged Hope you Enjoy This Thanku 🥰
 `}) 
