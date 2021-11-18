@@ -10,17 +10,17 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: 'command help menu'}, (a
     
     
     r_text[0] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[1] = "*'+Config.LG_LOGO+'*";
+    r_text[1] = " '+Config.LG_LOGO+' ";
     r_text[2] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[3] = "*'+Config.LG_LOGO+'*";
+    r_text[3] = " '+Config.LG_LOGO+' ";
     r_text[4] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[5] = "*'+Config.LG_LOGO+'*";
+    r_text[5] = " '+Config.LG_LOGO+' ";
     
     var i = Math.floor(6*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `✨️═════```BOT NAME:``` *'+Config.BOT+'*═════✨️
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `✨️═════* '+Config.BOT+ '*═════✨️´
  
 ☃️ .xmedia
 🍒 It is a plugin with more than 25 media tools._ 
