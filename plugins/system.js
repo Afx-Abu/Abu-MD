@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: 'command help menu'}, (a
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `
-   ` + config.BOT + `
+   ` + config.LOGO_NAME + `
  
 ☃️ .xmedia
 🍒 It is a plugin with more than 25 media tools._ 
