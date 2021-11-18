@@ -130,18 +130,18 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: 'command help menu'}, (a
 
 ☃️ .doc 
 🍒 CONVERT TO DOCUMENT AND ADD GIVEN NAME_ 
-💬 Eg:- : ```.doc pinky *replace pinky with desired name*```
+💬 Eg:- :.doc pinky *replace pinky with desired name*
 
 ☃️ .dict 
 🍒 Use it as a dictionary.
 Eg: .dict en_US;lead
- For supporting languages send *.lngcode*_ 
+ For supporting languages send *.lngcode*
 
 ☃️ .splay 
-🍒 Uploads the song you wrote._ 
+🍒 Uploads the song you wrote.
 
 ☃️ .meme 
-🍒 Photo memes you replied to._ 
+🍒 Photo memes you replied to.
 
 ☃️ .welcome
 🍒 It sets the welcome message. If you leave it blank it shows the welcome message._ 
@@ -173,22 +173,22 @@ Eg: .dict en_US;lead
 🍒 Reply a message and type .save or just use .save <Your note> without replying_ 
 
 ☃️ .deleteNotes
-🍒 Deletes *all* your saved notes._ 
+🍒 Deletes *all* your saved notes.
 
 ☃️ .owner
-🍒 shows the detail of bot owner_ 
+🍒 shows the detail of bot owner
 
 ☃️ .jid 
-🍒 Giving user's JID._ 
+🍒 Giving user's JID.
 
 ☃️ .random 
 🍒 word image_ 
 
 ☃️ .brdmore 
-🍒 add readmore before your text_ 
+🍒 add readmore before your text
 
 ☃️ .rdmore 
-🍒 add readmore before your text_ 
+🍒 add readmore before your text
 
 ☃️ .removebg 
 🍒 Removes the background of the photos._ 
