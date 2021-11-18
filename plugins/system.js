@@ -9,15 +9,9 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: 'command help menu'}, (a
 
     var r_text = new Array ();
     
+    r_text[0] = Config.LG_LOGO
     
-    r_text[0] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[1] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[2] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[3] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[4] = "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg";
-    r_text[5] = Config.LG_LOGO
-    
-    var i = Math.floor(6*Math.random())
+    var i = Math.floor(1*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
