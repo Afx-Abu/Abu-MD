@@ -27,7 +27,7 @@ var i = Math.floor(2*Math.random())
       ]
       
       const buttonMessage = {
-          contentText: Config.ALIVEMSG
+          contentText: ' BOT NAME:``` *'+Config.BOT+'*\n\n```*'+Config.ALIVEMSG+'*\n',
           footerText: 'Amalser ©',
           buttons: buttons,
           headerType: 1
