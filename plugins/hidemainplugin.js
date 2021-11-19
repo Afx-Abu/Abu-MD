@@ -22,7 +22,7 @@ r_text[1] = Config.LG_LOGO
    
 var i = Math.floor(2*Math.random())
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: '+Config.BOT+'}, type: 1},
+        {buttonId: 'id1', buttonText: {displayText: '```+Config.BOT+'}, type: 1},
         {buttonId: 'id2', buttonText: {displayText: 'Bot'}, type: 1}
       ]
       
