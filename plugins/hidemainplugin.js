@@ -1,3 +1,7 @@
+/* Codedd by Amalser
+Re-edit Amalser
+*/
+
 const WhatsAlexa = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -22,8 +26,8 @@ r_text[1] = Config.LG_LOGO
    
 var i = Math.floor(2*Math.random())
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: Config.BOT }, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: 'Bot'}, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: Config.AMAL_SER }, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: Config.AMAL_S }, type: 1}
       ]
       
       const buttonMessage = {
