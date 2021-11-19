@@ -1,4 +1,4 @@
-/* Codedd by Amalser
+/* Amalser Bot
 Re-edit Amalser
 */
 
