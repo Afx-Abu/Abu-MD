@@ -46,12 +46,12 @@
             "value": "Amalser"
         },
         "AMAL_SER": {
-            "description": "Set the logo list name",
+            "description": "Set the alive message two name",
             "required": true,
             "value": "Hello"
         },
         "AMAL_S": {
-            "description": "Set the Alive message",
+            "description": "Set the Alive message first name",
             "required": true,
             "value": "Hii"
         },
