@@ -28,7 +28,7 @@ var i = Math.floor(2*Math.random())
       
       const buttonMessage = {
           contentText: Config.ALIVEMSG
-          footerText: owner
+          footerText: owner,
           buttons: buttons,
           headerType: 1
       }
