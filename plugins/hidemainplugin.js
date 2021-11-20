@@ -2,10 +2,11 @@
 Re-edit Amalser
 */
 
-const Amalser = require('../events');
+const WhatsAlexa = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
+const config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
@@ -16,14 +17,8 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+WhatsAlexa.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
-var r_text = new Array ();
-    
-  
-r_text[0] = Config.LG_LOGO
-   
-var i = Math.floor(1*Math.random())
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.AMAL_SER }, type: 1},
         {buttonId: 'id2', buttonText: {displayText: Config.AMAL_S }, type: 1}
