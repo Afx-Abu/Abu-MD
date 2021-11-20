@@ -7,8 +7,6 @@ const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@ad
 const fs = require('fs');
 const Config = require('../config')
 const axios = require('axios')
-const id1 = require('id1')
-const id2 = require('id2')
 const request = require('request');
 const os = require('os');
 var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
@@ -31,10 +29,10 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
           buttons: buttons,
           headerType: 1
       }
-      if (id1.test(message.message)) {
+      if (id1.test((message.message)) {
          await message.client.sendMessage(message.jid,'ʏᴇꜱ ᴛʜᴀᴛꜱ ᴍᴇ', MessageType.text, {quoted: message.data })
       }
-      else if (id2.test(message.message)) {
+      else if (id2.test((message.message)) {
          await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', MessageType.text, {quoted: message.data })
       }
       
