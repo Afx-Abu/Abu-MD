@@ -34,5 +34,8 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
       }
       else if (id2.test(message.message)) {
          await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', buttonMessage, MessageType.buttonsMessage)
+      }
+  }));
 
-}));
+ }
+
