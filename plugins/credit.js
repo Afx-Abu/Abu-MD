@@ -9,7 +9,7 @@ const Config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
- Language = require('../language');
+Language = require('../language');
 const Lang = Language.getString('credit');
 var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
 var ggg = Buffer.from(clh.cd, 'base64')
@@ -18,11 +18,14 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-Amalser.addCommand({pattern: 'liv', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+Amalser.addCommand({pattern: 'liv', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
-let pp
-        try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
-        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image}) });
+var r_text = new Array ();
+    
+  
+r_text[0] = Config.LG_LOGO
+   
+var i = Math.floor(1*Math.random())
 }    
 	   else {
     const buttons = [
