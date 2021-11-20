@@ -29,10 +29,10 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
           buttons: buttons,
           headerType: 1
       }
-      if (buttonId: 'id1', buttonText.test(message.message)) {
+      if (id1, buttonText.test(message.message)) {
          await message.client.sendMessage(message.jid,'ʏᴇꜱ ᴛʜᴀᴛꜱ ᴍᴇ', buttonMessage, MessageType.buttonsMessage)
       }
-      else if (buttonId: 'id2', buttonText.test(message.message)) {
+      else if (id2, buttonText.test(message.message)) {
          await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', buttonMessage, MessageType.buttonsMessage)
       }
   }));
