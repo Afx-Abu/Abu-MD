@@ -36,6 +36,6 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
          await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', MessageType.text, {quoted: message.data })
       }
       
-      await message.client.sendMessage(message.jid, MessageType.text, {quoted: message.data, buttonMessage, MessageType.buttonsMessage})
+      await message.client.sendMessage(message.jid, message.message, buttonMessage, MessageType.buttonsMessage)
 
 }));
