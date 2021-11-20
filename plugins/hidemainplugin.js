@@ -16,7 +16,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-Amalser.addCommand({pattern: 'live', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
 var r_text = new Array ();
     
