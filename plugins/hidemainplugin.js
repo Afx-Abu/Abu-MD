@@ -37,6 +37,6 @@ var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' }
           headerType: 1
       }
       
-      await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: buttonmessage})
+      await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption :buttonMessage})
 
 }));
