@@ -22,7 +22,7 @@ Amalser.addCommand({pattern: 'liv', fromMe: true, desc: Lang.ALIVE_DESC}, (async
 // send a buttons message!
 let pp
         try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
-        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image});
+        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image}) });
 }    
 	   else {
     const buttons = [
