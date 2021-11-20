@@ -18,13 +18,6 @@ let whb = Config.WORKTYPE == 'public' ? false : true
 
 Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
-var r_text = new Array ();
-    
-  
-r_text[0] = Config.LG_LOGO
-   
-var i = Math.floor(1*Math.random())
-var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.AMAL_SER }, type: 1},
         {buttonId: 'id2', buttonText: {displayText: Config.AMAL_S }, type: 1}
@@ -39,6 +32,6 @@ var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' }
       
       var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, buttonMessage, MessageType.buttonsMessage})
+        await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
