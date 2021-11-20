@@ -30,8 +30,6 @@ Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (a
           headerType: 1
       }
       
-      var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-        await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
+      await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)
 
 }));
