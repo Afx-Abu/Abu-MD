@@ -30,7 +30,7 @@ var i = Math.floor(1*Math.random())
       ]
       
       const buttonMessage = {
-          contentText: ' ```'+Config.LG_LOGO+'\n\n```'+Config.ALIVEMSG+'\n',
+          contentText: ' ```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
           footerText: 'Amalser ©',
           buttons: buttons,
           headerType: 1
