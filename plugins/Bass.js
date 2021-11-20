@@ -29,13 +29,10 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
           buttons: buttons,
           headerType: 1
       }
-      if (id1.test((message.message)) {
-         await message.client.sendMessage(message.jid,'ʏᴇꜱ ᴛʜᴀᴛꜱ ᴍᴇ', MessageType.text, {quoted: message.data })
+      if (id1.test(message.message)) {
+         await message.client.sendMessage(message.jid,'ʏᴇꜱ ᴛʜᴀᴛꜱ ᴍᴇ', buttonMessage, MessageType.buttonsMessage)
       }
-      else if (id2.test((message.message)) {
-         await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', MessageType.text, {quoted: message.data })
-      }
-      
-      await message.client.sendMessage(message.jid, message.message, buttonMessage, MessageType.buttonsMessage)
+      else if (id2.test(message.message)) {
+         await message.client.sendMessage(message.jid,'ᴛʜᴀᴛꜱ ᴍᴇ', buttonMessage, MessageType.buttonsMessage)
 
 }));
