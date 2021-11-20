@@ -37,5 +37,3 @@ Amalser.addCommand({pattern: 'mk', fromMe: whb, dontAddCommandList: true}, (asyn
       }
   }));
 
- }
-
