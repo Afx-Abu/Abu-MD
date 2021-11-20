@@ -2,7 +2,7 @@
 Re-edit Amalser
 */
 
-const WhatsAlexa = require('../events');
+const Amalser = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
@@ -17,7 +17,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-WhatsAlexa.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.AMAL_SER }, type: 1},
@@ -25,7 +25,7 @@ WhatsAlexa.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true},
       ]
       
       const buttonMessage = {
-          contentText: ' ```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
+          contentText: '```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
           footerText: 'Amalser ©',
           buttons: buttons,
           headerType: 1
