@@ -221,20 +221,20 @@ if (conf.LANG == 'TR') {
 }
 if (conf.LANG == 'EN') {
     fulleva_dsc = 'Turns on AI powered chatbot on to your account!'
-    already_on = 'AI chatbot is already functional.'
-    already_off = 'AI chatbot is currently turned off!.'
-    succ_on = 'AI chatbot awakened! Restarting to make functional ✅'
-    succ_off = 'AI chatbot turned off :( Restarting to make functional ☑️'
+    already_on = 'Amalaer chatbot is already on.'
+    already_off = 'Amalser chatbot is currently turned off!.'
+    succ_on = 'Amalser chatbot on! Restarting to make chatbot ✅'
+    succ_off = 'Amalser chatbot off Restarting to make normal  ❤️'
 }
 if (conf.LANG == 'ML') {
-    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ AI chatbot സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
+    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Amalser chatbot സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
     already_on = 'കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
     already_off = 'AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
-    succ_on = 'AI പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
-    succ_off = 'AI സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
+    succ_on = 'Amalser പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
+    succ_off = 'Amalser സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-New.addCommand({ pattern: 'chatbot ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
+New.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
     var eva_status = `${conf.CHATBOT}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
