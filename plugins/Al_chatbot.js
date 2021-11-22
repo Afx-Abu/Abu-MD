@@ -22,8 +22,8 @@ let baseURI = '/apps/' + conf.HEROKU.APP_NAME;
 let wk = conf.WORKTYPE == 'public' ? false : true
 var vtalk_dsc = ''
 var reply_eva = ''
-if (conf.LANG == 'TR') vtalk_dsc = 'Eva amalser voice chat.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
-if (conf.LANG == 'EN') vtalk_dsc = 'Starts to amalser voice chat.', reply_eva = '*Reply to Any Voice Message!*'
+if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
+if (conf.LANG == 'EN') vtalk_dsc = 'Starts to raganork voice chat.', reply_eva = '*Reply to Any Voice Message!*'
 if (conf.LANG == 'AZ') vtalk_dsc = 'Eva səsli söhbətinə başlayır.', reply_eva = '*Hər hansı bir səsli mesaja cavab verin!*'
 if (conf.LANG == 'PT') vtalk_dsc = 'Começa o bate-papo por voz de Eva.', reply_eva = '*Responder a qualquer mensagem de voz!*'
 if (conf.LANG == 'RU') vtalk_dsc = 'Запускает голосовой чат Eva.', reply_eva = '*Ответьте на любое голосовое сообщение!*'
@@ -78,14 +78,14 @@ New.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand:
                     fins = ceviri.text
                 }
             } else { fins = response.data.cnt }
-            await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOTSK).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOTSK).replace('acobot', conf.BOTSK), MessageType.text, { quoted: message.data})
+            await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOT).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOT).replace('acobot', conf.BOT), MessageType.text, { quoted: message.data})
         })
     }
 }));
 New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        if (conf.CHATBOT == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+        if (conf.CHATBOT == 'true' && ((!message.jid.includes('@g.us')) || (message.jid.includes('@g.us') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
-            if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
+            if (message.jid.includes('@g.us') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
                     if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
                         var unique_ident = message.client.user.jid.split('@')[0]      
@@ -107,11 +107,11 @@ New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                                     fins = ceviri.text
                                 }
                             } else { fins = response.data.cnt }
-                            await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOTSK).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOTSK).replace('acobot', conf.BOTSK), MessageType.text, { quoted: message.data})
+                            await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOT).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOT).replace('acobot', conf.BOT), MessageType.text, { quoted: message.data})
                         })
                     }
                 })
-            } else if (message.jid.includes('-') && message.reply_message !== false) {
+            } else if (message.jid.includes('@g.us') && message.reply_message !== false) {
                 if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
                     var unique_ident = message.client.user.jid.split('@')[0]      
                     var finm = message.message
@@ -133,7 +133,7 @@ New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                                 fins = ceviri.text
                             }
                         } else { fins = response.data.cnt }
-                        await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOTSK).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOTSK).replace('acobot', conf.BOTSK), MessageType.text, { quoted: message.data})
+                        await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOT).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOT).replace('acobot', conf.BOT), MessageType.text, { quoted: message.data})
                     })
                 }
             } else {
@@ -156,7 +156,7 @@ New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                             fins = ceviri.text
                         }
                     } else { fins = response.data.cnt }
-                    await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOTSK).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOTSK).replace('acobot', conf.BOTSK), MessageType.text, { quoted: message.data})
+                    await message.client.sendMessage(message.jid,fins.replace('Raganork', conf.BOT).replace('Souravkl11', conf.PLK).replace('Aco', conf.BOT).replace('acobot', conf.BOT), MessageType.text, { quoted: message.data})
                 })
             }
         }
@@ -234,7 +234,7 @@ if (conf.LANG == 'ML') {
     succ_off = 'AI സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-New.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.amalser on / off' }, (async (message, match) => {
+New.addCommand({ pattern: 'chatbot ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
     var eva_status = `${conf.CHATBOT}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
