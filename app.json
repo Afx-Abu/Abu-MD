@@ -104,8 +104,8 @@
             "required": true,
             "value": "^[.!;]"
         },
-        "TALKING_PINKY": {
-            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+        "CHAT_BOT": {
+            "description": "Turn your account into a chatbot! .amalser on/off",
             "required": true,
             "value": "false"
         },
