@@ -2,6 +2,7 @@
 */
 
 const Asena = require('../events');
+const MyPnky = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
