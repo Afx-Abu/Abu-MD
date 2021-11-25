@@ -233,54 +233,125 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
     
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
-        const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var plk_here = new Date().toLocaleDateString(get_localized_date)
-	    var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
-
+            // Participant leaving/removal message
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 if (gb.message.includes('{pp}')) {
                 let pp 
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{time}', afn_plk_).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
-            } else if (gb.message.includes('{gif}')) {
-                //created by afnanplk
+                 var group = await conn.groupMetadata(msg.key.remoteJid)
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (profile) => {
+                await conn.sendMessage(msg.key.remoteJid, profile.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0}); });                           
+            } else if (gb.message.includes('{gicon}')) {
+                var sgroup = await conn.getProfilePicture(msg.key.remotejid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(sgroup.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gicon}', '').replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
+            }
+                else if (gb.message.includes('{gif}')) {
+                var group = await conn.groupMetadata(msg.key.remoteJid)
+                
                     var plkpinky = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
-                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
             } else {
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{time}', afn_plk_).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
-              } 
-            }//thanks to farhan      
+                var group = await conn.groupMetadata(msg.key.remoteJid)
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', group.subject).replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name), MessageType.text, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
+            }
+          }  //thanks to farhan      
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-            // welcome
-            var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
-           const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-           var plk_here = new Date().toLocaleDateString(get_localized_date)
-	       var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
-             var gb = await getMessage(msg.key.remoteJid);
+            // If anti fake is true, exclude members with fake and send response to given country code! 
+        let skl11 = `config.CCODE`    
+	if (msg.messageStubParameters[0].startsWith('91') && config.FAKE === 'true') {
+			   
+			var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
                 if (gb.message.includes('{pp}')) {
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                    //created by afnanplk
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
+                var group = await conn.groupMetadata(msg.key.remoteJid)
+                let location = await message.client.groupMetadata(msg.key.remoteJid);
+				var jids = [];
+                raganork = '';	
+				var total = [];
+            location['participants'].map(async (member) => {
+                if (member.isAdmin) {
+                    raganork += '@' + member.id.split('@')[0] + ' ';
+                    jids.push(member.id.replace('c.us', 's.whatsapp.net'));
+                }
+                location.push(member.id.replace('c.us', 's.whatsapp.net'));
+            });
+					await axios.get(pp, {responseType: 'arraybuffer'}).then(async (profile) => {
+                    
+                await conn.sendMessage(msg.key.remoteJid, profile.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}}); });                           
             } else if (gb.message.includes('{gif}')) {
                 var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{time}', afn_plk_).replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', group.subject).replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 2});
+            } else if (gb.message.includes('{gicon}')) {
+                var sgroup = await conn.getProfilePicture(msg.key.remotejid)
+                const skicon = await axios.get(sgroup, {responseType: 'arraybuffer'})
+				await conn.sendMessage(msg.key.remoteJid, Buffer.from(skicon.data), MessageType.image, {mimetype: Mimetype.jpg, caption: gb.message.replace('{gicon}', '').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{gphead}', group.subject).replace('{gpmaker}', 'wa.me/' + group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 3});
             } else {
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{time}', afn_plk_).replace('{owner}', conn.user.name), MessageType.text);
+                   var group = await conn.groupMetadata(msg.key.remoteJid)
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', group.subject).replace('{count}', 'EXCLUDED CASE!').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name), MessageType.text, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
             }
-          }         
+			
+          }
+			
             return;                               
+    }
+			// If anti fake is false, send response to all members 
+            else if (config.FAKE === 'false') {
+				// Get information from Greetings database - Implemented for Whatsasena by Yusuf usta
+                var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+                if (gb.message.includes('{pp}')) {
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                var group = await conn.groupMetadata(msg.key.remoteJid)
+                
+					await axios.get(pp, {responseType: 'arraybuffer'}).then(async (profile) => {
+                    
+                await conn.sendMessage(msg.key.remoteJid, profile.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}}); });                           
+            } else if (gb.message.includes('{gif}')) {
+                var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', group.subject).replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 2});
+            } else if (gb.message.includes('{gicon}')) {
+                var sgroup = await conn.getProfilePicture(msg.key.remotejid)
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(sgroup.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gicon}', '').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{gphead}', group.subject).replace('{gpmaker}', group.owner).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name) }, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 3});
+            } else {
+                   // New member mention - Implemented for Raganork by souravkl11!
+                   var group = await conn.groupMetadata(msg.key.remoteJid)
+                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', group.subject).replace('{count}', 'EXCLUDED CASE!').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{line}', '\n').replace('{mention}', '@' + msg.messageStubParameters[0].split('@')[0]).replace('{gpdesc}', group.desc).replace('{owner}', conn.user.name), MessageType.text, {contextInfo: {mentionedJid: [msg.messageStubParameters[0].replace('c.us', 's.whatsapp.net')]}, previewType: 0});
+            }
+			
+          }
+			}
+        // If anti fake is true, filter stub parameters by excluding given country codes   
+	// Auto fake remove - implemented for raganork by souravkl11
+        if (!msg.messageStubParameters[0].startsWith('91') && config.FAKE === 'true') {
+				async function checkImAdmin(message, user = conn.user.jid) {
+    var grup = await conn.groupMetadata(msg.key.remoteJid);
+    var sonuc = grup['participants'].map((member) => {
+        
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    return sonuc.includes(true);
+}
+                // If user isn't admin, return!
+		var im = await checkImAdmin(conn);
+                if (!im) {
+		return;
+		}
+		   else {
+			return await conn.groupRemove(msg.key.remoteJid, [msg.messageStubParameters[0]]);
+			}	
+	}}
+         if (config.BLOCKCHAT !== false) {     
+        var abc = config.BLOCKCHAT.split(',');                            
+        if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+    }
+    if (config.SUPPORT == '919074309534-1632403322') {     
+        var sup = config.SUPPORT.split(',');                            
+        if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
     }         
 
         events.commands.map(
