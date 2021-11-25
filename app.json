@@ -80,6 +80,11 @@
             "required": true,
             "value": "false"
         },
+        "FAKE_REMOVE": {
+            "description": "Fake number removing.",
+            "required": true,
+            "value": "false"
+        },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
             "required": false          
