@@ -274,7 +274,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 				var total = [];
             location['participants'].map(async (member) => {
                 if (member.isAdmin) {
-                    raganork += '@' + member.id.split('@')[0] + ' ';
+                    conn += '@' + member.id.split('@')[0] + ' ';
                     jids.push(member.id.replace('c.us', 's.whatsapp.net'));
                 }
                 location.push(member.id.replace('c.us', 's.whatsapp.net'));
