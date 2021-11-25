@@ -270,7 +270,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 var group = await conn.groupMetadata(msg.key.remoteJid)
                 let location = await message.client.groupMetadata(msg.key.remoteJid);
 				var jids = [];
-                raganork = '';	
+                conn = '';	
 				var total = [];
             location['participants'].map(async (member) => {
                 if (member.isAdmin) {
