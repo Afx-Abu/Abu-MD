@@ -102,7 +102,6 @@ async function whatsAsena () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     
@@ -299,19 +298,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                             await whats.delete(); 
                         }
 */
-                   
+
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                                await conn.sendMessage(conn.user.jid, '-- HATA RAPORU [WHATSASENA] --' + 
-                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
-                                    '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
-                                    '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
-                                    '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._\n\n' +
-                                    'Gerçekleşen Hata: ' + error + '\n\n'
-                                    , MessageType.text);
-                            } else {
                             if (config.NOLOG === 'off') {
                                 
                                 await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
