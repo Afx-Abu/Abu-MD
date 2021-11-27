@@ -9,7 +9,7 @@ const Lol = KeyLol[Math.floor(Math.random() * KeyLol.length)]
 
 const DESC_BOB = "Make text on sponge bob's board"
 
-const DESC_RIP = "Please provide an image link for the effect to be applied (Apply death effect)"
+const DESC_RIP = "Make beautiful text!!"
 
 const DESC_GURA = "Create gawr gura text"
 
@@ -50,10 +50,10 @@ var uria = encodeURI(match[1])
 var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/harta?query=${uria}&apikey=hardianto`, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
-Asena.addCommand({ pattern: 'rip ?(.*)', fromMe: true, desc: DESC_RIP }, (async (message, match) => {
+Asena.addCommand({ pattern: 'sliktext ?(.*)', fromMe: true, desc: DESC_RIP }, (async (message, match) => {
 if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD, MessageType.text);
 var uria = encodeURI(match[1])
-var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/rip?image=${uria}&apikey=hardianto`, { responseType: 'arraybuffer' })
+var ttinullimageh = await axios.get(`https://api.zeks.me/api/silktext?apikey=apivinz&text=${uria}`, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
@@ -167,10 +167,10 @@ var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/ha
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
-Asena.addCommand({ pattern: 'rip ?(.*)', fromMe: false, desc: DESC_RIP }, (async (message, match) => {
+Asena.addCommand({ pattern: 'sliktext ?(.*)', fromMe: false, desc: DESC_RIP }, (async (message, match) => {
 if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD, MessageType.text);
 var uria = encodeURI(match[1])
-var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/rip?image=${uria}&apikey=hardianto`, { responseType: 'arraybuffer' })
+var ttinullimageh = await axios.get(`https://api.zeks.me/api/silktext?apikey=apivinz&text=${uria}`, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
