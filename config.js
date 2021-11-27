@@ -63,6 +63,7 @@ module.exports = {
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    NOLOG: process.env.FIX_ERROR === undefined ? 'on' : process.env.FIX_ERROR,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     MENU_EGS: process.env.MENU_EGS === undefined ? '📝' : process.env.MENU_EGS,
     MENU_TEG: process.env.MENU_TEG === undefined ? '🎯' : process.env.MENU_TEG,
