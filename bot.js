@@ -299,11 +299,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                             await whats.delete(); 
                         }
 */
-                     if (config.NOLOG === 'off') {
+                   
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            
+                             if (config.NOLOG === 'off') {
                                 
                                 await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
                                     '\n*🌀 Subcribe this channel other wise chance to get erorr: https://youtube.com/channel/UCT7x7a4HJ72bbMNx49Z9DTA*' +
