@@ -27,6 +27,11 @@ Project created by <a href="https://github.com/cyberchekuthan">Amalser_v2</a> to
  [![ANY DOUBT REFER IT](https://www.linkpicture.com/q/YouTube-Logo-700x394.png)](https://youtu.be/5MKycJxmA4c)
 
 
+## Instagram  Follow ❤️
+
+https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
+
+
   ### Simple Method
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Amal-ser/Amalser.git)
@@ -45,7 +50,7 @@ $ git clone https://github.com/Amal-ser/Amalser
 $ cd Amalser
 $ npm install @adiwajshing/baileys
 $ npm install chalk
-$ node julie.js
+$ node Amalser.js
 ```
       
 ```js
@@ -53,7 +58,7 @@ SETUP
 $ git clone https://github.com/Amal-ser/Amalser
 $ cd Amalser
 $ npm i
-$ node julie.js
+$ node Amalser.js
 ```
 
 ----
