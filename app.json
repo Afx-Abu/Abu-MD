@@ -114,10 +114,10 @@
             "required": true,
             "value": "false"
         },
-        "NO_LOG": {
+        "FIX_ERROR": {
             "description": " Set true if you don't want to see error log.",
             "required": false,
-            "value": "true"
+            "value": "on"
         },
         "SEND_READ": {
             "description": "Write true if you want to throw seen.",
