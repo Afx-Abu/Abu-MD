@@ -309,9 +309,9 @@ Asena.addCommand({pattern: 'mkmods ?(.*)', fromMe: true, desc: psmm, onlyGroup: 
         text: ttsMessage,
         voice: LANG
     });
-    fs.writeFileSync('tts.mp3', buffer);
+    fs.writeFileSync('.mp3', buffer);
 
-    await message.client.sendMessage(message.reply_message.jid, fs.readFileSync('tts.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
+    await message.client.sendMessage(message.reply_message.jid, fs.readFileSync('.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     await message.client.sendMessage(message.jid,sucmsg, MessageType.text);
        
 }));
