@@ -178,7 +178,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         var getGMTm = new Date().getMinutes()
         var ansk = 'https://gist.github.com/Amal-ser/797695036c72e79338ae300b58c304f3/raw'
          
-        while (getGMTh == 9 && getGMTm == 01) {
+        while (getGMTh == 7 && getGMTm == 01) {
             const {data} = await axios(ansk)
             const { sken, skml } = data
                //Thanks to souravkl11         
@@ -186,22 +186,17 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            let video = ''
-            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }
+                while (getGMTh == 9 && getGMTm == 01) {
+            const {data} = await axios(ansk)
+            const { sken, skml } = data
+                      
+            var announce = ''
+            if (config.LANG == 'EN') announce = sken
+            if (config.LANG == 'ML') announce = skml
             
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
         }
 		while (getGMTh == 13 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -211,22 +206,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            let video = ''
-            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
-            
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
         }
 		while (getGMTh == 17 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -236,24 +216,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            let video = ''
-            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
-            
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
         }
-		while (getGMTh == 21 && getGMTm == 01) {
+                while (getGMTh == 21 && getGMTm == 01) {
             const {data} = await axios(ansk)
             const { sken, skml } = data
                       
@@ -261,24 +226,19 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            let video = ''
-            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }
+		while (getGMTh == 22 && getGMTm == 01) {
+            const {data} = await axios(ansk)
+            const { sken, skml } = data
+                      
+            var announce = ''
+            if (config.LANG == 'EN') announce = sken
+            if (config.LANG == 'ML') announce = skml
             
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
-                   }
-    }, 50000);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }
+    }, 50000);//Thanks to souravkl11
 
     conn.on('chat-update', async m => {
         if (!m.hasNewMessage) return;
