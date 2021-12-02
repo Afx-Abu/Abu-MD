@@ -187,7 +187,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'ML') announce = skml
             
             let video = ''
-            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
@@ -212,7 +212,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'ML') announce = skml
             
             let video = ''
-            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
@@ -237,7 +237,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'ML') announce = skml
             
             let video = ''
-            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
@@ -262,7 +262,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'ML') announce = skml
             
             let video = ''
-            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            let image = '' //'https://i.imgur.com/w89FHm7.jpeg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
