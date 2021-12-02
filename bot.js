@@ -277,8 +277,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
                 } else {
                     return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
-                }
-          }
       }
   }, 50000);
 
