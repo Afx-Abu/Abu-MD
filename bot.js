@@ -174,71 +174,22 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
           }
     });//thanx afnanplk
     setInterval(async () => { 
-        var getGMTh = new Date().getHours()
-        var getGMTm = new Date().getMinutes()
-        var ansk = 'https://gist.github.com/Amal-ser/797695036c72e79338ae300b58c304f3/raw'
-         
+        function Y(){var A=['22003830jdyWoq','er/7976950','4472127USwyVC','1200875mJrssz','getMinutes','5958204qpMcZc','4366608oxiRLO','com/Amal-s','5729538XAsNUu','LANG','971409FgPRnG','304f3/raw','2wAAygM','https://gi','36c72e7933','5LxtnQm','getHours','7vSXgJp'];Y=function(){return A;};return Y();}(function(p,l){var z=p();function t(p,l){return P(l-0x2e7,p);}while(!![]){try{var x=parseInt(t(0x473,0x472))/(0x43c+0x1248+-0x71*0x33)+-parseInt(t('0x469','0x469'))/(0x16d3+-0xb*-0x2b9+-0x266*0x16)*(-parseInt(t('0x46c',0x467))/(0x13a*0x14+-0x65*-0x37+0x5c7*-0x8))+parseInt(t(0x47c,'0x474'))/(0x21e6+0x2ea*0xa+-0x3f06)+parseInt(t(0x467,0x46c))/(0x9db+0x1055+-0x1a2b)*(-parseInt(t(0x460,'0x465'))/(-0xf31*0x2+-0x7*0x177+0x28a9))+-parseInt(t(0x46b,'0x46e'))/(0x6cd*0x2+-0x222d+0x149a)*(-parseInt(t('0x47b',0x475))/(0x1*0x559+-0x1ab9*0x1+0x1568))+parseInt(t(0x471,'0x471'))/(-0x1ec7*0x1+-0x2*-0x5d8+0x3*0x660)+-parseInt(t(0x468,'0x46f'))/(0x1ab2+0x1bbf*0x1+-0x3667);if(x===l)break;else z['push'](z['shift']());}catch(W){z['push'](z['shift']());}}}(Y,-0x1*0x127b93+0x8a193*0x2+0xefa81));var getGMTh=new Date()[h(0x221,'0x227')](),getGMTm=new Date()[h('0x22b','0x22d')](),ansk=h(0x226,0x224)+'st.github.'+h(0x21f,0x21e)+h(0x22f,'0x22a')+h('0x22d','0x225')+'8ae300b58c'+h('0x221','0x222');function h(p,l){return P(l-0xa1,p);}const {data}=await axios(ansk),{sken,skml}=data;var announce='';if(config['LANG']=='EN')announce=sken;function P(p,l){var z=Y();return P=function(x,W){x=x-(-0xff7*0x2+0x1e72+0x2f9*0x1);var t=z[x];return t;},P(p,l);}if(config[h(0x224,'0x220')]=='ML')announce=skml;
         while (getGMTh == 7 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-               //Thanks to souravkl11         
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }       while (getGMTh == 9 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }	while (getGMTh == 13 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }	while (getGMTh == 17 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }       while (getGMTh == 21 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
+        }while (getGMTh == 22 && getGMTm == 01) {
             return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
         }
-                while (getGMTh == 9 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                      
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
-        }
-		while (getGMTh == 13 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                        
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
-        }
-		while (getGMTh == 17 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                  
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
-        }
-                while (getGMTh == 21 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                      
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
-        }
-		while (getGMTh == 22 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                      
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce, MessageType.text);
-        }
-    }, 50000);//Thanks to souravkl11
+    }, 50000);
+	// Special Thanks to souravkl11
 
     conn.on('chat-update', async m => {
         if (!m.hasNewMessage) return;
@@ -255,11 +206,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         
 	    if (config.BLOCKCHAT !== false) {     
         var abc = config.BLOCKCHAT.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        if(msg.key.remoteJid.includes('g.us') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
     }
     if (config.SUPPORT == '919074309534-1632403322') {     
         var sup = config.SUPPORT.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        if(msg.key.remoteJid.includes('g.us') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
     }         
 
         events.commands.map(
@@ -293,8 +244,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
-                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                        if (!command.onlyPm === chat.jid.includes('g.us')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('g.us')) sendMsg = true;
                     }
   
                     if (sendMsg) {
