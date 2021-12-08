@@ -56,17 +56,17 @@ if (Config.LANG == 'ES') bdesc = 'Envía audio, video y fotos dentro del servido
 if (Config.LANG == 'ID') bdesc = 'Ini mengirimkan audio, video dan foto di dalam server.', berr = '*File yang Anda cari tidak tersedia di server!*', need_way = '*Jalur File Diperlukan!*'
 if (Config.LANG == 'ML') bdesc = 'സെർവറിനുള്ളിൽ ഓഡിയോ, വീഡിയോ, ഫോട്ടോകൾ അയയ്ക്കുന്നു.', berr = '*നിങ്ങൾ തിരയുന്ന ഫയൽ സെർവറിൽ ലഭ്യമല്ല!*', need_way = '*ഫയൽ പാത്ത് ആവശ്യമാണ്!*'
 let wk_q = Config.WORKTYPE == 'public' ? false : true
-Asena.addCommand({pattern: 'bashmedia ?(.*)', fromMe: wk_q, desc: bdesc, usage: 'video.mp4 && media/gif/pic.mp4'}, (async (message, match) => {    
+Asena.addCommand({pattern: 'addbgm ?(.*)', fromMe: wk_q, desc: bdesc, usage: 'video.mp4 && media/gif/pic.mp4'}, (async (message, match) => {    
     var id = message.jid
     try {
         if (match[1].includes('jpg') || match[1].includes('tiff') || match[1].includes('raw') || match[1].includes('dng') || match[1].includes('png') || match[1].includes('jpeg')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.image, {caption: 'Made by WhatsAsena' })
+            await message.client.sendMessage(id,fs.readFileSync(`/Amal-ser/Amalser/${match[1]}`), MessageType.image, {caption: 'Made by Amalser' })
         }
         else if (match[1].includes('mp4') || match[1].includes('avi') || match[1].includes('webm') || match[1].includes('mkv') || match[1].includes('mpeg')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.video, {caption: 'Made by WhatsAsena' });
+            await message.client.sendMessage(id,fs.readFileSync(`/Amal-ser/Amalser/${match[1]}`), MessageType.video, {caption: 'Made by Amalser' });
         }
         else if (match[1].includes('mp3') || match[1].includes('waw') || match[1].includes('flac') || match[1].includes('weba') || match[1].includes('ogg') || match[1].includes('m4a')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.audio);
+            await message.client.sendMessage(id,fs.readFileSync(`/Amal-ser/Amalser/${match[1]}`), MessageType.audio);
         }
         else {
             await message.client.sendMessage(id,need_way, MessageType.text)
@@ -99,7 +99,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             message: message.reply_message.data.quotedMessage
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-image.' + fin)
+        exec('mv ' + location + ' /Amal-ser/Amalser/server-image.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else if (message.reply_message.video) {
@@ -239,7 +239,7 @@ Asena.addCommand({pattern: 'findvid$', fromMe: wk, desc: medinfo}, (async (messa
             },
             message: message.reply_message.data.quotedMessage           
         });
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/vid.mp4')
+        exec('mv ' + location + ' /Amal-ser/Amalser/vid.mp4')
         exec('ffprobe -hide_banner -loglevel fatal -show_error -show_format -show_streams -show_programs -show_chapters -show_private_data -print_format json /root/WhatsAsenaDuplicated/vid.mp4', async (err, st, stderr) => {
             if (err) {
                 return await message.client.sendMessage(id,'*Error:* \n\n' + err,MessageType.text);
