@@ -112,7 +112,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-video.' + fin)
+        exec('mv ' + location + ' /Amal-ser/Amalser/server-video.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else if (message.reply_message.audio) {
@@ -125,7 +125,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-audio.' + fin)
+        exec('mv ' + location + ' /Amal-ser/Amalser/server-audio.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else { await message.client.sendMessage(message.jid,rep_add, MessageType.text)
