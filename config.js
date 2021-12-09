@@ -68,7 +68,7 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     MENU_EGS: process.env.MENU_EGS === undefined ? '📝' : process.env.MENU_EGS,
     MENU_TEG: process.env.MENU_TEG === undefined ? '🎯' : process.env.MENU_TEG,
-    EMOJI_COMMAND: process.env.EMOJI_COMMAND === undefined ? '🃏' : process.env.EMOJI_COMMAND,
+    ALLEMOJI: process.env.CMD_LIST === undefined ? 'siya/🃏/🌈/⚠️/📝/💬' : process.env.CMD_LIST,
     EMOJI_DESCRIPTION: process.env.EMOJI_DESCRIPTION === undefined ? '🦸‍♂️' : process.env.EMOJI_DESCRIPTION,
     EMOJI_EXAMPLE: process.env.EMOJI_EXAMPLE === undefined ? '💬' : process.env.EMOJI_EXAMPLE,
     EMOJI_WARNING: process.env.EMOJI_WARNING === undefined ? '⚠️' : process.env.EMOJI_WARNING,
