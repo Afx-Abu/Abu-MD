@@ -85,6 +85,11 @@
             "required": true,
             "value": "false"
         },
+        "C_CODE": {
+            "description": "Fake number not  removing country code.",
+            "required": true,
+            "value": "91"
+        },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
             "required": false          
