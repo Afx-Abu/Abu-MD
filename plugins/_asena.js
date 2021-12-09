@@ -11,7 +11,14 @@ const fs = require("fs")
 
 const Language = require('../language');
 const Lang = Language.getString('_asena');
-
+var split = Config.ALLEMOJI.split('/');
+         sk4 = split[4];
+         sk3 = split[3];
+         sk2 = split[2];
+         sk1 = split[1];
+         skcmd = split[0];
+         
+      }
 if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
@@ -431,28 +438,28 @@ else if (Config.WORKTYPE == 'public') {
                             HANDLER = '.';
                         }
                         if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + Config.EMOJI_EXAMPLE + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n\n';
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + sk3 + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + Config.EMOJI_DESCRIPTION + ' '  + command.desc + '_ \n\n';
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + sk2 + ' '  + command.desc + '_ \n\n';
                     }
                     if (command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '+\n' + '' + Config.EMOJI_DESCRIPTION + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '+\n' + '' + sk2 + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
                     }
                     if (!command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + Config.EMOJI_DESCRIPTION + ' '  + command.desc + '_ \n' + Config.EMOJI_EXAMPLE + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n\n';
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + sk2 + ' '  + command.desc + '_ \n' + sk4 + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + Config.EMOJI_DESCRIPTION + ' '  + command.desc + '_\n' + '' + Config.EMOJI_WARNING + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + sk2 + ' '  + command.desc + '_\n' + '' + sk4 + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
                     }
                     if (command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + Config.EMOJI_EXAMPLE + ' '  + Lang.EXAMPLE + ': ' + command.usage + '_ \n' + '' + Config.EMOJI_WARNING + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + sk3 + ' '  + Lang.EXAMPLE + ': ' + command.usage + '_ \n' + '' + Config.EMOJI_WARNING + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
                     }
                     if  (command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
                     }
                     if  (!command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '' + Config.EMOJI_COMMAND + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + Config.EMOJI_DESCRIPTION + ' '  + command.desc + '_ \n' + Config.EMOJI_EXAMPLE + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n' + '' + Config.EMOJI_WARNING + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
+                        CMD_HELP += '' + sk1 + ' '  + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '' + sk3 + ' '  + command.desc + '_ \n' + Config.EMOJI_EXAMPLE + ' '  + Lang.EXAMPLE + ': ' + command.usage + '\n' + '' + Config.EMOJI_WARNING + ' '  + Lang.WARN + ': ' + command.warn + '\n\n'
                         }
                     }
                 }
@@ -464,7 +471,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     })); 
 
-    Asena.addCommand({pattern: `${Config.PANEL_COMMAND} ?(.*)`, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: `${skcmd} ?(.*)`, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
         
         var CMD_HELP = '';
         if (match[1] === '') {
