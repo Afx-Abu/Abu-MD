@@ -45,6 +45,11 @@
             "required": true,
             "value": "Amalser"
         },
+        "C_CODE": {
+            "description": "Fake not removing country code",
+            "required": true,
+            "value": "91"
+        },
         "AMAL_SER": {
             "description": "Set the alive message two name",
             "required": true,
