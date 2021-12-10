@@ -50,11 +50,6 @@
             "required": true,
             "value": "Hello/Hii"
         },
-        "AMAL_S": {
-            "description": "Set the Alive message first name",
-            "required": true,
-            "value": "Hii"
-        },
         "INBO_BLOCK": {
             "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
             "required": true,
