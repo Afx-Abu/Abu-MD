@@ -45,10 +45,10 @@
             "required": true,
             "value": "Amalser"
         },
-        "AMAL_SER": {
+        "ALIVE_BUTTON": {
             "description": "Set the alive message two name",
             "required": true,
-            "value": "Hello"
+            "value": "Hello/Hii"
         },
         "AMAL_S": {
             "description": "Set the Alive message first name",
