@@ -23,8 +23,8 @@ let whb = Config.WORKTYPE == 'public' ? false : true
 Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: sk1 }, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: sk2 }, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: +  sk1  + }, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: +  sk2  + }, type: 1}
       ]
       
       const buttonMessage = {
