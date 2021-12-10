@@ -153,35 +153,10 @@
             "required": false,
             "value": "hear me friends"
         },
-        "EMOJI_COMMAND": {
-            "description": "You can change Command list emojis.)",
-            "required": true,
-            "value": "🃏"
-        },
         "CMD_LIST": {
             "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
             "required": true,
             "value": "siya/🃏/🌈/⚠️/📝"
-        },
-        "EMOJI_DESCRIPTION": {
-            "description": "You can change command list emojis.)",
-            "required": true,
-            "value": "🦸‍♂️"
-        },
-        "EMOJI_EXAMPLE": {
-            "description": "You can change command list emojis.)",
-            "required": true,
-            "value": "💬"
-        },
-        "EMOJI_WARNING": {
-            "description": "You can change command list emojis.)",
-            "required": true,
-            "value": "⚠"
-        },
-        "PANEL_COMMAND": {
-            "description": "You can change command list name eg:menu,help etc...)",
-            "required": true,
-            "value": "siya"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
