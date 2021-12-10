@@ -80,6 +80,26 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW SUDO UPDATED")
     }));
 
+Julie.addCommand({ pattern: 'button ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.button *Hello/Hi My Friend*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('Hello/Hi My Friend')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['ALIVE_BUTTON']: match[1]
+            }
+        });
+        await message.sendMessage("NEW BUTTON UPDATED")
+    }));
+
+Julie.addCommand({ pattern: 'emoji ?(.*)', fromMe: true, desc: 'changes list command and emojies', usage: '.emoji *list/💌/🍃/🍒/🍿*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('list/💌/🍃/🍒/🍿')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['CMD_LIST']: match[1]
+            }
+        });
+        await message.sendMessage("NEW LIST AND EMOJIES UPDATED")
+    }));
+
     Julie.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by JulieMwol*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED cA CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
