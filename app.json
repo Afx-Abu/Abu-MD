@@ -161,7 +161,7 @@
         "CMD_LIST": {
             "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
             "required": true,
-            "value": "siya/💌/✨️/✅️/⚠️"
+            "value": "siya/🃏/🌈/⚠️/📝"
         },
         "EMOJI_DESCRIPTION": {
             "description": "You can change command list emojis.)",
