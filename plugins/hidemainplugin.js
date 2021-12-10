@@ -15,16 +15,16 @@ var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 var sk1,sk2
 var split = Config.AMAL_SER.split('/');
-         sk2 = split[2];
-         sk1 = split[1];
+         sk2 = split[1];
+         sk1 = split[0];
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
 Amalser.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: +  sk1  + }, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: +  sk2  + }, type: 1}
+        {buttonId: 'id1', buttonText: {displayText: sk1 }, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: sk2 }, type: 1}
       ]
       
       const buttonMessage = {
