@@ -7,6 +7,7 @@ WhatsAsena - Yusuf Usta
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
+const raganork = require("./raganork");
 const chalk = require('chalk');
 const config = require('./config');
 const simpleGit = require('simple-git');
@@ -176,20 +177,19 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     setInterval(async () => { 
 	    // Special thanks to souravkl11
-	    
-        function x(){var H=['304f3/raw','1435cJuJpW','3654825tilPuj','st.github.','13944GamLrF','53670jNxSaR','getMinutes','com/Amal-s','https://gi','LANG','getHours','909228VgEoyi','arraybuffe','301761uDkopC','9068418fScUXk','responseTy','989476iQNEUn','10tlGQlr','er/7976950'];x=function(){return H;};return x();}(function(I,k){function o(I,k){return e(k- -'0x342',I);}var u=I();while(!![]){try{var c=parseInt(o(-0x1aa,-0x1b4))/(-0x7*0x75+0x1*-0x1b31+0x1e65*0x1)+parseInt(o(-0x1a0,-'0x1a9'))/(0x21a4+0x24fe+-0x46a*0x10)+parseInt(o(-'0x1a7',-0x1ac))/(-0x2543+0x2039+0x50d)+parseInt(o(-0x1b5,-'0x1b1'))/(-0x3a6*-0x2+0x159e+-0x1ce6)+-parseInt(o(-'0x1b2',-0x1b0))/(0x19e*0xd+-0x171d+-0x6c*-0x5)*(-parseInt(o(-0x1b3,-'0x1b6'))/(-0x12c5+0x189e+-0x5d3))+-parseInt(o(-'0x1a3',-0x1ad))/(-0x1*0x1f05+0x1dcf+-0x13d*-0x1)*(parseInt(o(-0x1b0,-'0x1aa'))/(0x1a15+0x25*-0xfa+0xa15*0x1))+-parseInt(o(-'0x1b0',-0x1b3))/(-0x85*0x2b+0x25f6+-0xf96);if(c===k)break;else u['push'](u['shift']());}catch(G){u['push'](u['shift']());}}}(x,-0xedb11+0xebd77+-0x1*-0xb4a89));var getGMTh=new Date()[J(0x158,0x14e)](),getGMTm=new Date()[J('0x167',0x16d)](),ansk=J(0x169,0x164)+J(0x164,0x162)+J('0x168','0x16f')+J(0x160,0x162)+'36c72e7933'+'8ae300b58c'+J('0x161',0x158);const {data}=await axios(ansk);function J(I,k){return e(I- -'0x33',k);}const {sken,skml,skpic}=data;var announce='';if(config[J('0x16a','0x16b')]=='EN')announce=sken;function e(I,k){var u=x();return e=function(c,G){c=c-(0x1*-0x1a2f+0x53*-0x22+0x3e0*0xa);var o=u[c];return o;},e(I,k);}if(config[J(0x16a,0x174)]=='ML')announce=skml;async function skl11(k){var u={};u[D('0x2d8',0x2da)+'pe']=D('0x2d5','0x2de')+'r';var c=await axios['get'](k,u),G=Buffer['from'](c['data']);function D(I,k){return J(I-0x17b,k);}return G;}
+	(function(I,k){function o(I,k){return e(k- -'0x29e',I);}var u=I();while(!![]){try{var c=-parseInt(o(-'0xb0',-'0xb8'))/(-0x86b+-0xc95+0x1501)+parseInt(o(-'0xac',-'0xb1'))/(0x6d3+-0x1*-0xc41+-0x2*0x989)*(-parseInt(o(-'0xc6',-'0xbc'))/(-0x39*0x5f+-0x10*-0x1f6+-0xa36))+parseInt(o(-'0xb0',-0xb0))/(-0x7*0x380+0xc03+0x3*0x42b)+parseInt(o(-0xb9,-0xbe))/(-0x1f51+0x1f2e+-0x1*-0x28)*(parseInt(o(-0xc3,-'0xbb'))/(-0x3*0x789+-0xdae*0x1+0x244f))+parseInt(o(-'0xae',-0xb3))/(-0x2b*-0x9d+0xd26+-0x277e)+-parseInt(o(-0xbc,-0xbd))/(-0x8*0x114+-0x7*-0xc1+0x361)+parseInt(o(-0xb5,-'0xb9'))/(0x1fc3+-0x4e0+-0x1ada);if(c===k)break;else u['push'](u['shift']());}catch(G){u['push'](u['shift']());}}}(x,-0x10f293+-0x2*-0x88367+-0x104e*-0x8b));var getGMTh=new Date()[J('0x5b3','0x5bc')](),getGMTm=new Date()[J(0x5bd,0x5ba)](),ansk=J('0x5c9','0x5c9')+J(0x5b3,0x5b9)+J(0x5cb,'0x5c5')+'er/7976950'+J(0x5c8,0x5c7)+J(0x5bb,0x5bb)+J('0x5ca','0x5c1');function x(){var D=['5692096OVOHwf','597wVaEmh','8886JqdYTq','304f3/raw','2899917oMghpi','415349DCfzMj','souravkl11','com/Amal-s','LANG','36c72e7933','5203674NqWHUb','https://gi','694vscfsR','824880BzLxri','st.github.','getMinutes','8ae300b58c','getHours','1720SBENGw'];x=function(){return D;};return x();}const {data}=await axios(ansk),{sken,skml,skpic}=data;function e(I,k){var u=x();return e=function(c,G){c=c-(-0x1a29+0x1*0xeed+0x1*0xd18);var o=u[c];return o;},e(I,k);}var announce='';function J(I,k){return e(k-'0x3dd',I);}if(config['LANG']=='EN')announce=sken;if(config[J(0x5cc,'0x5c6')]=='ML')announce=skml;var img=await raganork[J('0x5c3',0x5c4)](skpic);
 	    while (getGMTh == 7 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }       while (getGMTh == 9 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }	while (getGMTh == 13 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }	while (getGMTh == 17 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }       while (getGMTh == 21 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }       while (getGMTh == 22 && getGMTm == 01) {
-            return await conn.sendMessage(conn.user.jid, skl11(skpic), MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMALSER ]*\n\n' + announce});
         }
     }, 50000);
 
