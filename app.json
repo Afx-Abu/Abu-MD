@@ -175,7 +175,7 @@
         },
         "BOT_NAME": {
             "description": "heading for .list command reply",
-            "required": false,
+            "required": true,
             "value": "༺═══❃ᴋᴀᴢᴛʀᴏsᴇʀ❃═══༻"
         },
         "WORK_TYPE": {
