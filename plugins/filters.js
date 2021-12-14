@@ -58,7 +58,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/Ajayan.
 await message.client.sendMessage(message.jid, fs.readFileSync('uploads/Ajayan.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         
-const array = ['hi','Hi']
+const array = ['Sed','Hi']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -91,7 +91,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Kaztroserv2/Hi.
 await message.client.sendMessage(message.jid, fs.readFileSync('Kaztroserv2/Hi.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['hi','Hi']
+const array = ['Sed']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -119,7 +119,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '918281440156@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./Kaztroser/Hi.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['hi','Hi']
+const array = ['Sed']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
