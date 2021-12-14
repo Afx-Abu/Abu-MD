@@ -1,7 +1,7 @@
 {
     "name": "Kaztroserv2 ",
     "description": "Kaztroser is the Modified Version of WhatsAsena, Made By @Aj-fx with Baileys.",
-    "logo": "https://i.imgur.com/yCYYyEJ.jpeg",
+    "logo": "https://i.ibb.co/xCFcGCN/amalser.jpg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/Amal-ser/Amalser",
     "website":   "https://github.com/farhan-dqz/Julie-Mwol",
@@ -195,17 +195,17 @@
         "OWNER_NAME": {
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
-            "value": "Amalser"
+            "value": "Ajfx"
         },
         "OWNER_NUMBER": {
             "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
             "required": false,
-            "value": "919895828468"
+            "value": "918281440156"
         },
         "NUMBER": {
             "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
             "required": false,
-            "value": "919895828468"
+            "value": "918281440156"
         },
         "DEPLOYER": {
             "description": "enter your name here",
