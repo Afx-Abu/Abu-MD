@@ -88,10 +88,10 @@ if(pattern.test(message.message)){
 await message.client.sendMessage(message.jid, fs.readFileSync('./Kaztroserv2/Hi.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
-await message.client.sendMessage(message.jid, fs.readFileSync('Kaztroserv2/Hi.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('Kaztroserv2/owner.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['Sed','Hi','help','2','6','alive','Bot','Cr7','Da','Daa','Football','gif','git','group']
+const array = ['Sed','Hi','help','2','6','alive','Bot','Cr7','Da','Daa','Football','gif','git','group','Ha','Haa','Hello','help','Hm','Ho','invite','kooi','list','Love','Mm','Oo','owner','pm','Poda','Song','sticker','Video','love','bot']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
