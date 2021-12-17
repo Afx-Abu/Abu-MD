@@ -91,7 +91,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Kaztroserv2/Hi.
 await message.client.sendMessage(message.jid, fs.readFileSync('Kaztroserv2/Hi.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['Sed','Hi']
+const array = ['Sed','Hi','help','2','6','alive','Bot','Cr7','Da','Daa','Football','gif','git','group']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
