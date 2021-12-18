@@ -4,7 +4,7 @@
 </p>
 <div align="center">
   <p align="center">
-<img src=https://i.imgur.com/w89FHm7.jpeg>
+<img src=https://i.ibb.co/xCFcGCN/amalser.jpg>
 </p>
   <p align="center">
 <a href="https://github.com/Aj-fx"><img title="Author" src="https://img.shields.io/badge/Author-Aj-fx/Kaztroserv3?color=blue&style=for-the-badge&logo=whatsapp"></a>
@@ -39,7 +39,7 @@ https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Kaztroserv3/Kaztroserv3)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
   
 ### The Hard Method
 ```js
