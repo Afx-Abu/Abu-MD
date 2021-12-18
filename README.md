@@ -32,7 +32,7 @@ Project created by <a href="https://github.com/cyberchekuthan">Kaztroserv2</a> t
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aj-fx/Kaztroserv2.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phathicusthiccy/Kaztroserv2.git)
 
 
 
