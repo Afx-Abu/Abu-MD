@@ -34,7 +34,7 @@ https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phathicusthiccy/Kaztroserv3.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aj-fx/Kaztroserv3.git)
 
 
 
