@@ -1,17 +1,20 @@
 <div align="center">
 
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F7000&lines=Welcome+to+Kaztroserv3+WA+Bot+repo;Created+by+Aj+fx;This+is+a+userbot+privet+and+public+bot;With+more+features)](https://git.io/typing-svg)
+
  </a>
 </p>
+
 <div align="center">
   <p align="center">
-<img src=https://i.imgur.com/w89FHm7.jpeg>
+<img src=https://i.ibb.co/xCFcGCN/amalser.jpg>
 </p>
   <p align="center">
-<a href="https://github.com/Aj-fx"><img title="Author" src="https://img.shields.io/badge/Author-Aj-fx/Kaztroserv3?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/cyberchekuthan"><img title="Author" src="https://img.shields.io/badge/Author-Ajayan-cyberchekuthan/Kaztroserv3_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/Aj-fx">Aj-fx</a> to make it public
+Project created by <a href="https://github.com/cyberchekuthan">Kaztroserv3</a> to make it public
     <br>
        | © |
         Reserved |
@@ -22,14 +25,9 @@ Project created by <a href="https://github.com/Aj-fx">Aj-fx</a> to make it publi
 <div align="center"> 
 
 
-## Click Youtube logo to Watch full video and findout password in this video 👇
+## Click Instagram logo to follow this page👇
 
- [![ANY DOUBT REFER IT](https://www.linkpicture.com/q/YouTube-Logo-700x394.png)](https://youtu.be/Tb1B-rS52uo)
-
-
-## Instagram  Follow ❤️
-
-https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
+ [![ANY DOUBT REFER IT](photo/instagram.png)](https://youtu.be/5MKycJxmA4c)
 
 
   ### Simple Method
@@ -39,7 +37,7 @@ https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Kaztroserv3/Kaztroserv3)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
   
 ### The Hard Method
 ```js
@@ -50,7 +48,7 @@ $ git clone https://github.com/Aj-fx/Kaztroserv3
 $ cd Kaztroserv3
 $ npm install @adiwajshing/baileys
 $ npm install chalk
-$ node Kaztroserv3.js
+$ node julie.js
 ```
       
 ```js
@@ -58,7 +56,7 @@ SETUP
 $ git clone https://github.com/Aj-fx/Kaztroserv3
 $ cd Kaztroserv3
 $ npm i
-$ node Kaztroserv3.js
+$ node julie.js
 ```
 
 ----
@@ -67,7 +65,7 @@ $ node Kaztroserv3.js
   <a href="httsp://github.com/Aj-fx/Kaztroserv3">
     
 <a href="https://github.com/Aj-fx/followers">
-<img src="https://img.shields.io/github/repo-size/Aj-fx/Kaztroserv3?color=green&label=Repo%20total%20size&style=plastic">
+<img src="https://img.shields.io/github/repo-size/cyberchekuthan/Kaztroserv3_v2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
 <a href="https://github.com/Aj-fx/followers"
 <img title="Followers" src="https://img.shields.io/github/followers/Aj-fx?color=blue&style=flat-square"></a>
@@ -80,7 +78,7 @@ $ node Kaztroserv3.js
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/CbRlEux876XFsWQfIlOKty)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/JM2qHJm8zS95itgHXjd88R)
   <div align="center">
        
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Aj-fx&repo=Kaztroserv3&theme=nightowl)](https://github.com/Aj-fx/Kaztroserv3)
@@ -102,14 +100,14 @@ No personal support will be provided / We won't spoon feed you.
 If you need help
 you can contact 👇🏻👇🏻 
 ```
-**[![Kaztroserv3](https://www.linkpicture.com/q/WHTSPP-LOGO.png)](http://wa.me/919895828468?text=Can%20you%20help%20bro)**
+**[![Kaztroserv3](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](http://wa.me/918281440156?text=Can%20you%20help%20bro)**
 
 ## Developers
   <div align="center">
     
   [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=100)](https://github.com/farhan-dqz) | [![Kaztroserv3](https://github.com/Aj-fx.png?size=100)](https://github.com/Aj-fx) |  [![TOXIC4L!3N](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
 ----|----|----|----
-[farhan-dqz](https://github.com/farhan-dqz) | [Kaztroserv3](https://github.com/Aj-fx) | [TOXIC4L!3N](https://github.com/AI-VIKI) | [afnanplk](https://github.com/afnanplk) 
+[farhan-dqz](https://github.com/farhan-dqz) | [Ajfx](https://github.com/Aj-fx) | [TOXIC4L!3N](https://github.com/AI-VIKI) | [afnanplk](https://github.com/afnanplk) 
 Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
   </div>
     
