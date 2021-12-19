@@ -4,7 +4,7 @@
 </p>
 <div align="center">
   <p align="center">
-<img src=https://i.ibb.co/xCFcGCN/amalser.jpg>
+<img src=https://i.imgur.com/w89FHm7.jpeg>
 </p>
   <p align="center">
 <a href="https://github.com/Aj-fx"><img title="Author" src="https://img.shields.io/badge/Author-Aj-fx/Kaztroserv3?color=blue&style=for-the-badge&logo=whatsapp"></a>
@@ -34,12 +34,12 @@ https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aj-fx/Kaztroserv3.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phathicusthiccy/Kaztroserv3.git)
 
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Kaztroserv3/Kaztroserv3)
   
 ### The Hard Method
 ```js
