@@ -1,4 +1,4 @@
-const Ktb = require('../events');
+Lonst Ktb = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
