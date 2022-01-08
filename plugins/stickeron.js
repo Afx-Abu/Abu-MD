@@ -1,5 +1,5 @@
 /* Copyright (C) 2021 farhan-dqz
-coded for juliemwol
+coded for Kaztroser
 */
 
 const Julie = require('../events');
