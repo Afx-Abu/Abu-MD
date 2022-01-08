@@ -5,7 +5,7 @@ Amalser - Amal
 Wa.me/+918281440156
 */
 
-const Neotro = require('../events');
+const Neotrl = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
