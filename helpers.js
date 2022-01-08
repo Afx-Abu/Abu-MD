@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Kaztroserv2*:  ```" + msg + "```"
+    return "✅ *Kaztroserv1*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Kaztroserv2*:  ```" + msg + "```"
+    return "🛑 *Kaztroserv1*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Kaztroserv2*:  ```" + msg + "```"
+    return "⏺️ *Kaztroserv1*:  ```" + msg + "```"
 }
 
 
