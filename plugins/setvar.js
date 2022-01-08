@@ -7,7 +7,7 @@ const Lang = Language.getString('wallpaper');
 
 Asena.addCommand({pattern: 'setvar', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
-    var r_text = new Array (2);
+    var r_text = new Array ();
     
     
     r_text[0] = "https://i.ibb.co/xCFcGCN/amalser.jpg";
