@@ -16,7 +16,7 @@ var split = Config.ALLEMOJI.split('/');
          sk4 = split[4];
          sk3 = split[3];
          sk2 = split[2];
-         sk1 = split[1];
+         sk4 = split[1];
          skcmd = split[0];        
 
 if (Config.WORKTYPE == 'private') {
