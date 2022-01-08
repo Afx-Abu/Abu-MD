@@ -1,5 +1,5 @@
-/* Amalser Bot
-Re-edit Amalser
+/* Kaztroserv1 Bot
+Re-edit Aj-fx
 */
 
 const Amalser = require('../events');
