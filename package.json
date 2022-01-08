@@ -1,6 +1,6 @@
 {
   "name": "JulieMwol",
-  "version": "7.3.7",
+  "version": "7.3.6",
   "description": "Julie Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
   "main": "./Julie-Mwol/bot.js",
   "scripts": {
