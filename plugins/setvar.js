@@ -84,7 +84,7 @@ All setvars are
  To change bad word remove list
  .setvar THERI_LIST:badword,badword
 
- To change AMALSER bot name
+ To change ABUSER bot name
  .setvar BOT_NAME:your bot name
 
  To get a song when your number is mentioned
