@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'private') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Kaztroserv1 by Ajayan*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'*Abu_ser by Abu-Jasil*' , MessageType.text);
         }
         else {
             await message.client.sendMessage(message.jid,Config.OWNER + '\n\n---------------------', MessageType.text);
@@ -30,7 +30,7 @@ else if (Config.WORKTYPE == 'public') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Kaztroserv1 by Ajayan*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'*Abu_ser by Abu-Jasil*' , MessageType.text);
         }
         else {
             await message.client.sendMessage(message.jid,Config.OWNER + '\n\n--------------------', MessageType.text);
