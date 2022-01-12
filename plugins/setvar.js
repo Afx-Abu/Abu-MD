@@ -18,7 +18,7 @@ Asena.addCommand({pattern: 'setvar', fromMe: false, desc: Lang.WP}, (async (mess
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━💙SETVAR💙━━⛦
-𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 𝗸𝗮𝘇𝘁𝗿𝗼𝘀𝗲𝗿 𝐛𝐨𝐭.
+𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 𝐀𝐛𝐮𝘀𝗲𝗿 𝐛𝐨𝐭.
   
 *ẉa.me/➳Setvar*
 ■□■□■□■□■□■□■□■□■□■□
