@@ -10,7 +10,7 @@ if (Config.WORKTYPE == 'private') {
 
     var r_text = new Array ();
     
-    r_text[1] = "*╔══■□💙ᴋᴀᴢᴛʀᴏsᴇʀ💙■□══╗*\n           \n*⚜═ᴋᴀᴢᴛʀᴏsᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 ᴀᴊᴀʏᴀɴ - https://api.whatsapp.com/send?phone=+918281440156&text=Please%20add%20kaztroser%20bot%20gruop%20💙*\n*            *\n*╚══■□💙ᴋᴀᴢᴛʀᴏsᴇʀ💙■□══╝*\n\n*▷Creator: ᴀᴊᴀʏᴀɴ ✝︎*"
+    r_text[1] = "*╔══■□💙ᴀʙᴜsᴇʀ💙■□══╗*\n           \n*⚜═ᴀʙᴜsᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aʙᴜ-ᴊᴀsɪʟ - https://api.whatsapp.com/send?phone=+917025994178&text=Please%20add%20Aʙᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀʙᴜsᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
 
     
     await message.client.sendMessage(
@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
         var r_text = new Array ();
     
-        r_text[1] = "*Git links*\n           *\n🌟═ᴋᴀᴢᴛʀᴏsᴇʀ ᴏᴡɴᴇʀ ᴀᴊ ғx═🌟*\n\n*🔅https://github.com/Aj-fx/Kaztroserv1*"
+        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀʙᴜsᴇʀ ᴏᴡɴᴇʀ ᴀʙᴜ »« ʀᴇᴀʟ ɴᴀᴍᴇ-ᴊᴀsɪʟ═🌟*\n\n*🔅https://github.com/Arx-Abu/Abu_ser*"
 
     
         await message.client.sendMessage(
@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
 
     var r_text = new Array ();
     
-    r_text[1] = "*╔══■□💙ᴋᴀᴢᴛʀᴏsᴇʀ💙■□══╗*\n           \n*⚜═ᴋᴀᴢᴛʀᴏsᴇʀ═⚜*\n\n*ᴏᴡɴᴇʀ ᴀᴊ ғx - https://api.whatsapp.com/send?phone=+918281440156&text=Please%20add%20kaztroser%20bot%20gruop%20💙*\n*            *\n*╚══■□💙ᴋᴀᴢᴛʀᴏsᴇʀ💙■□══╝*\n\n*▷Creator: ᴀᴊᴀʏᴀɴ ✝︎*"
+    r_text[1] = "*╔══■□💙ᴀʙᴜsᴇʀ💙■□══╗*\n           \n*⚜═ᴀʙᴜsᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aʙᴜ-ᴊᴀsɪʟ - https://api.whatsapp.com/send?phone=+917025994178&text=Please%20add%20Aʙᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀʙᴜsᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
 
     
     await message.client.sendMessage(
@@ -52,7 +52,7 @@ if (Config.WORKTYPE == 'private') {
 
         var r_text = new Array ();
     
-        r_text[1] = "*Git links*\n           *\n🌟═ᴋᴀᴢᴛʀᴏsᴇʀ ᴏᴡɴᴇʀ ᴀᴊ ғx═🌟*\n\n*🔅https://github.com/Aj-fx/Kaztroserv1*"
+        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀʙᴜsᴇʀ ᴏᴡɴᴇʀ ᴀʙᴜ »« ʀᴇᴀʟ ɴᴀᴍᴇ-ᴊᴀsɪʟ═🌟*\n\n*🔅https://github.com/Arx-Abu/Abu_ser*"
 
     
         await message.client.sendMessage(
