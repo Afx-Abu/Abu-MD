@@ -1,5 +1,8 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=ABU+SER+BOT&color=%2354F780&multiline=true&lines=THIS+BOT+CREATED+BY+ABU+SER)](https://git.io/typing-svg)
 <div align="center">
+<div align="center">
+  <p align="center">
+<img src=https://www.linkpicture.com/q/20220107_193223_1.jpg>
+</p>
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F7000&lines=WELCOME+TO+ABUSER+WA+BOT+REPO;CREATED+BY+ARX+ABU;THIS+IS+A+USERBOT+PRIVATE+AND+PUBLIC+BOT;WITH+MORE+FEATHERS)](https://git.io/typing-svg)
 
