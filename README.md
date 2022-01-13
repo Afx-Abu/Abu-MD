@@ -41,7 +41,7 @@ Project created by <a href="https://github.com/cyberchekuthan">Abu_ser</a> to ma
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/ABUSIREV3-QR?v=1)
   
 ### The Hard Method
 ```js
