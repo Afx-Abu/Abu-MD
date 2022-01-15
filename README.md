@@ -43,7 +43,7 @@ GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
 $ git clone https://github.com/AMRUSIR/AMRU-SER
-$ cd Abu_ser
+$ cd AMRU-ser
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node julie.js
