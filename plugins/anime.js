@@ -94,7 +94,7 @@ if (Config.WORKTYPE == 'private') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Mᴀᴅᴇ Bʏ Aʙᴜ Sᴇʀ'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Mᴀᴅᴇ Bʏ Aᴍʀᴜ Sᴇʀ'})
 
     }));
 }
@@ -188,7 +188,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Mᴀᴅᴇ Bʏ Aʙᴜ Sᴇʀ Bᴏᴛ'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Mᴀᴅᴇ Bʏ Aᴍʀᴜ Sᴇʀ Bᴏᴛ'})
 
     }));
 }
