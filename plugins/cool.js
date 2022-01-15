@@ -10,7 +10,7 @@ if (Config.WORKTYPE == 'private') {
 
     var r_text = new Array ();
     
-    r_text[1] = "*╔══■□💙ᴀʙᴜsᴇʀ💙■□══╗*\n           \n*⚜═ᴀʙᴜsᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aʙᴜ-ᴊᴀsɪʟ - https://api.whatsapp.com/send?phone=+917025994178&text=Please%20add%20Aʙᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀʙᴜsᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
+    r_text[1] = "*╔══■□💙ᴀᴍʀᴜ-sᴇʀ💙■□══╗*\n           \n*⚜═ᴀᴍʀᴜ-sᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aᴍʀᴜ-Aᴍʀᴜᴛʜᴇsʜ - https://api.whatsapp.com/send?phone=+917025994178&text=Please%20add%20Aʙᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀᴍʀᴜ-sᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
 
     
     await message.client.sendMessage(
@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
         var r_text = new Array ();
     
-        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀʙᴜsᴇʀ ᴏᴡɴᴇʀ ᴀʙᴜ »« ʀᴇᴀʟ ɴᴀᴍᴇ-ᴊᴀsɪʟ═🌟*\n\n*🔅https://github.com/Arx-Abu/Abu_ser*"
+        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀᴍʀᴜ-sᴇʀ ᴏᴡɴᴇʀ ᴀᴍʀᴜ- »« ʀᴇᴀʟ ɴᴀᴍᴇ-Aᴍʀᴜᴛʜᴇsʜ═🌟*\n\n*🔅https://github.com/Arx-Abu/Abu_ser*"
 
     
         await message.client.sendMessage(
@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
 
     var r_text = new Array ();
     
-    r_text[1] = "*╔══■□💙ᴀʙᴜsᴇʀ💙■□══╗*\n           \n*⚜═ᴀʙᴜsᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aʙᴜ-ᴊᴀsɪʟ - https://api.whatsapp.com/send?phone=+917025994178&text=Please%20add%20Aʙᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀʙᴜsᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
+    r_text[1] = "*╔══■□💙ᴀᴍʀᴜ-sᴇʀ💙■□══╗*\n           \n*⚜═ᴀᴍʀᴜ-sᴇʀ═⚜*\n\n*𝕆𝕨𝕟𝕖𝕣 Aʙᴜ-Aᴍʀᴜᴛʜᴇsʜ - https://api.whatsapp.com/send?phone=+917025631103&text=Please%20add%20Aᴍʀᴜsᴇʀ%20bot%20ɢʀᴏᴜᴘ%20💙*\n*            *\n*╚══■□💙ᴀᴍʀᴜ-sᴇʀ💙■□══╝*\n\n*▷Creator: Aʙᴜ-Jᴀsɪʟ ✝︎*"
 
     
     await message.client.sendMessage(
@@ -52,7 +52,7 @@ if (Config.WORKTYPE == 'private') {
 
         var r_text = new Array ();
     
-        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀʙᴜsᴇʀ ᴏᴡɴᴇʀ ᴀʙᴜ »« ʀᴇᴀʟ ɴᴀᴍᴇ-ᴊᴀsɪʟ═🌟*\n\n*🔅https://github.com/Arx-Abu/Abu_ser*"
+        r_text[1] = "*Gɪᴛ Lɪɴᴋs*\n           *\n🌟═ᴀᴍʀᴜ-sᴇʀ ᴏᴡɴᴇʀ ᴀᴍʀᴜ- »« ʀᴇᴀʟ ɴᴀᴍᴇ-Aᴍʀᴜᴛʜᴇsʜ═🌟*\n\n*🔅https://github.com/AMRUSIR/AMRU-SER*"
 
     
         await message.client.sendMessage(
