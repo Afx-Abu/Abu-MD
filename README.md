@@ -12,6 +12,11 @@
   <p align="center">
 <img src=https://i.imgur.com/CtaexU3.jpeg>
 </p>
+
+<img src=https://i.ibb.co/s1CSFK7/ae6572d653ee04f78fc986bddd89d5b3.png>
+</p>
+
+
   <p align="center">
 <a href="wa.me/917025631103"><img title="Author" src="https://img.shields.io/badge/Author--Amruthesh/AMRU-SER?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
