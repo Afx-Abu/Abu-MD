@@ -114,13 +114,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.blueBright.italic('Confirming password...')
         );
-        if (config.AFPLK == 'amalser' || config.AFPLK == 'afamk' || config.AFPLK == 'vava' || config.AFPLK == 'Amalser') {
+        if (config.AFPLK == 'amalser' || config.AFPLK == 'amrus' || config.AFPLK == 'vava' || config.AFPLK == 'Amalser') {
         //thanks to afnanplk
         console.log(
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else if (config.AFPLK !== 'amalser' || config.AFPLK !== 'afamk' || config.AFPLK !== 'vava' || config.AFPLK !== 'Amalser') {
+         else if (config.AFPLK !== 'amalser' || config.AFPLK !== 'amrus' || config.AFPLK !== 'vava' || config.AFPLK !== 'Amalser') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
@@ -277,7 +277,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         } catch (error) {
                             if (config.NOLOG === 'off') {
                                 
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Abuser ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ AMRU SER ~______~*' +
                                     '\n*🌀 Follow this page other wise chance to get erorr: https://youtu.be/OYhA_ZNQ4GQ*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
