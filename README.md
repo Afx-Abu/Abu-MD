@@ -30,7 +30,7 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
 
 ## Click Instagram logo to follow this page👇
 
- [![ANY DOUBT REFER IT](photo/instagram.png)](https://youtu.be/5MKycJxmA4c)
+ [![ANY DOUBT REFER IT](https://i.imgur.com/SJ8fwvm.jpeg)](https://instagram.com/its_me_dron)
 
 
   ### Simple Method
