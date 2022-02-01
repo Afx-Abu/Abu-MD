@@ -114,13 +114,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.blueBright.italic('Confirming password...')
         );
-        if (config.AFPLK == 'amalser' || config.AFPLK == 'amrus' || config.AFPLK == 'vava' || config.AFPLK == 'Amalser') {
+        if (config.AFPLK == 'amruser' || config.AFPLK == 'AMRU' || config.AFPLK == 'vava' || config.AFPLK == 'Amruser') {
         //thanks to afnanplk
         console.log(
             chalk.green.bold('thanks for watching -key cofirmed-')
         );
          }
-         else if (config.AFPLK !== 'amalser' || config.AFPLK !== 'amrus' || config.AFPLK !== 'vava' || config.AFPLK !== 'Amalser') {
+         else if (config.AFPLK !== 'amruser' || config.AFPLK !== 'AMRU' || config.AFPLK !== 'vava' || config.AFPLK !== 'Amruser') {
          console.log(
             chalk.red.bold('make sure you have typed the correct password'));
          throw new Error("Password Error ⚠⚠ ");         
@@ -154,7 +154,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Abu ᴡᴏʀᴋɪɴɢ ' + config.WORKTYPE + ' ɴᴏᴡ 💙'));
+            chalk.green.bold('Amru Ser ' + config.WORKTYPE + ' Now 💙'));
           // thanks to afnanplk
 	    if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
@@ -278,7 +278,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                             if (config.NOLOG === 'off') {
                                 
                                 await conn.sendMessage(conn.user.jid, '*~_________~ AMRU SER ~______~*' +
-                                    '\n*🌀 Follow this page other wise chance to get erorr: https://youtu.be/OYhA_ZNQ4GQ*' +
+                                    '\n*🌀 Follow this page other wise chance to get erorr: https://chat.whatsapp.com/DnHJu25Ccss7zn72nPhL8z*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
