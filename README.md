@@ -39,7 +39,7 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
 
   ### Simple Method
   
-[![Deploy](https://i.imgur.com/hSxOEEp.jpeg)](https://youtu.be/x47g62HcsWc)
+[![Deploy](https://i.imgur.com/Jh74sBF.jpeg)](https://youtu.be/x47g62HcsWc)
 
 ## https://heroku.com/deploy?template= (Fork Link)
 
