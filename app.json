@@ -110,7 +110,7 @@
             "value": "^[.!;]"
         },
         "CHAT_BOT": {
-            "description": "Turn your account into a chatbot! .amalser on/off",
+            "description": "Turn your account into a chatbot! .amruser on/off",
             "required": true,
             "value": "false"
         },
@@ -179,7 +179,7 @@
             "value": "༺═══❃AMRU SER❃═══༻"
         },
         "WORK_TYPE": {
-            "description": "Amalser Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "Amruser Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
