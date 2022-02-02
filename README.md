@@ -41,6 +41,8 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
   
 [![Deploy](https://i.imgur.com/hSxOEEp.jpeg)](https://youtu.be/x47g62HcsWc)
 
+## https://heroku.com/deploy?template= (Fork Link)
+
 SIMPLE BGM BOT ONLY!
 
   
