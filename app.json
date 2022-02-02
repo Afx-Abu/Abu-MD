@@ -8,7 +8,7 @@
     "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
     "stack": "container",
     "env": {
-        "AMALSER_CODE": {
+        "AMRUSER_CODE": {
             "description": "Type the code when you got by scanning QR through WhatsApp.",
             "required": true
         },
@@ -17,7 +17,7 @@
             "required": false
         },
          "YT_PASSWORD": {
-            "description": "enter the password, to get password watch https://youtu.be/fd0KPblop-k .",
+            "description": "PASSWORD SMAL leter. amrus ENNUTHABE ADIKKANAM ILLEL ERROR VARUM .",
             "required": true
         },
         "LANGUAGE": {
