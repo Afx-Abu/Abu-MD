@@ -48,7 +48,7 @@
         "ALIVE_BUTTON": {
             "description": "Set the alive message two name",
             "required": true,
-            "value": "Sed/Happy"
+            "value": "AMRU/ABU"
         },
         "INBO_BLOCK": {
             "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
