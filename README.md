@@ -18,11 +18,11 @@
 
 
   <p align="center">
-<a href="https:"><img title="Author" src="https://img.shields.io/badge/Author--Abu/AMRU-SER?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https:"><img title="Author" src="https://img.shields.io/badge/Author--Amruthesh/AMRU-SER?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/cyberchekuthan">AMRU-SER</a> to make it public
+Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to make it public
     <br>
        | © |
         Reserved |
@@ -39,11 +39,9 @@ Project created by <a href="https://github.com/cyberchekuthan">AMRU-SER</a> to m
 
   ### Simple Method
   
-[![Deploy](https://i.imgur.com/Jh74sBF.jpeg)](https://youtu.be/x47g62HcsWc)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AMRUSIR/AMRU-SER.git)
 
-## https://heroku.com/deploy?template= (Fork Link)
 
-SIMPLE BGM BOT ONLY!
 
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
