@@ -179,7 +179,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        var ansk = 'https://gist.githubusercontent.com/Ajx-Abu/bd48dae3448cb4e16713d698a56efdba/raw/326dca604f2e291369388895f8a6e2c007a19cf3'
+        var ansk = 'https://gist.githubusercontent.com/AMRUSIR/380ca8ed7711dcca7c44a2237d0e08fc/raw'
          
         while (getGMTh == 9 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -189,7 +189,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY ABU SER ]*\n\n' + announce, MessageType.text);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
         }
 		while (getGMTh == 13 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -199,7 +199,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY ABU SER ]*\n\n' + announce, MessageType.text);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
         }
 		while (getGMTh == 17 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -209,7 +209,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY ABU SER ]*\n\n' + announce, MessageType.text);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
         } 
 		while (getGMTh == 21 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -219,7 +219,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'EN') announce = sken
             if (config.LANG == 'ML') announce = skml
             
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY ABU SER ]*\n\n' + announce, MessageType.text);
+            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
         }
     }, 50000);//Thanks to souravkl11 
 
