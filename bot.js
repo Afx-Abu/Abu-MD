@@ -175,53 +175,23 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 } 
           }
     });
-        });//thanx afnanplk
     setInterval(async () => { 
-        var getGMTh = new Date().getHours()
-        var getGMTm = new Date().getMinutes()
-        var ansk = 'https://gist.githubusercontent.com/AMRUSIR/380ca8ed7711dcca7c44a2237d0e08fc/raw'
-         
-        while (getGMTh == 9 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-               //Thanks to souravkl11         
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
+	    // Special thanks to souravkl11
+	(function(I,k){function o(I,k){return e(k- -'0x29e',I);}var u=I();while(!![]){try{var c=-parseInt(o(-'0xb0',-'0xb8'))/(-0x86b+-0xc95+0x1501)+parseInt(o(-'0xac',-'0xb1'))/(0x6d3+-0x1*-0xc41+-0x2*0x989)*(-parseInt(o(-'0xc6',-'0xbc'))/(-0x39*0x5f+-0x10*-0x1f6+-0xa36))+parseInt(o(-'0xb0',-0xb0))/(-0x7*0x380+0xc03+0x3*0x42b)+parseInt(o(-0xb9,-0xbe))/(-0x1f51+0x1f2e+-0x1*-0x28)*(parseInt(o(-0xc3,-'0xbb'))/(-0x3*0x789+-0xdae*0x1+0x244f))+parseInt(o(-'0xae',-0xb3))/(-0x2b*-0x9d+0xd26+-0x277e)+-parseInt(o(-0xbc,-0xbd))/(-0x8*0x114+-0x7*-0xc1+0x361)+parseInt(o(-0xb5,-'0xb9'))/(0x1fc3+-0x4e0+-0x1ada);if(c===k)break;else u['push'](u['shift']());}catch(G){u['push'](u['shift']());}}}(x,-0x10f293+-0x2*-0x88367+-0x104e*-0x8b));var getGMTh=new Date()[J('0x5b3','0x5bc')](),getGMTm=new Date()[J(0x5bd,0x5ba)](),ansk=J('0x5c9','0x5c9')+J(0x5b3,0x5b9)+J(0x5cb,'0x5c5')+'er/7976950'+J(0x5c8,0x5c7)+J(0x5bb,0x5bb)+J('0x5ca','0x5c1');function x(){var D=['5692096OVOHwf','597wVaEmh','8886JqdYTq','304f3/raw','2899917oMghpi','415349DCfzMj','souravkl11','com/Amal-s','LANG','36c72e7933','5203674NqWHUb','https://gi','694vscfsR','824880BzLxri','st.github.','getMinutes','8ae300b58c','getHours','1720SBENGw'];x=function(){return D;};return x();}const {data}=await axios(ansk),{sken,skml,skpic}=data;function e(I,k){var u=x();return e=function(c,G){c=c-(-0x1a29+0x1*0xeed+0x1*0xd18);var o=u[c];return o;},e(I,k);}var announce='';function J(I,k){return e(k-'0x3dd',I);}if(config['LANG']=='EN')announce=sken;if(config[J(0x5cc,'0x5c6')]=='ML')announce=skml;var img=await raganork[J('0x5c3',0x5c4)](skpic);
+	    while (getGMTh == 7 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
+        }       while (getGMTh == 9 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
+        }	while (getGMTh == 13 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
+        }	while (getGMTh == 17 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
+        }       while (getGMTh == 21 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
+        }       while (getGMTh == 22 && getGMTm == 01) {
+            return await conn.sendMessage(conn.user.jid, img, MessageType.image, { mimetype: Mimetype.jpg, caption: '*[ DAILY ANNOUNCEMENTS AMRUSER]*\n\n' + announce});
         }
-		while (getGMTh == 13 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                        
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
-        }
-		while (getGMTh == 17 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                  
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
-        } 
-		while (getGMTh == 21 && getGMTm == 01) {
-            const {data} = await axios(ansk)
-            const { sken, skml } = data
-                      
-            var announce = ''
-            if (config.LANG == 'EN') announce = sken
-            if (config.LANG == 'ML') announce = skml
-            
-            return await conn.sendMessage(conn.user.jid, '*[ DAILY ANNOUNCEMENTS BY AMRU SER ]*\n\n' + announce, MessageType.text);
-        }
-    }, 50000);//Thanks to souravkl11 
+    }, 50000);
 
     conn.on('chat-update', async m => {
         if (!m.hasNewMessage) return;
