@@ -1,20 +1,24 @@
 {
-    "name": "Sana-Mwol",
-    "description": "Sana is the Modified Version of WhatsAsena, Made By @aju with Baileys.",
-    "logo": "https://i.imgur.com/2bWHUWI.jpg",
-    "keywords": ["whatsapp", "userbot", "Abu", "WhatsAsena", "ser", "bot", "ai"],
-    "repository": "https://github.com/AMRUSIR/AMRU_SER-V2",
-    "website":   "https://github.com/Afx-Abu/Sana-Mwol",
-    "success_url": "https://github.com/Afx-Abu/Sana-Mwol",
+    "name": "AMRUSER ",
+    "description": "AMRUSER is the Modified Version of WhatsAsena, Made By @wvfx-AMRU with Baileys.",
+    "logo": "https://i.imgur.com/CtaexU3.jpeg",
+    "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
+    "repository": "https://github.com/AMRUSIR/AMRUSER",
+    "website":   "https://github.com/farhan-dqz/Julie-Mwol",
+    "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
     "stack": "container",
     "env": {
-        "SANA_SESSION": {
-            "description": "Type here yours Abu Session.",
+        "AMRUSER_CODE": {
+            "description": "Type the code when you got by scanning QR through WhatsApp.",
             "required": true
         },
         "SUDO": {
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 91xxxxxxxxx,0",
             "required": false
+        },
+         "YT_PASSWORD": {
+            "description": "PASSWORD SMAL leter. amrus ENNUTHABE ADIKKANAM ILLEL ERROR VARUM .",
+            "required": true
         },
         "LANGUAGE": {
             "description": "Bot language.English => en",
@@ -26,11 +30,6 @@
             "required": false,
             "value": "true"
         },
-        "OWNER_NAME": {
-            "description": "Fill your name in here. it will show your name in .owner command reply",
-            "required": false,
-            "value": "💖ᴀʙᴜ sᴇʀ💖"
-        },
         "AUTO_STICKER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
@@ -39,29 +38,34 @@
         "LG_LOGO": {
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
-            "value": "https://i.imgur.com/2bWHUWI.jpg"
+            "value": "https://i.imgur.com/snKWQib.jpg"
         },
         "LOGO_NAME": {
             "description": "Set the logo list name",
             "required": true,
-            "value": "◄━⦁⦁💖︎𝙸𝚃𝚉 𝙼𝙴 𝚂𝙰𝙽𝙰 𝙼𝚆𝙾𝙻💖⦁⦁━►︎"
+            "value": "AMRU"
         },
-        "TALKING_SANA": {
-            "description": " Turn your account into a chatbot!",
+        "ALIVE_BUTTON": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "AMRUSER/AMRU"
+        },
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
             "required": true,
             "value": "false"
         },
-        "GROUP_LINK": {
-            "description": "Enter Your Group Link",
-            "required": true,
-            "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
+        "WELCOME": {
+            "description": "You can select welcome as gif/pp",
+            "required": false,
+            "value": "pp"
         },
         "WEL_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
             "value": "false"
         },
-        "BYE_GIF": {
+        "GIF_BYE": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
             "value": "false"
@@ -71,8 +75,32 @@
             "required": true,
             "value": "false"
         },
+        "FAKE_REMOVE": {
+            "description": "Fake number removing.",
+            "required": true,
+            "value": "false"
+        },
+        "C_CODE": {
+            "description": "Fake number not  removing country code.",
+            "required": true,
+            "value": "91"
+        },
+        "TAG_REPLY": {
+            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
+            "required": false          
+        },
+        "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by SAIDALI",
+            "required": false,
+            "value": "39999600"
+        },
         "AUTO_BİO": {
             "description": " Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"        
+        },
+         "BAD_WORDS": {
+            "description": "enter the word you dont allow in your group ",
             "required": true,
             "value": "false"
         },
@@ -81,15 +109,15 @@
             "required": true,
             "value": "^[.!;]"
         },
-        "FULL_EVA": {
-            "description": "Turn your account into a chatbot!",
+        "CHAT_BOT": {
+            "description": "Turn your account into a chatbot! .amruser on/off",
             "required": true,
             "value": "false"
         },
-        "NO_LOG": {
+        "FIX_ERROR": {
             "description": " Set true if you don't want to see error log.",
-            "required": true,
-            "value": "false"
+            "required": false,
+            "value": "on"
         },
         "SEND_READ": {
             "description": "Write true if you want to throw seen.",
@@ -99,7 +127,7 @@
         "ALL_CAPTION": {
             "description": "Caption for images and videos generated by pinky bot",
             "required": false,
-            "value": "❤𝙼𝙰𝙳𝙴 𝙱𝚈 𝚂𝙰𝙽𝙰 𝙼𝚆𝙾𝙻️💙"
+            "value": "MADE BY AMRUSER"
         },
         "HEROKU": {
             "description": "If it is running in Heroku, type true.",
@@ -118,7 +146,12 @@
         "TAG_HEADER": {
             "description": "Heading when taging all",
             "required": false,
-            "value": "machanmare.."
+            "value": "hear me friends"
+        },
+        "CMD_LIST": {
+            "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
+            "required": true,
+            "value": "siya/💙/🌟/🥀/🐾"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
@@ -140,27 +173,13 @@
             "required": false,
             "value": "default"
         },
-        "NUMBER": {
-            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
-            "required": false,
-            "value": "917025994178"
-        },
-        "DEPLOYER": {
-            "description": "enter your name here",
-            "required": false
-        },
-        "BGM_DURATION": {
-            "description": "FUNY BGM DURATION  codded by SAIDALI",
-            "required": false,
-            "value": "39999600"
-        },
         "BOT_NAME": {
             "description": "heading for .list command reply",
-            "required": false,
-            "value": "🦋 𝚂𝙰𝙽𝙰 𝙼𝚆𝙾𝙻 🦋"
+            "required": true,
+            "value": "༺═══❃AMRUSER❃═══༻"
         },
         "WORK_TYPE": {
-            "description": "Sana Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "Amruser Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
@@ -173,24 +192,33 @@
             "required": true,
             "value": "false"
         },
+        "OWNER_NAME": {
+            "description": "reply for .owner ! give your details, Use => default, to change back.",
+            "required": false,
+            "value": "AMRU"
+        },
+        "OWNER_NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "wa.me/917025631103"
+        },
+        "NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "wa.me/917025631103"
+        },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
             "required": false
         },
-        "ALIVE_BUTTON": {
-            "description": "Customize Alive Button ",
-            "required": true,
-            "value": "ᴇɴɢᴀɴᴇʏᴜɴᴅ \n ᴀʙᴜ sᴇʀ🌝"
-        },
-        "ALIVE_BUTTON2": {
-            "description": "Customize Alive Button ",
-            "required": true,
-            "value": "ᴘᴏᴡᴇʀᴇᴇsʜ🤩"
-        },
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```I Am Alive !!!\n Njan engttum poytilla ivde ind 😁 \n created by Abu```\n\n```Type``` *.help* ```for commands```"
+            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands  {pp}```"
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
@@ -200,12 +228,12 @@
         "SONGD": {
             "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
             "required": true,
-            "value": "*♡︎..sᴀɴᴀ..ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ..♡︎*"
+            "value": "*Downloading your song*"
         },
         "SONGU": {
             "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
             "required": true,
-            "value": "*♡︎..ᴜᴘʟᴏᴀᴅɪɴɢ..ᴜsᴇ..ʜᴇᴅsᴇᴛ..ғᴏʀ..ʙᴇᴛᴇʀ..☏︎*"
+            "value": "*Feel the song*"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
@@ -215,7 +243,7 @@
         "KICKME_MESSAGE": {
             "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "default"      
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
