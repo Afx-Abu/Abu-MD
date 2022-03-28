@@ -29,6 +29,7 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
+    ABU: process.env.AUDIO_CAPTION === undefined ? '[AMRU SER]\n INSTA: DRON AMRU' : process.env.AUDIO_CAPTION,
     PHONE: process.env.NUMBER === undefined ? '+917025631103' : process.env.NUMBER,   
     OA_NAME: process.env.DEPLOYER === undefined ? 'Amruser' : process.env.DEPLOYER,
     ALL: process.env.ALL_CAPTION === undefined ? 'Made By AMERU_SER' : process.env.ALL_CAPTION,
