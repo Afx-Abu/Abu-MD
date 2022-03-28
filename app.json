@@ -119,6 +119,11 @@
             "required": false,
             "value": "on"
         },
+        "AUDIO_CAPTION": {
+            "description": " Set true if you don't want to see error log.",
+            "required": false,
+            "value": "[AMRU SER]\n INSTA: DRON_AMRU"
+        },
         "SEND_READ": {
             "description": "Write true if you want to throw seen.",
             "required": true,
