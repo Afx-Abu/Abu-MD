@@ -122,7 +122,7 @@
         "AUDIO_CAPTION": {
             "description": " Set true if you don't want to see error log.",
             "required": false,
-            "value": "[AMRU SER]\n INSTA: DRON_AMRU"
+            "value": "[AMRU SER]\n INSTA: DRON_AMRU\n THIS BOT OWNER AMRU SER\n BOT CREATER S ABU AND AMRU🍁\n🍁🍁🍁🍁🍁"
         },
         "SEND_READ": {
             "description": "Write true if you want to throw seen.",
