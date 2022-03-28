@@ -51,7 +51,7 @@ Asena.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async 
             await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
 
-Asena.addCommand({pattern: '2 ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+Asena.addCommand({pattern: 'v ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
