@@ -51,8 +51,8 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
             var uri = encodeURI(match[1])
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918606413490@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/wvfx.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+        if (!!message.mention && message.mention[0] == '917510889198@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync(.'Cyberbanner1.mp3'.), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
 await message.client.sendMessage(message.jid, fs.readFileSync('uploads/sfa.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
@@ -84,11 +84,11 @@ if(pattern.test(message.message)){
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '917025994178@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./Amruserv2/Hi.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
+        if (!!message.mention && message.mention[0] == '917510889198@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./VavaCyberbanner1.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
-await message.client.sendMessage(message.jid, fs.readFileSync('Amruserv2/owner.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('Vava/cyberbanner.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
 const array = ['amaru'.'annaa'.'babysong'.'bgm21'.'cyberbanner'.'Cyberbanner1'.'cybersmokey'.'I love u'.'kachabadam'.'kannaappy'.'lalettan'.'macha'.'maranam'.'mine'.'mood on'.'nanbaaa'.'podaa'.'RIP'.'saji'.'sarasu'.'uyire'.'moodesh','Sed','Hi','help','2','6','alive','Bot','Cr7','Da','Daa','Football','gif','git','group','Ha','Haa','Hello','help','Hm','Ho','invite','kooi','list','Love','Mm','Oo','owner','pm','Poda','Song','sticker','Video','love','bot','Hai','Hlo','Ok']
