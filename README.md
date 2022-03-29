@@ -3,7 +3,7 @@
 <img src=_CYBERBANNER_BOT.jpg>
 </p>
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=WELCOME+TO+Cyberbanner +WA+BOT+REPO;CREATED+BY+AMRU+SIR;THIS+IS+A+USERBOT+PRIVATE+AND+PUBLIC+BOT;WITH+MORE+FEATHERS)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=WELCOME+TO+Cyberbanner+WA+BOT+REPO;CREATED+BY+AMRU+SIR;THIS+IS+A+USERBOT+PRIVATE+AND+PUBLIC+BOT;WITH+MORE+FEATHERS)](https://git.io/typing-svg)
 
  </a>
 </p>
@@ -29,7 +29,7 @@
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/Cyberbanner -AMRUSER">Vava</a> to make it public
+Project created by <a href="https://github.com/Cyberbanner-AMRUSER">Vava</a> to make it public
     <br>
        | © |
         Reserved |
@@ -81,21 +81,21 @@ $ node julie.js
 <a href="https://github.com/Cyberbanner/followers">
 <img src="https://img.shields.io/github/repo-size/cyberchekuthan/Kaztroserv1_v2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
-<a href="https://github.com/Cyberbanner /followers"
+<a href="https://github.com/Cyberbanner/followers"
 <img title="Followers" src="https://img.shields.io/github/followers/Aj-fx?color=blue&style=flat-square"></a>
-<a href="https://github.com/Cyberbanner /Vava/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Cyberbanner /Vava?color=blue&style=flat-square"></a>
-<a href="https://github.com/Cyberbanner /Vava/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Cyberbanner /Vava?color=blue&style=flat-square"></a>
-<a href="https://github.com/Cyberbanner /Vava/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Cyberbanner /Vava?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner/Vava/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Cyberbanner/Vava?color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner/Vava/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Cyberbanner/Vava?color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner/Vava/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Cyberbanner/Vava?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 ## 📢 Guide
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/DnHJu25Ccss7zn72nPhL8z)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/HuRZ1cwiwda6IyOLCNx4bM)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Cyberbanner &repo=Vava&theme=nightowl)](https://github.com/Cyberbanner /Vava)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Cyberbanner&repo=Vava&theme=nightowl)](https://github.com/Cyberbanner/Vava)
   </div>
     
 ### ⚠ Warning ⚠
@@ -104,14 +104,14 @@ Click WA logo to Join Support Group 👇
 By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
 
 ```
-**[![Vava](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](http://wa.me/917025631103?text=Can%20you%20help%20bro)**
+**[![Vava](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](http://wa.me/917510889198?text=Can%20you%20help%20bro)**
 
 ## Developers
   <div align="center">
     
-  [![Vava](https://github.com/Cyberbanner.png?size=100)](https://github.com/Cyberbanner ) | [![Ajx-Abu](https://github.com/Ajx-Abu.png?size=100)](https://github.com/Ajx-Abu) 
+  [![Vava](https://github.com/Cyberbanner.png?size=100)](https://github.com/Cyberbanner) | [![Ajx-Abu](https://github.com/Ajx-Abu.png?size=100)](https://github.com/Ajx-Abu) 
 ----|----|----|----
-[Vava](https://github.com/Cyberbanner ) | [Ajx-Abu](https://github.com/Ajx-Abu)
+[Vava](https://github.com/Cyberbanner) | [Ajx-Abu](https://github.com/Ajx-Abu)
 Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
   </div>
     
