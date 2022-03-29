@@ -51,7 +51,7 @@ Project created by <a href="https://github.com/Cyberbanner -AMRUSER">Vava</a> to
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/Vava-QR?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
   
 ### The Hard Method
 ```js
