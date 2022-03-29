@@ -1,9 +1,9 @@
 <div align="center">
   <p align="center">
-<img src=https://i.imgur.com/Q8UeA57.png>
+<img src=_CYBERBANNER_BOT.jpg>
 </p>
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=WELCOME+TO+AMRUSIR+WA+BOT+REPO;CREATED+BY+AMRU+SIR;THIS+IS+A+USERBOT+PRIVATE+AND+PUBLIC+BOT;WITH+MORE+FEATHERS)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=WELCOME+TO+Cyberbanner +WA+BOT+REPO;CREATED+BY+AMRU+SIR;THIS+IS+A+USERBOT+PRIVATE+AND+PUBLIC+BOT;WITH+MORE+FEATHERS)](https://git.io/typing-svg)
 
  </a>
 </p>
@@ -17,19 +17,19 @@
 
 <div align="center">
   <p align="center">
-<img src=https://i.imgur.com/CtaexU3.jpeg>
+<img src=_CYBERBANNER_BOT_1.jpg>
 </p>
 
-<img src=https://i.ibb.co/s1CSFK7/ae6572d653ee04f78fc986bddd89d5b3.png>
+<img src=_CYBERBANNER_BOT.jpg>
 </p>
 
 
   <p align="center">
-<a href="https:"><img title="Author" src="https://img.shields.io/badge/Author--Amruthesh/AMRU-SER?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https:"><img title="Author" src="https://img.shields.io/badge/Author--Amruthesh/Vava?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to make it public
+Project created by <a href="https://github.com/Cyberbanner -AMRUSER">Vava</a> to make it public
     <br>
        | © |
         Reserved |
@@ -46,20 +46,20 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AMRUSIR/AMRU-SER.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Cyberbanner/Vava.git)
 
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/Vava-QR?v=1)
   
 ### The Hard Method
 ```js
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/AMRUSIR/AMRU-SER
-$ cd AMRU-ser
+$ git clone https://github.com/Cyberbanner/Vava
+$ cd Vava
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node julie.js
@@ -67,8 +67,8 @@ $ node julie.js
       
 ```js
 SETUP
-$ git clone https://github.com/AMRUSIR/AMRU-SER
-$ cd AMRU-SER
+$ git clone https://github.com/Cyberbanner/Vava
+$ cd Vava
 $ npm i
 $ node julie.js
 ```
@@ -76,16 +76,16 @@ $ node julie.js
 ----
 
   <p align="center">
-  <a href="https://github.com/AMRUSIR/AMRU-SER">
+  <a href="https://github.com/Cyberbanner/Vava">
     
-<a href="https://github.com/AMRUSIR/followers">
+<a href="https://github.com/Cyberbanner/followers">
 <img src="https://img.shields.io/github/repo-size/cyberchekuthan/Kaztroserv1_v2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
-<a href="https://github.com/AMRUSIR/followers"
+<a href="https://github.com/Cyberbanner /followers"
 <img title="Followers" src="https://img.shields.io/github/followers/Aj-fx?color=blue&style=flat-square"></a>
-<a href="https://github.com/AMRUSIR/AMRU-SER/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/AMRUSIR/AMRU-SER?color=blue&style=flat-square"></a>
-<a href="https://github.com/AMRUSIR/AMRU-SER/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AMRUSIR/AMRU-SER?color=blue&style=flat-square"></a>
-<a href="https://github.com/AMRUSIR/AMRU-SER/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/AMRUSIR/AMRU-SER?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner /Vava/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Cyberbanner /Vava?color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner /Vava/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Cyberbanner /Vava?color=blue&style=flat-square"></a>
+<a href="https://github.com/Cyberbanner /Vava/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Cyberbanner /Vava?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 ## 📢 Guide
@@ -95,7 +95,7 @@ Click WA logo to Join Support Group 👇
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/DnHJu25Ccss7zn72nPhL8z)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=AMRUSIR&repo=AMRU-ser&theme=nightowl)](https://github.com/AMRUSIR/AMRU-SER)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Cyberbanner &repo=Vava&theme=nightowl)](https://github.com/Cyberbanner /Vava)
   </div>
     
 ### ⚠ Warning ⚠
@@ -104,14 +104,14 @@ Click WA logo to Join Support Group 👇
 By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
 
 ```
-**[![AMRU-SER](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](http://wa.me/917025631103?text=Can%20you%20help%20bro)**
+**[![Vava](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](http://wa.me/917025631103?text=Can%20you%20help%20bro)**
 
 ## Developers
   <div align="center">
     
-  [![AMRU-SER](https://github.com/AMRUSIR.png?size=100)](https://github.com/AMRUSIR) | [![Ajx-Abu](https://github.com/Ajx-Abu.png?size=100)](https://github.com/Ajx-Abu) 
+  [![Vava](https://github.com/Cyberbanner.png?size=100)](https://github.com/Cyberbanner ) | [![Ajx-Abu](https://github.com/Ajx-Abu.png?size=100)](https://github.com/Ajx-Abu) 
 ----|----|----|----
-[AMRU-SER](https://github.com/AMRUSIR) | [Ajx-Abu](https://github.com/Ajx-Abu)
+[Vava](https://github.com/Cyberbanner ) | [Ajx-Abu](https://github.com/Ajx-Abu)
 Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
   </div>
     
