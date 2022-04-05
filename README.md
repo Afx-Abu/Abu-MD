@@ -53,7 +53,7 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
   
-1. Click [SCAN](https://replit.com/@https://replit.com/@ABUOP1/AMRU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
+1. Click [SCAN](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
 2. You will get a long text that needs after 4th step (AMRU_QR_CODE).
 3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
 4. Click [FORK](https://github.com/AMRUSIR/AMRU-SER/fork) 
