@@ -1,0 +1,1 @@
+var anything = new RegExp(' ')
