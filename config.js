@@ -34,6 +34,8 @@ module.exports = {
     OA_NAME: process.env.DEPLOYER === undefined ? 'Amruser' : process.env.DEPLOYER,
     ALL: process.env.ALL_CAPTION === undefined ? 'Made By AMERU_SER' : process.env.ALL_CAPTION,
     LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/1986d89402b68b4f4aeca.jpg' : process.env.LG_LOGO,
+    ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'sᴇᴅ' : process.env.ALIVEBUTTON,
+    ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
     LOGO_NAME: process.env.LOGO_NAME === undefined ? 'Amalser' : process.env.LOGO_NAME,
     CODE: process.env.C_CODE === undefined ? '91' : process.env.C_CODE,
     MENTION: process.env.TAG_REPLY === undefined ? '917025631103@s.whatsapp.net' : process.env.TAG_REPLY,
