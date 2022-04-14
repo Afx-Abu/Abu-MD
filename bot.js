@@ -230,6 +230,15 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         if (config.NO_ONLINE) {
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
+      
+        } else if (config.BOT_PRESENCE == 'online') {
+            await conn.updatePresence(msg.key.remoteJid, Presence.available);
+        
+        } else if (config.BOT_PRESENCE == 'typing') {
+            await conn.updatePresence(msg.key.remoteJid, Presence.composing);
+        
+        } else if (config.BOT_PRESENCE == 'recording') {
+            await conn.updatePresence(msg.key.remoteJid, Presence.recording);
         }
 
       // Thanks to farhan dqz, souravl11, afnanplk
