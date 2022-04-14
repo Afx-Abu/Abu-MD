@@ -39,6 +39,11 @@
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
             "value": "https://i.imgur.com/snKWQib.jpg"
+       },
+        "BOT_PRESENCE": {
+            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+            "required": false,
+            "value": "online"
         },
         "LOGO_NAME": {
             "description": "Set the logo list name",
