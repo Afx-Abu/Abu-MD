@@ -231,7 +231,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         if (config.NO_ONLINE) {
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
       
-        if (config.BOT_PRESENCE == 'online') {
+        } else if (config.BOT_PRESENCE == 'online') {
             await conn.updatePresence(msg.key.remoteJid, Presence.available);
         
         } else if (config.BOT_PRESENCE == 'typing') {
