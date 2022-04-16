@@ -57,7 +57,10 @@ Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to 
 2. You will get a long text that needs after 4th step (AMRU_QR_CODE).
 3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
 4. Click [FORK](https://github.com/AMRUSIR/AMRU-SER/fork) 
-5 Click the url showing below to copy deploy template https://heroku.com/deploy?template=https://github.com/AMRUSIR/AMRU-SER
+5 Click the url showing below to copy deploy template
+````
+https://heroku.com/deploy?template=https://github.com/AMRUSIR/AMRU-SER
+````
 6. Now change AMRUSIR with your github username and click ENJOY
 
 ----
