@@ -65,8 +65,8 @@ https://heroku.com/deploy?template=https://github.com/AMRUSIR/AMRU-SER
 
   
 
-## 📢 Guide
-Click WA logo to Join Support Group 👇
+## JOIN WA GRP
+👇
     <br>
 <br>
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/DnHJu25Ccss7zn72nPhL8z)
