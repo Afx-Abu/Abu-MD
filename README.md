@@ -29,24 +29,13 @@
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/AMRUSIR-AMRUSER">AMRU-SER</a> to make it public
-    <br>
-       | © |
-        Reserved |
-    <br> 
-</p>
 
-## Setup
-<div align="center"> 
-
-
-## Click Instagram logo to follow this page👇
+## Click Instagram logo to any doubt contact me👇
 
  [![ANY DOUBT REFER IT](https://i.imgur.com/OnPjBJ7.png)](https://instagram.com/its_me_dron)
 
-  ### Simple Method
+
  
-  
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
 <img src=https://i.imgur.com/LTQumgu.jpeg>
 ☝️THIS PROBLEM SOLVED 
