@@ -35,7 +35,9 @@
  [![ANY DOUBT REFER IT](https://i.imgur.com/OnPjBJ7.png)](https://instagram.com/its_me_dron)
 
 
- 
+🚫NEW WHATS APP UPDATE WILL COME QR ERROR
+ NOT SOLUTION FOUNDED🚫
+
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/AMRU-SER-QR?v=1)
 <img src=https://i.imgur.com/LTQumgu.jpeg>
 ☝️THIS PROBLEM SOLVED 
