@@ -1,5 +1,0 @@
-build:
-  docker:
-      worker: /AMRU/Dockerfile
-run:
-   worker: npm start
