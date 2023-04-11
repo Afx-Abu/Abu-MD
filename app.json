@@ -1,0 +1,93 @@
+{
+	"name": "Deploy",
+	"description": "Wa Bot.",
+	"keywords": [
+		"Abu",
+		"bot"
+	],
+	"repository": "https://github.com/Afx-Abu/Abu-MD",
+	"stack": "container",
+    "env": { 
+        "HANDLERS": {
+            "description": "Prefix of commands. Can be also false",
+            "required": true,
+            "value":".,"
+        },
+        "ANTI_LINK": {
+            "description": "Groups for antilink (JIDS)",
+            "required": false,
+            "value":""
+        },
+        "ANTILINK_ACTION": {
+            "description": "Bot will remove all link messages. Can be also false",
+            "required": true,
+            "value":"false"
+        },
+        "RMBG_KEY": {
+            "description": "bg remove",
+            "required": true,
+            "value":""
+        },
+       "HEROKU_API_KEY": {
+            "description": "For updating bot and setting vars remotely",
+            "required": true,
+            "value":""
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Exact name which you gave at the top",
+            "required": true,
+            "value":""
+        },
+        "GOODBYE_MSG": {
+            "description": "good bye ✅ ",
+            "required": true,
+            "value":"bye bye ✅"
+        },
+        "LOGS": {
+            "description": "logs send",
+            "required": true,
+            "value":"true"
+        },
+        "STICKER_DATA": {
+            "description": "Name of stickers created using bot. Can also split using ;",
+            "required": true,
+            "value":"Abu💗"
+        },
+       "BOT_INFO": {
+            "description": "Your bot menu info changing ;",
+            "required": true,
+            "value":"𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg"
+        },
+        "AUDIO_DATA": {
+            "description": "Name of audio (take) name;name;image(url)",
+            "required": true,
+            "value":"Abu MD;Abu;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
+        },
+        "MODE": {
+            "description": "Private or public",
+            "required": true,
+            "value":"public"
+        },
+        "SUDO": {
+            "description": "These numbers can control your bot. seperate with commas",
+            "required": false,
+            "value":"917025994178"
+        },
+       "SESSION_ID": {
+            "description": "Your MD session",
+            "required": true
+             
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      },
+      {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      }]
+  }
+  
+  
