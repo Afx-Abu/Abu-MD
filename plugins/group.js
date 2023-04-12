@@ -13,12 +13,12 @@ Module({
     if (!message.isGroup)
       return await message.treply("_This command is for groups_");
     match = match || message.reply_message.jid;
-    if (!match) return await message.treply("_Mention user to add");
+    if (!match) return await message.reply("_Mention user to add");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.treply("_I'm not admin_");
+    if (!isadmin) return await message.reply("_I'm not admin_");
     let jid = parsedJid(match);
     await message.add(jid);
-    return await message.treply(`@${jid[0].split("@")[0]} added`, {
+    return await message.reply(`@${jid[0].split("@")[0]} added`, {
       mentions: jid,
     });
   }
