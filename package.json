@@ -1,18 +1,19 @@
 {
-   "name": "abu-md",
+   "name": "Abu-MD",
    "version": "2.0.1",
-   "description": "Abu MD - Simple whatsapp Bot",
-   "main": "./Abu-MD/index.js",
+   "description": "Abu-MD - Simple whatsapp Bot",
+   "main": "./index.js",
    "scripts": {
     "start": "supervisor -s index.js"
    },
-   "author": "Jsl",
+   "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
       "@adiwajshing/baileys": "^4.4.0",     
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
+      "raganork-bot": "^3.0.1",
       "acrcloud": "^1.4.0",
       "abu-bot": "^2.4.0",
       "async-g-i-s": "1.0.0",
@@ -24,9 +25,11 @@
       "chalk": "^4.1.2",
       "cheerio": "^1.0.0-rc.10",
       "child_process": "^1.0.2",
+      "encodeurl": "^1.0.2",
       "form-data": "^4.0.0",
       "file-type": "^16.5.3",
       "fluent-ffmpeg": "^2.1.2",
+      "fake-useragent": "^1.0.1",
       "fs": "0.0.1-security",
       "g-i-s": "^2.1.6",
       "google-it": "^1.6.2",
@@ -39,6 +42,8 @@
       "mp3-cutter": "^1.0.6",
       "lowdb": "^2.1.0",
       "node-cron": "^3.0.0",
+      "node-id3": "^0.2.3",
+      "node-youtube-music": "^0.8.3",
       "node-fetch": "^2.6.1",
       "node-webpmux": "^3.1.0",
       "os": "^0.1.2",
@@ -69,6 +74,7 @@
       "aes256":"1.1.0",
       "express": "latest",
       "ytdl-core": "latest",
+      "youtubedl-core": "^4.11.2",
       "pastebin-js": "^1.0.6"      
    }
 }
