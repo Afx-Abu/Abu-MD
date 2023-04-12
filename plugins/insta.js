@@ -17,7 +17,7 @@ Module(
     type: "downloader",
   },
    async (message, match) => {		
-   return await sendGpt(message);
+   return await sendGpt(message,match);
 
 })
 
@@ -30,6 +30,6 @@ Module(
     type: "downloader",
   },
    async (message, match) => {		
-   return await getTts(message);
+   return await getTts(message,match);
 
 })
