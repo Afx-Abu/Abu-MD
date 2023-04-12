@@ -13,7 +13,7 @@ module.exports = {
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   SESSION_ID: (process.env.SESSION_ID || 'jsl~VAAbO3NAI1Gg+0XP4Csp4Dytx1083xu4TmhJUw==').trim(),
   LANG: process.env.LANG || "EN",
-  HANDLERS:process.env.HANDLER === "false" || process.env.HANDLER === "null"? "^": "^[.]",
+  HANDLERS:process.env.HANDLER === "false" || process.env.HANDLER === "null"? "^": "^",
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "master",
   BOT_INFO: process.env.BOT_INFO || '𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg',
