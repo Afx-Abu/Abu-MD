@@ -4,26 +4,25 @@ const { cron, saveSchedule } = require("../lib/scheduler");
 
 
 Module({
-    pattern: "add   ",
+    pattern: "add",
   fromMe: isPublic,
   desc: "Adds a person to group",
   type: "group",
 
-}, async (message, match, m) => {
+}, async async (message, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.treply("_This command is for groups_");
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply("_Mention user to add");
+    if (!match) return await message.treply("_Mention user to add");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply("_I'm not admin_");
+    if (!isadmin) return await message.treply("_I'm not admin_");
     let jid = parsedJid(match);
     await message.add(jid);
-    return await message.reply(`@${jid[0].split("@")[0]} 𝙰𝙳𝙳𝙴𝙳`, {
+    return await message.treply(`@${jid[0].split("@")[0]} added`, {
       mentions: jid,
     });
   }
 );
-
 
 
     Module({
