@@ -14,7 +14,7 @@ Module
             },
 		async (message, match) => {
                 if(!match) return await message.reply("_enter song url/name_")			
-		return await getSong(message);
+		return await getSong(message, match);
 
 })
 
