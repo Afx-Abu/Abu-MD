@@ -21,7 +21,7 @@
 > <b><s1>1.ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ ɪɴ ʜᴇʀᴏᴋᴜ. ᴄʀᴇᴀᴛᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ. </b></s1> 
 <a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-> <b><s1>2. ɴᴏᴡ ᴅᴇᴘʟᴏʏ </b></s1>
+><b><s1>2.ɴᴏᴡ ᴅᴇᴘʟᴏʏ </b></s1>
 <a href='https://hermit.adithyan.ml/deploy-heroku' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 ## ⚠ Warning ⚠
