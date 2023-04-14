@@ -17,8 +17,10 @@
 ***
 
 > <b><s1>.ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ</b></s1> 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Afx-ToxicLeo/ToxicLeo)
 
+</b></s1>1. ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ ɪɴ ʜᴇʀᴏᴋᴜ. ᴄʀᴇᴀᴛᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ.</b></s1>
+    <br>
+<a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 ## ⚠ Warning ⚠
 
