@@ -1,4 +1,5 @@
 const config = require("../config");
+const { STICKER_DATA } = require("../config");
 const { Module, isPublic, getJson, sleep, tiny, webp2mp4 } = require("../lib/");
 const { Image } = require("node-webpmux");
 const { toAudio } = require("../lib/media");
@@ -17,7 +18,7 @@ Module(
     let buff = await m.quoted.download();
     message.sendMessage(
       buff,
-      { packname: message.pushName, quoted: message },
+      { packname: config.STICKER_DATA.split(",")[0], author: config.STICKER_DATA.split(",")[1], quoted: message },
       "sticker"
     );
   }
@@ -56,7 +57,7 @@ Module(
       );
       await message.sendMessage(
         `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`,
-        { packname: message.pushName, quoted: message },
+        { packname: config.STICKER_DATA.split(",")[0], author: config.STICKER_DATA.split(",")[1], quoted: message },
         "sticker"
       );
       sleep(1500);
@@ -77,11 +78,11 @@ Module(
     if (!message.reply_message && !message.reply_message.sticker)
       return await message.reply("_Reply to sticker_");
     let buff = await m.quoted.download();
-    let [packname] = match.split(",");
+    let [packname, author] = match.split(",");
     await message.sendMessage(
       buff,
       {
-        packname: packname, quoted: message
+        packname: packname || config.STICKER_DATA.split(",")[0], author: author || config.STICKER_DATA.split(",")[1], quoted: message
       },
       "sticker"
     );
