@@ -47,7 +47,7 @@ Module(
     if (result.is_animated)
       return message.reply("_Animated stickers are not supported_");
     message.reply(
-      `*Total stickers :* ${result.stickers.length}\n*Estimated complete in:* ${
+      `*Total sticker :* ${result.stickers.length}\n*Estimated complete in:* ${
         result.stickers.length * 1.5
       } seconds`.trim()
     );
