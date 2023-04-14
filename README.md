@@ -32,5 +32,7 @@ If  you ended up spamming groups, getting reported left and right,
 and you ended up in being fight with WhatsApp
 and at the end WhatsApp Team deleted your account. DON'T BLAME US.
 
+
 <a href="https://chat.whatsapp.com/IGKecY3j1p9ANWys4QoNAs"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-black?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
 
