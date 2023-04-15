@@ -31,7 +31,7 @@ Module
             },
 		async (message, match) => {
                 if(!match) return await message.reply("_enter youthube url/name_")			
-		return await getSong(message, match);
+		return await getYts(message, match);
 
 })
 
