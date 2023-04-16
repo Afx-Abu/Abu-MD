@@ -10,7 +10,7 @@ const {
 Module
 	(
 		{
-            pattern: "song?(.*)",
+            pattern: "play?(.*)",
 	    fromMe: isPublic,
 	    desc: "downloading your YouTube song",
             type: "downloader",
