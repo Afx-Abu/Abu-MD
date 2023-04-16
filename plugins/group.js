@@ -9,7 +9,7 @@ Module({
   desc: "Adds a person to group",
   type: "group",
 
-}, async (message, match, m) => {
+},   async (message, match) => {
     if (!message.isGroup)
       return await message.reply("_This command is for groups_");
     match = match || message.reply_message.jid;
@@ -18,7 +18,7 @@ Module({
     if (!isadmin) return await message.reply("_I'm not admin_");
     let jid = parsedJid(match);
     await message.add(jid);
-    return await message.reply(`@${jid[0].split("@")[0]} 𝙰𝙳𝙳𝙴𝙳`, {
+    return await message.reply(`@${jid[0].split("@")[0]} added`, {
       mentions: jid,
     });
   }
