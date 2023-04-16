@@ -13,7 +13,7 @@
 
 > <b><s1> 3. ɴᴏᴡ ᴅᴇᴘʟᴏʏ</b></s1>
     <br>
-<a href='https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/afx_toxicleo/toxicleo-md:latest&env[SESSION_ID]&env[WORK_TYPE]=public&env[BOT_INFO]=ToxicLeo,ᴛᴏxɪᴄʟᴇᴏ,https://i.imgur.com/bk3EKWZ.jpeg,https://i.imgur.com/bk3EKWZ.jpeg&env[ANTI_LINK]&env[KOYEB_NAME]=Toxic LeoMD&env[PREFIX]=.&env[RMBG_KEY]&env[PACKNAME]=Toxic Leo&env[SUDO]=919497206865&env[BOT_NAME]=𝚃𝚘𝚡𝚒𝚡𝙻𝚎𝚘-𝙼𝙳&env[OWNER_NAME]=ToxicLeo' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>  
+<a href='https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/afx-abu/abu-md/Abu-bot:latest&env[ANTI_LINK]&env[ANTILINK_ACTION]=false&env[AUDIO_DATA]=Abu MD;Abu;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg&env[BOT_INFO]=𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg&env[GOODBYE_MSG]=bye bye ✅&env[HANDLERS]=.,&env[MODE]=public&env[RMBG_KEY]&env[SESSION_ID]&env[STICKER_DATA]=Abu💗&env[SUDO]=917025994178=Abu-bot-md&env[KOYEB_NAME]=Abu-Jsl' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>  
 ***
 ## ```Heroku```
 
