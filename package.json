@@ -64,6 +64,7 @@
       "sqlite3": "^5.0.8",
       "sequelize": "^6.13.0", 
       "simple-git": "^3.7.1",
+      "spotifydl-core": "^0.2.0",
       "util": "^0.12.4",
       "yargs": "^17.2.1",
       "yt-search": "^2.10.2",
