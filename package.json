@@ -37,7 +37,7 @@
       "google-it": "^1.6.2",
       "got": "^11.8.3",
       "human-readable": "^0.2.1",
-      "link-preview-js": "^3.0.4",
+      "link-preview-js": "^2.1.13",
       "javascript-obfuscator": "^4.0.0",
       "jimp": "^0.16.1",
       "jsdom": "^16.4.0",
