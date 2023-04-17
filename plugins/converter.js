@@ -1,5 +1,4 @@
 const config = require("../config");
-const { STICKER_DATA } = require("../config");
 const { Module, isPublic, getJson, sleep, tiny, webp2mp4 } = require("../lib/");
 const { Image } = require("node-webpmux");
 const { toAudio } = require("../lib/media");
@@ -18,7 +17,7 @@ Module(
     let buff = await m.quoted.download();
     message.sendMessage(
       buff,
-      { packname: config.STICKER_DATA.split(",")[0], author: config.STICKER_DATA.split(",")[1], quoted: message },
+      { packname: message.pushName, quoted: message },
       "sticker"
     );
   }
@@ -47,7 +46,7 @@ Module(
     if (result.is_animated)
       return message.reply("_Animated stickers are not supported_");
     message.reply(
-      `*Total sticker :* ${result.stickers.length}\n*Estimated complete in:* ${
+      `*Total stickers :* ${result.stickers.length}\n*Estimated complete in:* ${
         result.stickers.length * 1.5
       } seconds`.trim()
     );
@@ -57,7 +56,7 @@ Module(
       );
       await message.sendMessage(
         `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`,
-        { packname: config.STICKER_DATA.split(",")[0], author: config.STICKER_DATA.split(",")[1], quoted: message },
+        { packname: message.pushName, quoted: message },
         "sticker"
       );
       sleep(1500);
@@ -78,11 +77,11 @@ Module(
     if (!message.reply_message && !message.reply_message.sticker)
       return await message.reply("_Reply to sticker_");
     let buff = await m.quoted.download();
-    let [packname, author] = match.split(",");
+    let [packname] = match.split(",");
     await message.sendMessage(
       buff,
       {
-        packname: packname || config.STICKER_DATA.split(",")[0], author: author || config.STICKER_DATA.split(",")[1], quoted: message
+        packname: packname, quoted: message
       },
       "sticker"
     );
