@@ -9,7 +9,7 @@
    "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "npm:baileys-md",
+      "@adiwajshing/baileys": "5.0.0",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
@@ -54,7 +54,6 @@
       "google-tts-api": "^2.0.2",
       "path": "^0.12.7",
       "pm2": "^5.2.0",
-      "link-preview-js": "^2.1.19",
       "pg": "^8.7.3",
       "pino": "^7.0.5",
       "request": "^2.88.2",
