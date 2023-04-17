@@ -1,7 +1,7 @@
 const config = require("../config");
-const { Module, isPublic, getJson, sleep, tiny, webp2mp4 } = require("../lib/");
+const { Module, isPublic, getJson, sleep, tiny, webp2mp4, toAudio } = require("../lib/");
 const { Image } = require("node-webpmux");
-const { toAudio } = require("../lib/media");
+
 
 
 Module(
