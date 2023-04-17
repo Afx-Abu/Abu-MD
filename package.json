@@ -9,6 +9,7 @@
    "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
+      "link-preview-js": "^3.0.4",
       "@adiwajshing/baileys": "4.0.0",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
