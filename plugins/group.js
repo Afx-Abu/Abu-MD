@@ -105,7 +105,7 @@ Module({
       desc: "mute group",
       type: "group",
     
-    }, async (message, match, m) => {
+    }, async (message, match, client, m) => {
     if (!message.isGroup)
       return await message.reply("_This command is for groups_");
     if (!isAdmin(message.jid, message.user, message.client))
@@ -123,7 +123,7 @@ Module({
   desc: "unmute group",
   type: "group",
 
-}, async (message, match, m) => {
+}, async (message, client, match, m) => {
     if (!message.isGroup)
       return await message.reply("_This command is for groups_");
     if (!isAdmin(message.jid, message.user, message.client))
