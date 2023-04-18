@@ -11,7 +11,7 @@ const fs = require("fs");
 const got = require("got");
 const axios = require("axios");
 const { format } = require("util");
-var handler = Config.HANDLERS !== 'false'?Config.HANDLERS.split("")[0]:""
+var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
 const Config = require('../config');
 
 Module(
