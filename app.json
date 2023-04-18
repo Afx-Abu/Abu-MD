@@ -51,7 +51,7 @@
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"Abu💗"
+            "value":"Abu-MD,~Jasil💗"
         },
        "BOT_INFO": {
             "description": "Your bot menu info changing ;",
