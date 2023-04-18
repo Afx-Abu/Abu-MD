@@ -34,6 +34,20 @@
             "WARN_RESET": "_റീസെറ്റ് മുന്നറിയിപ്പ് നൽകുന്നു, {} വേണ്ടി അവശേഷിക്കുന്നു_ _{}_",
             "WARN_OVER": "_മാക്സ് മുന്നറിയിപ്പ് എത്തി, {} ചവിട്ടി_"
         },
+        "external_plugin": {
+            "INSTALL_DESC": "Plugins install cheyyum",
+            "NEED_URL": "Oru url venam. like, .install https://gist.git....",
+            "INVALID_URL": "Ee url invalid aanu!",
+            "INVALID_PLUGIN": "_Plugin il error und!_\n",
+            "INSTALLED": "Ee plugin install akki => {} ✅",
+            "PLUGIN_DESC": "Currently install akiya plugins kanikkum",
+            "INSTALLED_PLUGINS": "Install cheytha plugins:\n",
+            "NO_PLUGIN": "Oru plugins um install cheythittilla!",
+            "REMOVE_DESC": "Removes plugin.",
+            "NEED_PLUGIN": "Oru name thaa. like: .remove news",
+            "PLUGIN_NOT_FOUND": "Angane oru plugin nee install akiyittilla",
+            "DELETED": "{} plugin remove cheyth. Venenkil reboot cheytho, atha nallath!"
+        },
         "instagram": {
             "NEED_WORD": "ഏതെങ്കിലും ഇൻസ്റ്റാഗ്രാം അക്കൗണ്ടിന്റെ ഉപയോക്തൃനാമം നൽകുക.",
             "USAGE": ".insta <userName>",
