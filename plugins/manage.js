@@ -3,6 +3,7 @@ const git = simpleGit();
 const { Module, sendButton } = require('../lib');
 const config = require('../config');
 const { SUDO, MODE } = require('../config');
+const Config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({ token: config.HEROKU_API_KEY })
 const baseURI = '/apps/' + config.HEROKU_APP_NAME
