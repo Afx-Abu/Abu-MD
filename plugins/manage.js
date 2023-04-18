@@ -6,6 +6,8 @@ const { SUDO, MODE } = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({ token: config.HEROKU_API_KEY })
 const baseURI = '/apps/' + config.HEROKU_APP_NAME
+var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
+
 
 Module(
   {
@@ -130,8 +132,8 @@ Module(
   },
   async (message) => {
     const buttons = [
-      {buttonId: "setvar MODE:public", buttonText: {displayText: "Public"}, type: 1},
-      {buttonId: "setvar MODE:private", buttonText: {displayText: "Private"}, type: 1}
+      {buttonId: handler+"setvar MODE:public", buttonText: {displayText: "Public"}, type: 1},
+      {buttonId: handler+"setvar MODE:private", buttonText: {displayText: "Private"}, type: 1}
     ]
     await sendButton(buttons, "Mode Manager", "Current Mode : "+MODE, message)
   }
