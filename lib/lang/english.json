@@ -34,6 +34,20 @@
             "WARN_RESET": "_Reset warns, {} remaining for_ _{}_",
             "WARN_OVER": "_Max warns reached, {} Kicked_"
         },
+        "external_plugin": {
+            "INSTALL_DESC": "Installs external plugins.",
+            "NEED_URL": "_Need a URL! Ex:_ .install https://gist.git....",
+            "INVALID_URL": "_Invalid url!_",
+            "INVALID_PLUGIN": "_Error in plugin!_\n",
+            "INSTALLED": "_Installed {} ✅_",
+            "PLUGIN_DESC": "Shows the plugins that you have installed.",
+            "INSTALLED_PLUGINS": "_Total external plugins:_\n",
+            "NO_PLUGIN": "_No plugin found!_",
+            "REMOVE_DESC": "Removes plugin.",
+            "NEED_PLUGIN": "_Please give a plugin name! Ex: .remove news_",
+            "PLUGIN_NOT_FOUND": "Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.",
+            "DELETED": "_Deleted {}! Reboot to make effect_"
+        },
         "instagram": {
             "NEED_WORD": "Please enter username of any instagram account.",
             "USAGE": ".insta <userName>",
