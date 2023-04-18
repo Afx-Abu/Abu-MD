@@ -12,7 +12,7 @@
                           "UNMUTE": "_Unmuting..._",
                           "AMUTE": "_Enter time to mute_\n_Eg : amute 20:10_",
                           "AUNMUTE": "_Enter time to unmute_\n_Eg : aunmute 20:10_",
-                          "AUN_MUTE": "_Auto Unmuting..._",
+                          "AUN_MUTE": "_Auto Unmuting..._"
                          }
                         }
 }
