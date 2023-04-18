@@ -14,9 +14,9 @@ Module({
 
 }, async (message, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply("_Mention user to add");
+    if (!match) return await message.reply(Lang.ADD_USER);
     let isadmin = await isAdmin(message.jid, message.user, message.client);
     if (!isadmin) return await message.reply(Lang.NOT_ADMIN);
     let jid = parsedJid(match);
@@ -39,11 +39,11 @@ Module({
     
     }, async (message, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply("_Mention user to kick");
+    if (!match) return await message.reply(Lang.KICK_USER);
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply("_I'm not admin_");
+    if (!isadmin) return await message.reply(Lang.NOT_ADMIN);
     let jid = parsedJid(match);
     await message.kick(jid);
     return await message.reply(`@${jid[0].split("@")[0]} 𝙺𝙸𝙲𝙺𝙴𝙳`, {
@@ -63,11 +63,11 @@ Module({
     
     }, async (message, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply("_Mention user to promote_");
+    if (!match) return await message.reply(Lang.PROMOTE_USER);
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply("_I'm not admin_");
+    if (!isadmin) return await message.reply(Lang.NOT_ADMIN);
     let jid = parsedJid(match);
     await message.promote(jid);
     return await message.reply(`@${jid[0].split("@")[0]} 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙰𝚂 𝙰𝙳𝙼𝙸𝙽`, {
@@ -86,11 +86,11 @@ Module({
     
     }, async (message, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply("_Mention user to demote");
+    if (!match) return await message.reply(Lang.DEMOTE_USER);
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply("_I'm not admin_");
+    if (!isadmin) return await message.reply(Lang.NOT_ADMIN);
     let jid = parsedJid(match);
     await message.demote(jid);
     return await message.reply(`@${jid[0].split("@")[0]} 𝙳𝙴𝙼𝙾𝚃𝙴𝙳 𝙵𝚁𝙾𝙼 𝙰𝙳𝙼𝙸𝙽`, {
@@ -110,10 +110,10 @@ Module({
     
     }, async (message, match, client, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply("_I'm not admin_");
-    await message.reply("_Muting_");
+      return await message.reply(Lang.NOT_ADMIN);
+    await message.reply(Lang.MUTE);
     return await client.groupSettingUpdate(message.jid, "announcement");
   }
 );
@@ -128,10 +128,10 @@ Module({
 
 }, async (message, client, match, m) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply("_I'm not admin_");
-    await message.reply("_Unmuting_");
+      return await message.reply(Lang.NOT_ADMIN);
+    await message.reply(Lang.UNMUTE);
     return await client.groupSettingUpdate(message.jid, "not_announcement");
   }
 );
@@ -145,18 +145,18 @@ Module({
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
-    if (!match) return message.reply("_Enter time to mute_\nEg : amute 20:10");
+      return await message.reply(Lang.IS_GROUP);
+    if (!match) return message.reply(Lang.AMUTE);
 
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply("_I'm not admin_");
+      return await message.reply(Lang.NOT_ADMIN);
     message.reply(`_Group will mute at ${match}_`);
     await saveSchedule(message.jid, match, async () => {
-      await message.reply("_Muting_");
+      await message.reply(Lang.MUTE);
       return await client.groupSettingUpdate(message.jid, "announcement");
     });
     return cron(match, async () => {
-      await message.reply("_Muting_");
+      await message.reply(Lang.MUTE);
       return await client.groupSettingUpdate(message.jid, "announcement");
     });
   }
@@ -171,42 +171,21 @@ Module({
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
+      return await message.reply(Lang.IS_GROUP);
     if (!match)
-      return message.reply("_Enter time to unmute_\nEg : aunmute 20:10");
+      return message.reply(Lang.AUNMUTE);
 
     if (!isAdmin(message.jid, message.user, message.client))
       return await message.reply("_I'm not admin_");
     message.reply(`_Group will unmute at ${match}_`);
     await saveSchedule(message.jid, match, async () => {
-      await message.reply("_Auto Unmuting_");
+      await message.reply(Lang.AUN_MUTE);
       return await client.groupSettingUpdate(message.jid, "not_announcement");
     });
     return cron(match, async () => {
-      await message.reply("_Auto Unmuting_");
+      await message.reply(Lang.AUN_MUTE);
       return await client.groupSettingUpdate(message.jid, "not_announcement");
     });
-  }
-);
-
-
-Module({
-    pattern: "gjid",
-    fromMe: true,
-    desc: "gets jid of all group members",
-    type: "group",
-  },
-  async (message, match, m, client) => {
-    if (!message.isGroup)
-      return await message.reply("_This command is for groups_");
-    let { participants } = await client.groupMetadata(message.jid);
-    let participant = participants.map((u) => u.id);
-    let str = "╭──〔 *𝙶𝚁𝙾𝚄𝙿 𝙹𝙸𝙳𝚂* 〕\n";
-    participant.forEach((result) => {
-      str += `├ *${result}*\n`;
-    });
-    str += `╰──────────────`;
-    message.reply(str);
   }
 );
 
