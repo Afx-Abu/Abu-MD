@@ -9,7 +9,7 @@
    "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "4.4.0",
+      "@adiwajshing/baileys": "github:DarkWinzo/Baileys",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
