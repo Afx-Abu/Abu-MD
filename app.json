@@ -23,12 +23,17 @@
             "required": true,
             "value":"false"
         },
+        "LANGUAGE": {
+            "description": "Add language that if you want. Supporting languages:english,hindi,malayalam",
+            "required": true,
+            "value": "english"
+        },
         "RMBG_KEY": {
             "description": "bg remove",
             "required": true,
             "value":""
         },
-       "HEROKU_API_KEY": {
+        "HEROKU_API_KEY": {
             "description": "For updating bot and setting vars remotely",
             "required": true,
             "value":""
