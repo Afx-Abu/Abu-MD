@@ -1,7 +1,7 @@
 const { Module, isPublic } = require("../lib/");
 const { isAdmin, parsedJid, isUrl } = require("../lib");
 const { cron, saveSchedule } = require("../lib/scheduler");
-
+let Lang = getString('group');
 
 Module({
     pattern: "add",
@@ -15,7 +15,7 @@ Module({
     match = match || message.reply_message.jid;
     if (!match) return await message.reply("_Mention user to add");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply("_I'm not admin_");
+    if (!isadmin) return await message.reply(Lang.NOT_ADMIN);
     let jid = parsedJid(match);
     await message.add(jid);
     return await message.reply(`@${jid[0].split("@")[0]} 𝙰𝙳𝙳𝙴𝙳`, {
