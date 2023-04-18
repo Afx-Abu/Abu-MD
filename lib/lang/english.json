@@ -1,0 +1,54 @@
+{
+    "STRINGS": {
+        "group": {
+            "KICK_DESC": "Kicks participants from group.",
+            "NOT_ADMIN": "I'm not an admin",
+            "ISADMIN": "Participant is an admin",
+            "KICKED": "_Kicked!_",
+            "NEED_USER": "_Need a participant_",
+            "ADD_DESC": "Adds members to the group.",
+            "ADDED": "_added to the group_",
+            "ALREADY_PROMOTED": "_Person is already an admin_",
+            "PROMOTED": "_is now as admin!_",
+            "PROMOTE_DESC": "Makes any person an admin.",
+            "LEAVE_DESC": "Leaves from group.",
+            "DEMOTE_DESC": "Removes the person from admin position.",
+            "ALREADY_NOT_ADMIN": "Person is not an admin to demote",
+            "DEMOTED": " _is no longer an admin!_",
+            "MUTE_DESC": "Mutes group chat. Only the admins can send messages.",
+            "MUTED": "_Group muted!_",
+            "UNMUTE_DESC": "Unmutes the group chat allowing all participants to send messages",
+            "UNMUTED": "_Group unmuted!_",
+            "REVOKE_DESC": "Resets the group's invitation link.",
+            "REVOKED": "_Group link reset!_",
+            "TAGALL_DESC": "Tags all members of the group.",
+            "INVITE_DESC": "Provides the group's invitation link.",
+            "INVITE": "_Invite link:_",
+            "JID_DESC": "Gives jid of chat/user.",
+            "GROUP_COMMAND": "_Group command!_",
+            "WARN_DESC": "Gives warning. Kicks member if limit is over",
+            "WARNING": "     ⚠️ WARNING  ⚠️",
+            "USER": "*User:* ```{}```",
+            "REMAINING": "*Remaining:* ```{}```",
+            "REASON": "*Reason:* ```{}```",
+            "WARN_RESET": "_Reset warns, {} remaining for_ _{}_",
+            "WARN_OVER": "_Max warns reached, {} Kicked_"
+        },
+        "instagram": {
+            "NEED_WORD": "Please enter username of any instagram account.",
+            "USAGE": ".insta <userName>",
+            "DESC": "Fetches user informations from instagram",
+            "LOADING": "Fetching user data.. please wait.",
+            "USERNAME": "Username",
+            "NAME": "Name",
+            "BIO": "Biography",
+            "FOLLOWERS": "Followers",
+            "FOLLOWS": "Follows",
+            "ACCOUNT": "Account privacy",
+            "PUBLIC": "Public",
+            "HIDDEN": "Hidden",
+            "NOT_FOUND": "User not found: "
+        }
+       
+    }
+}
