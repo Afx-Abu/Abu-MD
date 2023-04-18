@@ -1,21 +1,54 @@
 {
- "STRINGS": {
-         "group": {
-                          "IS_GROUP": "_This feature will only work in groups!._",
-                          "NOT_ADMIN": "_I'm not an admin!_",
-                          "IS_ADMIN": "_This user is an admin!._",
-                          "ADD_USER": "_Give me a number to add!._",
-                          "KICK_USER": "_Give me a user to remove from the group._",
-                          "PROMOTE_USER": "_Give me a user to promote as admin._",
-                          "DEMOTE_USER": "_Give me a user to demote as member._",
-                          "MUTE": "_Muting..._",
-                          "UNMUTE": "_Unmuting..._",
-                          "AMUTE": "_Enter time to mute. Eg : amute 20:10_",
-                          "AUNMUTE": "_Enter time to unmute. Eg : aunmute 20:10_",
-                          "AUN_MUTE": "_Auto Unmuting..._"
-                    },
-           "instgram": {
-                          "NEED_URL": "_Need instgram url...!_"
-                       }
-                }
+    "STRINGS": {
+        "group": {
+            "IS_GROUP": "_This feature will only work in groups!._",
+            "NOT_ADMIN": "_I'm not an admin_",
+            "IS_ADMIN": "_This user is admin!._",
+            "ADD_USER": "_Give a number to add!._",
+            "KICK_USER": "_Give a user to remove from the group._",
+            "PROMOTE_USER": "_Give a user to promote as admin._",
+            "DEMOTE_USER": "_Give a user to demote as member._",
+            "MUTE": "_Muting..._",
+            "UNMUTE": "_Unmuting..._",
+            "AMUTE": "_Enter time to mute._",
+            "AUNMUTE": "_Enter time to unmute._",
+            "AUN_MUTE": "_Auto Unmuting..._",
+            "ALREADY_NOT_ADMIN": "Person is not an admin to demote",
+            "DEMOTED": " _is no longer an admin!_",
+            "MUTE_DESC": "Mutes group chat. Only the admins can send messages.",
+            "MUTED": "_Group muted!_",
+            "UNMUTE_DESC": "Unmutes the group chat allowing all participants to send messages",
+            "UNMUTED": "_Group unmuted!_",
+            "REVOKE_DESC": "Resets the group's invitation link.",
+            "REVOKED": "_Group link reset!_",
+            "TAGALL_DESC": "Tags all members of the group.",
+            "INVITE_DESC": "Provides the group's invitation link.",
+            "INVITE": "_Invite link:_",
+            "JID_DESC": "Gives jid of chat/user.",
+            "GROUP_COMMAND": "_Group command!_",
+            "WARN_DESC": "Gives warning. Kicks member if limit is over",
+            "WARNING": "     ⚠️ WARNING  ⚠️",
+            "USER": "*User:* ```{}```",
+            "REMAINING": "*Remaining:* ```{}```",
+            "REASON": "*Reason:* ```{}```",
+            "WARN_RESET": "_Reset warns, {} remaining for_ _{}_",
+            "WARN_OVER": "_Max warns reached, {} Kicked_"
+        },
+        "instagram": {
+            "NEED_WORD": "Please enter username of any instagram account.",
+            "USAGE": ".insta <userName>",
+            "DESC": "Fetches user informations from instagram",
+            "LOADING": "Fetching user data.. please wait.",
+            "USERNAME": "Username",
+            "NAME": "Name",
+            "BIO": "Biography",
+            "FOLLOWERS": "Followers",
+            "FOLLOWS": "Follows",
+            "ACCOUNT": "Account privacy",
+            "PUBLIC": "Public",
+            "HIDDEN": "Hidden",
+            "NOT_FOUND": "User not found: "
+        }
+       
+    }
 }
