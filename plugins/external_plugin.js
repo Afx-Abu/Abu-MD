@@ -4,6 +4,7 @@ const {
   getPlugin,
   delPlugin,
 } = require("../lib/db/plugins");
+const Config = require('../config');
 const {
   Module,
 } = require("../lib/");
@@ -12,7 +13,6 @@ const got = require("got");
 const axios = require("axios");
 const { format } = require("util");
 var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
-const Config = require('../config');
 
 Module(
   {
