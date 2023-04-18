@@ -1,6 +1,9 @@
 const { Module, isPublic } = require("../lib/");
 const { isAdmin, parsedJid, isUrl } = require("../lib");
 const { cron, saveSchedule } = require("../lib/scheduler");
+let {
+getString
+} = require("../lib/lang");
 let Lang = getString('group');
 
 Module({
