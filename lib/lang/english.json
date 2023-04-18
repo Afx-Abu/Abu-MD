@@ -13,6 +13,9 @@
                           "AMUTE": "_Enter time to mute. Eg : amute 20:10_",
                           "AUNMUTE": "_Enter time to unmute. Eg : aunmute 20:10_",
                           "AUN_MUTE": "_Auto Unmuting..._"
-                         }
-                        }
+                    },
+           "instgram": {
+                          "NEED_URL": "_Need instgram url...!_'
+                       }
+                }
 }
