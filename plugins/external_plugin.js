@@ -9,7 +9,7 @@ let {
     getString
 } = require('../lib/lang');
 let Lang = getString('external_plugin');
-var handler = Config.HANDLERS !== 'false'?Config.HANDLERS.split("")[0]:""
+var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
 
 Module({
     pattern: 'plugin ?(.*)',
