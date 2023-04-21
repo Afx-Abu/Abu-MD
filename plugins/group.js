@@ -1,4 +1,4 @@
-const { Module, true } = require("../lib/");
+const { Module, isPublic } = require("../lib/");
 const { isAdmin, parsedJid, isUrl } = require("../lib");
 const { cron, saveSchedule } = require("../lib/scheduler");
 let {
@@ -8,7 +8,7 @@ let Lang = getString('group');
 
 Module({
     pattern: "add",
-  fromMe: true,
+  fromMe: isPublic,
   desc: "Adds a person to group",
   type: "group",
 
@@ -33,7 +33,7 @@ Module({
 
     Module({
     pattern: "kick",
-      fromMe: true,
+      fromMe: 'true',
       desc: "kicks a person from group",
       type: "group",
     
@@ -57,7 +57,7 @@ Module({
 
     Module({
     pattern: "promote",
-      fromMe: true,
+      fromMe: isPublic,
       desc: "promote a member",
       type: "group",
     
@@ -80,7 +80,7 @@ Module({
 
     Module({
     pattern: "demote",
-      fromMe: true,
+      fromMe: isPublic,
       desc: "demote a member",
       type: "group",
     
@@ -104,7 +104,7 @@ Module({
 
     Module({
     pattern: "mute",
-      fromMe: true,
+      fromMe: isPublic,
       desc: "mute group",
       type: "group",
     
@@ -122,7 +122,7 @@ Module({
 
 Module({
     pattern: "unmute",
-  fromMe: true,
+  fromMe: isPublic,
   desc: "unmute group",
   type: "group",
 
@@ -139,7 +139,7 @@ Module({
 
 Module({
     pattern: "automute",
-    fromMe: true,
+    fromMe: isPublic,
     desc: "auto mutes group",
     type: "group",
   },
@@ -165,7 +165,7 @@ Module({
 
 Module({
     pattern: "automute",
-    fromMe: true,
+    fromMe: isPublic,
     desc: "auto unmutes group",
     type: "group",
   },
@@ -191,7 +191,7 @@ Module({
 
 Module({
     pattern: "tagall ?(.*)",
-    fromMe: true,
+    fromMe: isPublic,
     desc: "mention all users in group",
     type: "group",
   }, async (message, match, m) => {
@@ -209,7 +209,7 @@ Module({
 
 Module({
     pattern: "poll ?(.*)",
-    fromMe: true,
+    fromMe: isPublic,
     desc: "create poll",
     type: "group",
   }, async (message, match, m) => {
