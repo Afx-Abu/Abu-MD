@@ -1,4 +1,4 @@
-const { Module, isPrivate } = require("../lib/");
+const { Module, true } = require("../lib/");
 const { isAdmin, parsedJid, isUrl } = require("../lib");
 const { cron, saveSchedule } = require("../lib/scheduler");
 let {
@@ -8,7 +8,7 @@ let Lang = getString('group');
 
 Module({
     pattern: "add",
-  fromMe: isPrivate,
+  fromMe: true,
   desc: "Adds a person to group",
   type: "group",
 
@@ -33,7 +33,7 @@ Module({
 
     Module({
     pattern: "kick",
-      fromMe: isPrivate,
+      fromMe: true,
       desc: "kicks a person from group",
       type: "group",
     
@@ -57,7 +57,7 @@ Module({
 
     Module({
     pattern: "promote",
-      fromMe: isPrivate,
+      fromMe: true,
       desc: "promote a member",
       type: "group",
     
@@ -80,7 +80,7 @@ Module({
 
     Module({
     pattern: "demote",
-      fromMe: isPrivate,
+      fromMe: true,
       desc: "demote a member",
       type: "group",
     
@@ -104,7 +104,7 @@ Module({
 
     Module({
     pattern: "mute",
-      fromMe: isPrivate,
+      fromMe: true,
       desc: "mute group",
       type: "group",
     
@@ -122,7 +122,7 @@ Module({
 
 Module({
     pattern: "unmute",
-  fromMe: isPrivate,
+  fromMe: true,
   desc: "unmute group",
   type: "group",
 
@@ -138,7 +138,7 @@ Module({
 
 
 Module({
-    pattern: "amute",
+    pattern: "automute",
     fromMe: true,
     desc: "auto mutes group",
     type: "group",
@@ -164,7 +164,7 @@ Module({
 
 
 Module({
-    pattern: "aunmute",
+    pattern: "automute",
     fromMe: true,
     desc: "auto unmutes group",
     type: "group",
@@ -216,12 +216,12 @@ Module({
     let [poll,opt] = match.split(";");
     if (match.split(";") < 2)
       return await message.reply(
-        `poll question;option1,option2,option3.....`
+        `poll question;option1;option2;option3.....`
       );
     
     let options = [];
 
-    for (let i of opt.split(',')) {
+    for (let i of opt.split(';')) {
       options.push({ optionName: i });
     }
     return await message.client.relayMessage(
