@@ -55,6 +55,10 @@
             "PLUGIN_NOT_FOUND": "Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.",
             "DELETED": "_Deleted {}! Reboot to make effect_"
         },
+        "truecaller": {
+            "TRUE_REPLY": "_Need number/reply/mention_",
+            "TRUE_DESC": "Search number details from truecaller"
+        },
         "instagram": {
             "NEED_WORD": "Please enter username of any instagram account.",
             "USAGE": ".insta <userName>",
