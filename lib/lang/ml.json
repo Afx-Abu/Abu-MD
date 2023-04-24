@@ -54,6 +54,10 @@
             "PLUGIN_NOT_FOUND": "Angane oru plugin nee install akiyittilla",
             "DELETED": "{} plugin remove cheyth. Venenkil reboot cheytho, atha nallath!"
         },
+        "truecaller": {
+            "TRUE_REPLY": "_നമ്പർ/മറുപടി/പരാമർശം ആവശ്യമാണ്_",
+            "TRUE_DESC": "ട്രൂകോളറിൽ നിന്ന് നമ്പർ വിശദാംശങ്ങൾ തിരയുക"
+        },
         "instagram": {
             "NEED_WORD": "ഏതെങ്കിലും ഇൻസ്റ്റാഗ്രാം അക്കൗണ്ടിന്റെ ഉപയോക്തൃനാമം നൽകുക.",
             "USAGE": ".insta <userName>",
