@@ -16,7 +16,7 @@ var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
 
 Module(
   {
-    pattern: "plugin ?(.*)",
+    pattern: "plugin",
     fromMe: true,
     desc: "Installs External plugins",
     type: "owner",
@@ -78,7 +78,7 @@ Module(
 
 Module(
   {
-    pattern: "remove ?(.*)",
+    pattern: "removed",
     fromMe: true,
     desc: "Remove external plugins",
     type: "owner",
