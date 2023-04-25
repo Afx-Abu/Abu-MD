@@ -50,6 +50,7 @@
       "node-youtube-music": "^0.8.3",
       "node-fetch": "^2.6.1",
       "node-webpmux": "^3.1.0",
+      "mumaker": "^1.0.0", 
       "os": "^0.1.2",
       "object-query-string": "^1.2.0",
       "google-tts-api": "^2.0.2",
