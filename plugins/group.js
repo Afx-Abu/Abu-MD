@@ -106,14 +106,14 @@ fromMe: true,
 desc: Lang.MUTE_DESC,
 type: "group",
     
-}, async (message, match, client, m) => {
+}, async (message, match, m, client) => {
    if (!message.isGroup)
    return await message.reply(Lang.IS_GROUP);
-   if (!isAdmin(message.jid, message.user, message.client))
+   if (!isAdmin(message.jid, message.user, message.client)) 
    return await message.reply(Lang.NOT_ADMIN);
    await message.reply(Lang.MUTE);
    return await client.groupSettingUpdate(message.jid, "announcement");
-  }
+}
 );
 
 
