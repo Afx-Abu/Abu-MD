@@ -59,6 +59,18 @@
             "TRUE_REPLY": "_Need number/reply/mention_",
             "TRUE_DESC": "Search number details from truecaller"
         },
+        "downloader": {
+            "SONG_DESC": "Download songs from youtube with given song name.",
+            "NEED": "_Enter a song name/url_",
+            "SONG_DWNLD": "_Downloading your song..._",
+            "YTS_DESC": "Search from youtube with given query and give maximum results.",
+            "NEED2": "_Enter a song name/video name_",
+            "VIDEO_DESC": "Download videos from youtube.",
+            "NEED3": "_Enter a video name/url_",
+            "SPOTIFY_DESC": "Download songs from spotify.",
+            "VALID_LINK": "_Please give me a valid link_", 
+            "WAIT": "_Please wait..._"
+        },
         "instagram": {
             "NEED_WORD": "Please enter username of any instagram account.",
             "USAGE": ".insta <userName>",
