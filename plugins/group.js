@@ -6,8 +6,6 @@ getString
 } = require("../lib/lang");
 let Lang = getString('group');
 
-
-
 Module({
 pattern: "add",
 fromMe: true,
@@ -124,15 +122,14 @@ fromMe: true,
 desc: Lang.UNMUTE_DESC,
 type: "group",
 
-}, async (message, client, match, m) => {
+}, async (message, match, m, client) => {
    if (!message.isGroup)
    return await message.reply(Lang.IS_GROUP);
    if (!isAdmin(message.jid, message.user, message.client))
    return await message.reply(Lang.NOT_ADMIN);
    await message.reply(Lang.UNMUTE);
    return await client.groupSettingUpdate(message.jid, "not_announcement");
-  }
-);
+});
 
 
 
