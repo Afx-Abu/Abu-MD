@@ -10,6 +10,7 @@ let HANDLER = "false";
 module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
+  ALIVE_DATA : process.env.ALIVE_DATA || "_iam alive now &sender_",
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   SESSION_ID: (process.env.SESSION_ID || '').trim(),
   LANGUAGE: process.env.LANGUAGE || "EN",
