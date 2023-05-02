@@ -23,6 +23,51 @@ Module(
   }
 );
 
+Module({
+          pattern: 'rvtxt ?(.*)',
+          fromMe: isPublic,
+          desc: 'reverse the given text',
+          type: 'converter'}, 
+          async (m, match) => {
+match = match || m.reply_message.text
+if (!match) return await m.reply("Give me a text to reverse")
+await m.reply(match.split("").reverse().join(""))
+});
+
+Module(
+	{
+		pattern: 'aqt ?(.*)',
+		fromMe: true,
+		desc: 'Random anime quote',
+		type: 'info',
+	},
+	async (m, match, client) => {
+		const { anime, character, quote } = await getJson('https://animechan.vercel.app/api/random')
+		await m.reply( ` ☄️ *ANIME* : _${anime}_\n 🌻 *CHARACTER* : _${character}_\n🖇️ *quote* : ${quote}` )
+	}
+)
+
+Module({pattern: 'base64|b64 ?(.*)', fromMe: isPublic, desc: 'base64 encoder', type: 'encode'}, async (m, match, client) => {
+match = match || m.reply_message.text
+if(!m.reply_message.text) return await m.reply("Give me text to encode")
+await m.reply(btoa(match));
+});
+Module({pattern: 'dbase64|db64 ?(.*)', fromMe: isPublic, desc: 'base64 decoder', type: 'encode'}, async (m, match, client) => {
+match = match || m.reply_message.text
+if(!m.reply_message.text) return await m.reply("Give me text to encode")
+await m.reply(atob(match));
+});
+Module({pattern: 'hex ?(.*)', fromMe: isPublic, desc: 'hex encoder', type: 'encode'}, async (m, match, client) => {
+match = match || m.reply_message.text
+if(!m.reply_message.text) return await m.reply("Give me text to encode")
+await m.reply(Buffer.from(match, 'utf8').toString('hex'));
+});
+Module({pattern: 'dhex ?(.*)', fromMe: isPublic, desc: 'hex decoder', type: 'encode'}, async (m, match, client) => {
+match = match || m.reply_message.text
+if(!m.reply_message.text) return await m.reply("Give me text to encode")
+await m.reply(Buffer.from(match, 'hex').toString());
+});
+
 
 
 Module(
