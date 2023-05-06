@@ -37,7 +37,7 @@
 ###  about this bot
 - ✔️ | **Simple** 
 - ✔️ | **Button Template** 
-- ✔️ | **Insta,story,YouTube,spotyfive [Download]** 
+- ✔️ | **Insta,story,YouTube,spotify [Download]** 
 ---------
 
 
