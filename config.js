@@ -24,9 +24,6 @@ module.exports = {
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
   STICKER_DATA: process.env.STICKER_DATA || "Abu",
-  DEBUG: DEBUG,
-  ACR_A: "ff489a0160188cf5f0750eaf486eee74",
-  ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp"
   DATABASE_URL: DATABASE_URL,
   DATABASE:
     DATABASE_URL === "./database.db"
@@ -49,4 +46,7 @@ module.exports = {
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
   MODE: process.env.MODE || "public",
+  DEBUG: DEBUG,
+  ACR_A: "ff489a0160188cf5f0750eaf486eee74",
+  ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp"
 };
