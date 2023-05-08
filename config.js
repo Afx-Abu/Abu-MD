@@ -19,6 +19,7 @@ module.exports = {
   RMBG_KEY: process.env.RMBG_KEY || false,
   BGMBOT: process.env.BGMBOT || true,
   BRANCH: "master",
+  ANTIFAKE : process.env.ANTIFAKE || '',
   BOT_INFO: process.env.BOT_INFO || '𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg',
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
