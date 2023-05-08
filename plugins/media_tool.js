@@ -2,7 +2,7 @@ const {
       Module, isPublic
   } = require('../lib/');
   const fs = require('fs');
-  const ffmpeg = require('fluent-ffmpeg');"
+  const ffmpeg = require('fluent-ffmpeg');
 const config = require("../config");
 const acrcloud = require("acrcloud");
 const acr = new acrcloud({
