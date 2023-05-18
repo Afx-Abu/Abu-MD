@@ -37,6 +37,7 @@
       "google-it": "^1.6.2",
       "got": "^11.8.3",
       "human-readable": "^0.2.1",
+      "instagram-url-direct": "^1.0.13",
       "link-preview-js": "^2.1.13",
       "javascript-obfuscator": "^4.0.0",
       "jimp": "^0.16.1",
