@@ -1,13 +1,35 @@
 const { Module, 
        isPublic, 
        sendMenu,
+       aliveMessage,
+       sendList
 
-sendList
-
- }  = require("../lib");
+}  = require("../lib");
 
 
 
+
+Module(
+
+  {
+
+    pattern: "alive ?(.*)",
+
+    fromMe: isPublic,
+
+    desc: "Does bot work?",
+
+    type: "info"
+
+  },
+
+  async (message, match) => {
+
+    await aliveMessage(message, match);
+
+  }
+
+);
 
 
 
