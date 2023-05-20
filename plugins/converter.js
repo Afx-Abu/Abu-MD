@@ -1,5 +1,5 @@
 const config = require("../config");
-const { Module, isPublic, getJson, sleep, tiny, webp2mp4, toAudio, ffmpeg } = require("../lib/");
+const { Module, isPublic, getJson, sleep, tiny, webp2mp4, toAudio } = require("../lib/");
 const { Image } = require("node-webpmux");
 
 
