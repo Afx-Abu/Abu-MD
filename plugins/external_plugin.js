@@ -78,7 +78,7 @@ Module(
 
 Module(
   {
-    pattern: "removed",
+    pattern: "remove",
     fromMe: true,
     desc: "Remove external plugins",
     type: "owner",
