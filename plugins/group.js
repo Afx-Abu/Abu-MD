@@ -236,3 +236,174 @@ type: "group",
     );
   }
 );
+
+
+Module(
+
+  {
+
+    pattern: "invite ?(.*)",
+
+    fromMe: true,
+
+    desc: "Provides the group's invitation link.",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+
+    var admin = await isAdmin(message);
+
+    if (!admin) return await message.reply("_I'm not admin_");
+
+    const response = await message.client.groupInviteCode(message.jid)
+
+    await message.reply(`https://chat.whatsapp.com/${response}`)
+
+  }
+
+);
+
+Module(
+
+  {
+
+    pattern: "revoke ?(.*)",
+
+    fromMe: true,
+
+    desc: "Revoke Group invite link.",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+
+    var admin = await isAdmin(message);
+
+    if (!admin) return await message.reply("_I'm not admin_");
+
+    await message.client.groupRevokeInvite(message.jid)
+
+    await message.send("_Revoked_")
+
+  }
+
+);
+
+Module(
+
+  {
+
+    pattern: "join ?(.*)",
+
+    fromMe: true,
+
+    desc: "Join in the group",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    var rgx = /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/
+
+    if (!match || !rgx.test(match)) return await message.reply("_Need group link_")
+
+    var res = await message.client.groupAcceptInvite(match.split("/")[3])
+
+    if (!res) return await message.reply("_Invalid Group Link!_")
+
+    if (res) return await message.reply("_Joined!_")
+
+  }
+
+);
+
+Module(
+
+  {
+
+    pattern: "left ?(.*)",
+
+    fromMe: true,
+
+    desc: "Left from the group",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+
+    await message.client.groupLeave(message.jid)
+
+  }
+
+);
+
+Module(
+
+  {
+
+    pattern: "lock ?(.*)",
+
+    fromMe: true,
+
+    desc: "only allow admins to modify the group's settings.",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+
+    var admin = await isAdmin(message);
+
+    if (!admin) return await message.reply("_I'm not admin_");
+
+    return await message.client.groupSettingUpdate(message.jid, "locked")
+
+  }
+
+);
+
+Module(
+
+  {
+
+    pattern: "unlock ?(.*)",
+
+    fromMe: true,
+
+    desc: "allow everyone to modify the group's settings.",
+
+    type: "group",
+
+  },
+
+  async (message, match) => {
+
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+
+    var admin = await isAdmin(message);
+
+    if (!admin) return await message.reply("_I'm not admin_");
+
+    return await message.client.groupSettingUpdate(message.jid, "unlocked")
+
+  }
+
+);
