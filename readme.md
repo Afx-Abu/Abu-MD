@@ -21,7 +21,7 @@
 
 ***ғᴏʀ ᴘʟᴜɢɪɴs ᴠɪsɪᴛ***
 
-***ᴄʟɪᴄᴋ [ᴘʟᴜɢɪɴ ʟɪsᴛ](https://github.com/Afx-Abu/Abu-MD/wiki)***
+***ᴄʟɪᴄᴋ [ᴘʟᴜɢɪɴ ʟɪsᴛ](https://github.com/Afx-ToxicLeo/abu-md-plugin-list)***
 
 ## ```Heroku```
 
