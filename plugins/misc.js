@@ -66,3 +66,28 @@ Module(
     await message.reply(jsl)
   }
 );
+
+
+ Module({pattern: 'getjids ?(.*)', desc: 'Get all groups\' jids',type: 'info',fromMe: true}, async (msg, query) => {
+
+    var groups = Object.keys(await msg.client.groupFetchAllParticipating())
+
+    if (!groups.length) return await msg.reply("_No group chats!_");
+
+    var _msg = "";
+
+    for (let e of groups){
+
+        try {
+
+    var g_name = (await msg.client.groupMetadata(e)).subject
+
+    } catch {var g_name = 'Can\'t load name (rate-overlimit)'}
+
+    _msg+= `_Group:_ ${g_name} \n_JID:_ ${e}\n\n`
+
+    }
+
+    await msg.reply(_msg)
+
+});
