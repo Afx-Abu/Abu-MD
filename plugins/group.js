@@ -413,11 +413,11 @@ Module(
 
   {
 
-    pattern: "fullforward ?(.*)",
+    pattern: "broadcast ?(.*)",
 
     fromMe: true,
 
-    desc: "description",
+    desc: "broadcast your image/video/sticker/text",
 
     type: "type",
 
