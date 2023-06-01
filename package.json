@@ -9,7 +9,7 @@
    "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "npm:jsl-bot",
+      "@adiwajshing/baileys": "github:WhiskeySockets/Baileys",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
