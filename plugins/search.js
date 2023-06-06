@@ -12,7 +12,7 @@ Module({
 
 	pattern: 'npm ?(.*)',	fromMe: isPublic,
 
-	desc: 'data of any flim or Series',
+	desc: 'Search Your Npm package',
 
 	type: 'whatsapp',
 
