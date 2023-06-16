@@ -6,7 +6,7 @@ const { existsSync } = require("fs")
 
 if (existsSync("config.env")) require("dotenv").config({ path: "./config.env" })
 
-const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./database.db" : process.env.DATABASE_URL
+const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./lib/database.db" : process.env.DATABASE_URL
 
 module.exports = {
 
@@ -16,7 +16,7 @@ module.exports = {
 
   ALIVE_DATA : process.env.ALIVE_DATA || "_iam alive now &sender_",
 
-  DATABASE: DATABASE_URL === "./database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
+  DATABASE: DATABASE_URL === "./lib/database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
 
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
 
