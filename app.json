@@ -61,7 +61,7 @@
        "BOT_INFO": {
             "description": "Your bot menu info changing ;",
             "required": true,
-            "value":"𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu;917025994178;™𝐀𝐁𝐔 𝐌𝐃;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg"
+            "value":"𝐀𝐁𝐔 𝐌𝐃 𝐁𝐎𝐓;~Jasil;Copyright by Abu MD;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg"
         },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
