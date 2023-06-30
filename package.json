@@ -9,7 +9,7 @@
    "author": "Afx-Abu",
    "license": "ISC",
    "dependencies": {
-      "@whiskeysockets/baileys": "^6.3.0",
+      "@whiskeysockets/baileys": "git+https://github.com/Afx-Abu/baileys.ml",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
