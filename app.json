@@ -51,7 +51,7 @@
         "LOGS": {
             "description": "logs send",
             "required": true,
-            "value":"true"
+            "value":"false"
         },
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
