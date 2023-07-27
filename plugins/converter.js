@@ -1,5 +1,6 @@
 const config = require("../config");
 const { Module, isPublic, getJson, sleep, tiny, webp2mp4, toAudio } = require("../lib/");
+const { jslbuffer } = require('abu-bot');
 const { Image } = require("node-webpmux");
 
 
@@ -201,3 +202,35 @@ Module(
     return await message.sendMessage(buffer, { quoted: message }, "video");
   }
 );
+
+Module({
+	pattern: 'ttp ?(.*)',
+	fromMe: isPublic,
+	desc: 'converter Your text To ttp Sticker',
+	type: 'converter',
+}, async (message, match) => {
+    if (!match) return await message.reply("_Example:ttp Abu_");
+const Jsl_0x152d66=Jsl_0x290a;function Jsl_0x290a(_0xac6923,_0x2fd089){const _0x5dbc96=Jsl_0x5dbc();return Jsl_0x290a=function(_0x290ac9,_0x1984cb){_0x290ac9=_0x290ac9-0x19f;let _0xac969c=_0x5dbc96[_0x290ac9];return _0xac969c;},Jsl_0x290a(_0xac6923,_0x2fd089);}function Jsl_0x5dbc(){const _0x101caf=['192398qavkoD','27fNTFVR','9dsqciY','75Kethjb','95132cpJKTv','14753940sovovx','14KgbyZr','https://inrl-web.onrender.com/api/attp?text=','4009032fPsIMe','3783272Cdohqm','957836PEkOMH','2105257lQqIuI','120XtxbmD'];Jsl_0x5dbc=function(){return _0x101caf;};return Jsl_0x5dbc();}(function(_0x557715,_0x50aa0e){const _0x4028a4=Jsl_0x290a,_0x208397=_0x557715();while(!![]){try{const _0xb3b14d=-parseInt(_0x4028a4(0x1a8))/0x1+parseInt(_0x4028a4(0x1ab))/0x2*(parseInt(_0x4028a4(0x19f))/0x3)+-parseInt(_0x4028a4(0x1a2))/0x4*(parseInt(_0x4028a4(0x1a1))/0x5)+parseInt(_0x4028a4(0x1a6))/0x6*(parseInt(_0x4028a4(0x1a4))/0x7)+parseInt(_0x4028a4(0x1a7))/0x8*(-parseInt(_0x4028a4(0x1a0))/0x9)+-parseInt(_0x4028a4(0x1a3))/0xa+-parseInt(_0x4028a4(0x1a9))/0xb*(-parseInt(_0x4028a4(0x1aa))/0xc);if(_0xb3b14d===_0x50aa0e)break;else _0x208397['push'](_0x208397['shift']());}catch(_0xc8655f){_0x208397['push'](_0x208397['shift']());}}}(Jsl_0x5dbc,0xd0481));let a=await jslbuffer(Jsl_0x152d66(0x1a5)+match);
+ return message.sendMessage(a,{packname:'👀',
+        quoted: message,
+      },"sticker") 
+         }
+     )     
+     
+     
+Module({
+	pattern: 'attp ?(.*)',
+	fromMe: isPublic,
+	desc: 'convert Your text To Attp Sticker',
+	type: 'converter',
+}, async (message, match) => {
+    if (!match) return await message.reply("_Example:ttp Abu_");    
+const Jsl_0x152d66=Jsl_0x290a;function Jsl_0x290a(_0xac6923,_0x2fd089){const _0x5dbc96=Jsl_0x5dbc();return Jsl_0x290a=function(_0x290ac9,_0x1984cb){_0x290ac9=_0x290ac9-0x19f;let _0xac969c=_0x5dbc96[_0x290ac9];return _0xac969c;},Jsl_0x290a(_0xac6923,_0x2fd089);}function Jsl_0x5dbc(){const _0x101caf=['192398qavkoD','27fNTFVR','9dsqciY','75Kethjb','95132cpJKTv','14753940sovovx','14KgbyZr','https://inrl-web.onrender.com/api/attp?text=','4009032fPsIMe','3783272Cdohqm','957836PEkOMH','2105257lQqIuI','120XtxbmD'];Jsl_0x5dbc=function(){return _0x101caf;};return Jsl_0x5dbc();}(function(_0x557715,_0x50aa0e){const _0x4028a4=Jsl_0x290a,_0x208397=_0x557715();while(!![]){try{const _0xb3b14d=-parseInt(_0x4028a4(0x1a8))/0x1+parseInt(_0x4028a4(0x1ab))/0x2*(parseInt(_0x4028a4(0x19f))/0x3)+-parseInt(_0x4028a4(0x1a2))/0x4*(parseInt(_0x4028a4(0x1a1))/0x5)+parseInt(_0x4028a4(0x1a6))/0x6*(parseInt(_0x4028a4(0x1a4))/0x7)+parseInt(_0x4028a4(0x1a7))/0x8*(-parseInt(_0x4028a4(0x1a0))/0x9)+-parseInt(_0x4028a4(0x1a3))/0xa+-parseInt(_0x4028a4(0x1a9))/0xb*(-parseInt(_0x4028a4(0x1aa))/0xc);if(_0xb3b14d===_0x50aa0e)break;else _0x208397['push'](_0x208397['shift']());}catch(_0xc8655f){_0x208397['push'](_0x208397['shift']());}}}(Jsl_0x5dbc,0xd0481));let a=await jslbuffer(Jsl_0x152d66(0x1a5)+match);
+return message.sendMessage(a,{packname:'👀',
+        quoted: message,
+      },"sticker") 
+         }
+     )     
+     
+	    
+	 
