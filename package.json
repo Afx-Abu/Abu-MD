@@ -1,12 +1,12 @@
 {
-   "name": "Abu-MD",
+   "name": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇",
    "version": "2.0.1",
-   "description": "Abu-MD - Simple whatsapp Bot",
+   "description": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇 - Simple whatsapp Bot",
    "main": "./index.js",
    "scripts": {
     "start": "supervisor -s index.js"
    },
-   "author": "Afx-Abu",
+   "author": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇",
    "license": "ISC",
    "dependencies": {
       "@whiskeysockets/baileys": "git+https://github.com/Afx-Abu/baileys.ml",
