@@ -1,7 +1,7 @@
 {
    "name": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇",
    "version": "2.0.1",
-   "description": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇 - Simple hatsapp Bot",
+   "description": "𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇 - Simple whatsapp Bot",
    "main": "./index.js",
    "scripts": {
     "start": "supervisor -s index.js"
