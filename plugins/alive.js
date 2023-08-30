@@ -13,7 +13,7 @@ Module(
 
   {
 
-    pattern: "aive ?(.*)",
+    pattern: "alive ?(.*)",
 
     fromMe: isPublic,
 
