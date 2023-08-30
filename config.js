@@ -64,9 +64,9 @@ _" اب ہم اتنـــے ہـــی میـــسر ہونگے ، جتنـــ
 
   ANTIFAKE : process.env.ANTIFAKE || '',
 
-  FORWARD: process.env.FORWARD || '𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇;UᎦMᏘＮ;Copyright by Usman;https://i.ibb.co/nc4MKWb/ae8d07d7943e.jpg;audio;audio/mp4;https://github.com/Afx-Abu/Abu-MD',
+  FORWARD: process.env.FORWARD || '𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇;UᎦMᏘＮ;Copyright by Usman;https://i.imgur.com/3WDGOK2.jpeg;audio;audio/mp4;https://github.com/mrusman1316/USMAN-BOT-',
   
-  BOT_INFO: process.env.BOT_INFO || '𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇;UᎦMᏘＮ;Copyright by Usman Bot;https://i.imgur.com/UCxG4Ok.jpeg',
+  BOT_INFO: process.env.BOT_INFO || '𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇;UᎦMᏘＮ;Copyright by Usman Bot;https://i.imgur.com/3WDGOK2.jpeg',
 
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname
     Powered By 𝑈𝑆𝛭𝛥𝛮-𝐵𝛩𝑇",
