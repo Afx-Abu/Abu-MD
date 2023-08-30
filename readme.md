@@ -4,7 +4,7 @@
  
 > <b><s1> 2.sᴄᴀɴ ǫʀ ᴄᴏᴅᴇ </b></s1> 
 
- <a href='https://jasil.me/' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+ <a href='https://usman.me/' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
  
  <a href='https://jsl-web-mbl3.onrender.com/server/scan' target="_blank"><img alt='SCAN QR CODE' src='https://img.shields.io/badge/Scan_qr-code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
