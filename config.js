@@ -22,8 +22,8 @@ module.exports = {
 
   SESSION_ID: (process.env.SESSION_ID || '').trim(),
 
-  LANGUAGE: process.env.LANGUAGE || "EN",
-
+  LANGUAGE: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
+  
   WARN_LIMIT: process.env.WARN_LIMIT || "3",
 
   HANDLERS:process.env.HANDLER === "false" || process.env.HANDLERS || '^,',
