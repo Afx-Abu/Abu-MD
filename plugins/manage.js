@@ -5,7 +5,6 @@ const config = require('../config');
 const { SUDO, MODE } = require('../config');
 const Config = require('../config');
 const Heroku = require('heroku-client');
-const baseURI = '/apps/' + config.HEROKU_APP_NAME
 var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
 const { isAdmin, isUrl } = require("../lib/");
     const heroku = new Heroku({
@@ -14,7 +13,7 @@ const { isAdmin, isUrl } = require("../lib/");
     let baseURI = '/apps/' + Config.HEROKU_APP_NAME;
     var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
         async function fixHerokuAppName(message = false){
-            if (!HEROKU.API_KEY && message) return await message.reply(`_You have not provided HEROKU_API_KEY\n\nPlease fill this var, get api key from heroku account settings_`)
+            if (!HEROKU_API_KEY && message) return await message.reply(`_You have not provided HEROKU_API_KEY\n\nPlease fill this var, get api key from heroku account settings_`)
             let apps = await heroku.get('/apps')
             let app_names = apps.map(e=>e.name)
             if (!HEROKU.APP_NAME || !app_names.includes(Config.HEROKU_APP_NAME)){
