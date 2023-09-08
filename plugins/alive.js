@@ -44,4 +44,3 @@ Module
 		async (message, match) => {			
 		return await sendList(message);
 })
-  
