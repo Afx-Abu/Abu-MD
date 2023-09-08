@@ -10,7 +10,7 @@ const { isAdmin, isUrl } = require("../lib/");
     const heroku = new Heroku({
         token: Config.HEROKU_API_KEY
     });
-    let baseURI = '/apps/' + Config.HEROKU_APP_NAME;
+    
     var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
         async function fixHerokuAppName(message = false){
             if (!HEROKU_API_KEY && message) return await message.reply(`_You have not provided HEROKU_API_KEY\n\nPlease fill this var, get api key from heroku account settings_`)
@@ -50,7 +50,7 @@ const { isAdmin, isUrl } = require("../lib/");
                 }
             });
         }
-        
+        }
         
         
 Module(
@@ -168,9 +168,9 @@ Module(
 );
 
 Module({
-        pattern: 'mode ?(.*)',
+        pattern: 'language ?(.*)',
         fromMe: true,
-        desc: "Change bot mode to public & private",
+        desc: "Change bot language to en & ml",
         use: 'settings'
     }, (async (message, match) => {
         if (match[1]?.toLowerCase() == "public" || match[1]?.toLowerCase() == "private"){
