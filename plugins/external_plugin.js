@@ -30,7 +30,7 @@ Module(
     plugins.map(({ name, url }) => { msg += `*${num++}. ${name}* : ${url}\n` })
     return await message.reply(msg);
     }
-    let links = match.matxch(/\bhttps?:\/\/\S+/gi);
+    let links = match.match(/\bhttps?:\/\/\S+/gi);
     if (!links) {
     const getplugin = await getPlugin(match);
     if (!getplugin) return await message.reply("_Plugins not installed_");
@@ -101,4 +101,4 @@ Module(
         await message.client.sendMessage(message.jid,buttonMessage, { quoted: message });
   }
 );
-
+      
