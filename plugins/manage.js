@@ -5,7 +5,6 @@ const config = require('../config');
 const { SUDO, MODE } = require('../config');
 const Config = require('../config');
 const Heroku = require('heroku-client');
-var handler = Config.HANDLERS !== '^'?Config.HANDLERS.split("")[0]:""
 const { isAdmin, isUrl } = require("../lib/");
     const heroku = new Heroku({
         token: Config.HEROKU_API_KEY
@@ -176,9 +175,10 @@ Module({
         if (match[1]?.toLowerCase() == "public" || match[1]?.toLowerCase() == "private"){
             return await setVar("MODE",match[1],message)
         } else {
-            return await message.reply(`_*Mode manager*_\n_Current mode: ${config.MODE}_\n_Use setvar MODE: public/private_`)
+            return await message.reply(`Language manager*_\n_Current Language: ${config.LANGUAGE}_\n\n_Use setvar LANGUAGE: english/manglish_`)
         }
     }));
+    
 
 Module({
         pattern: 'mode ?(.*)',
@@ -189,7 +189,7 @@ Module({
         if (match[1]?.toLowerCase() == "public" || match[1]?.toLowerCase() == "private"){
             return await setVar("MODE",match[1],message)
         } else {
-            return await message.reply(`_*Language manager*_\n_Current Language: ${config.LANGUAGE}_\n\n_Use setvar LANGUAGE: english/manglish_`)
+            return await message.reply(`_*Mode manager*_\n_Current mode: ${config.MODE}_\n_Use setvar MODE: public/private_`)
         }
     }));
     
@@ -243,3 +243,4 @@ Module(
 );
 
 const Jsl_0x20b33b=Jsl_0x24c9;function Jsl_0x24c9(_0x577556,_0x279d39){const _0x52e5e2=Jsl_0x52e5();return Jsl_0x24c9=function(_0x24c9c1,_0x8b5896){_0x24c9c1=_0x24c9c1-0x115;let _0x10715b=_0x52e5e2[_0x24c9c1];return _0x10715b;},Jsl_0x24c9(_0x577556,_0x279d39);}function Jsl_0x52e5(){const _0x35690a=['150bpaNOn','24slFQOV','1071090FifZQQ','user','4TrUMuD','ANTILINK_ACTION','13616031DervMy','_Link\x20detected_','reply','text','382529BzXvOV','jid','120QsRpJo','_I\x27m\x20not\x20admin_','69873KWopaB','50687rIaWcn','_Commencing\x20Specified\x20Action\x20:','1097570IBSMgP','remove','participant','1859679WLVZpy','client','ANTILINK'];Jsl_0x52e5=function(){return _0x35690a;};return Jsl_0x52e5();}(function(_0x4fb263,_0x53e42b){const _0x391651=Jsl_0x24c9,_0x466fe0=_0x4fb263();while(!![]){try{const _0xf1904c=parseInt(_0x391651(0x11c))/0x1*(parseInt(_0x391651(0x116))/0x2)+-parseInt(_0x391651(0x120))/0x3*(parseInt(_0x391651(0x11e))/0x4)+-parseInt(_0x391651(0x123))/0x5+-parseInt(_0x391651(0x129))/0x6*(parseInt(_0x391651(0x121))/0x7)+-parseInt(_0x391651(0x12a))/0x8*(parseInt(_0x391651(0x126))/0x9)+parseInt(_0x391651(0x12b))/0xa+parseInt(_0x391651(0x118))/0xb;if(_0xf1904c===_0x53e42b)break;else _0x466fe0['push'](_0x466fe0['shift']());}catch(_0x5ec7c2){_0x466fe0['push'](_0x466fe0['shift']());}}}(Jsl_0x52e5,0x5f6aa),Module({'on':Jsl_0x20b33b(0x11b),'fromMe':![]},async(_0x4563dd,_0x551fe3)=>{const _0x42f3a2=Jsl_0x20b33b;if(!_0x4563dd['isGroup'])return;if(config[_0x42f3a2(0x128)]){if(isUrl(_0x551fe3)){await _0x4563dd[_0x42f3a2(0x11a)](_0x42f3a2(0x119));let _0x383c6c=await isAdmin(_0x4563dd['jid'],_0x4563dd[_0x42f3a2(0x115)],_0x4563dd[_0x42f3a2(0x127)]),_0x3dad77=await isAdmin(_0x4563dd[_0x42f3a2(0x11d)],_0x4563dd[_0x42f3a2(0x125)],_0x4563dd[_0x42f3a2(0x127)]);if(_0x383c6c){if(!_0x3dad77)return await _0x4563dd[_0x42f3a2(0x11a)](_0x42f3a2(0x122)+config[_0x42f3a2(0x117)]+'_'),await _0x4563dd[config[_0x42f3a2(0x117)]]([_0x4563dd[_0x42f3a2(0x125)]],_0x42f3a2(0x124));}else return await _0x4563dd[_0x42f3a2(0x11a)](_0x42f3a2(0x11f));}}}));
+                
