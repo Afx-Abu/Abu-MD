@@ -8,10 +8,10 @@
 	"repository": "https://github.com/Afx-Abu/Abu-MD",
 	"stack": "container",
     "env": { 
-        "HANDLER": {
+        "HANDLERS": {
             "description": "Prefix of commands. Can be also false use : ^ this",
             "required": true,
-            "value":"."
+            "value":"^"
         },
         "ANTI_LINK": {
             "description": "Groups for antilink (JIDS)",
