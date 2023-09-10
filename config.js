@@ -26,8 +26,8 @@ module.exports = {
   
   WARN_LIMIT: process.env.WARN_LIMIT || "3",
 
-  HANDLERS:  process.env.HANDLERS === undefined ? ['.'] : process.env.HANDLERS,
- 
+  HANDLERS: process.env.HANDLER === 'false' || process.env.HANDLER === 'null' ? '^' : '^[!]',
+  
   IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
 
   RMBG_KEY: process.env.RMBG_KEY || false,
