@@ -140,7 +140,7 @@ Module(
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("_I'm not admin_");
     await message.client.groupRevokeInvite(message.jid)
-    await message.send("_Revoked_")
+    await message.reply("_Revoked_")
   }
 );
 
@@ -213,7 +213,7 @@ Module(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("_This command only works in group chats_")
     match = match || message.reply_message.text
-    if (!match) return await message.send("_Need Subject!_\n_Example: gname New Subject!_.")
+    if (!match) return await message.reply("_Need Subject!_\n_Example: gname New Subject!_.")
     var { restrict } = message.client.groupMetadata(message.jid);;
     if (restrict && !(await isAdmin(message))) return await message.reply("_I'm not admin_");
     await message.client.groupUpdateSubject(message.jid, match)
@@ -231,7 +231,7 @@ Module(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("_This command only works in group chats_")
     match = match || message.reply_message.text
-    if (!match) return await message.send("_Need Description!\nExample: gdesc New Description!_")
+    if (!match) return await message.reply("_Need Description!\nExample: gdesc New Description!_")
     const participants =  await message.client.groupMetadata(message.jid)
     if (participants && !(await isAdmin(message.jid, message.user, message.client))) return await message.reply("_I'm not admin_");
     await message.client.groupUpdateDescription(message.jid, match)
@@ -357,4 +357,4 @@ Module(
 
   }
 
-);
+);.
