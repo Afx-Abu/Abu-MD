@@ -8,7 +8,7 @@
 	"repository": "https://github.com/Afx-Abu/Abu-MD",
 	"stack": "container",
     "env": { 
-        "HANDLERS": {
+        "HANDLER": {
             "description": "Prefix of commands. Can be also false use : ^ this",
             "required": true,
             "value":"."
