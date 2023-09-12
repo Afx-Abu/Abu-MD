@@ -1,7 +1,8 @@
 const {
   Module,
   isAdmin,
-  getString
+  getString,
+  parsedJid
 } = require("../lib/");
 let Lang = getString('group');
 
@@ -39,6 +40,28 @@ Module(
     if (!admin) return await message.reply("_I'm not admin_");
     await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
     return await message.client.sendMessage(message.jid, { text: `_@${user.split("@")[0]}, Kicked From The Group!_`, mentions: [user] })
+  }
+);
+
+Module(
+  {
+    pattern: "kickall",
+    fromMe: true,
+    desc: "Adds a person to group",
+    type: "group",
+  },
+  async (message, match) => {
+    let { participants } = await message.client.groupMetadata(message.jid);
+    let isadmin = await isAdmin(message.jid, message.user, message.client);
+    if (!isadmin) return await message.reply("_I'm not admin_");
+
+    for (let key of participants) {
+      let jid = parsedJid(key.id);
+      await message.kick(jid);
+      await message.reply(`@${jid[0].split("@")[0]} kicked`, {
+        mentions: jid,
+      });
+    }
   }
 );
 
