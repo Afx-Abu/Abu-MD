@@ -27,30 +27,14 @@ Module(
 
 Module(
   {
-    pattern: "kick ?(.*)",
-    fromMe: true,
-    desc: "kicks a person from group",
-    type: "group",
-  },
-  async (message, match) => {
-    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
-    let user = message.mention[0] || message.reply_message.jid
-    if (!user) return await message.reply("_Give me a user!_");
-    var admin = await isAdmin(message.jid, message.user, message.client);
-    if (!admin) return await message.reply("_I'm not admin_");
-    await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
-    return await message.client.sendMessage(message.jid, { text: `_@${user.split("@")[0]}, Kicked From The Group!_`, mentions: [user] })
-  }
-);
-
-Module(
-  {
-    pattern: "kickall",
+    pattern: "kick",
     fromMe: true,
     desc: "Adds a person to group",
     type: "group",
   },
   async (message, match) => {
+    if (!match && match !== "all") return await message.reply("_Removing All Group Members_")
+    if (match == "all") {
     let { participants } = await message.client.groupMetadata(message.jid);
     let isadmin = await isAdmin(message.jid, message.user, message.client);
     if (!isadmin) return await message.reply("_I'm not admin_");
@@ -62,6 +46,13 @@ Module(
         mentions: jid,
       });
     }
+  }
+    if (!message.isGroup) return await message.reply("_This command only works in group chats_")
+    let user = message.mention[0] || message.reply_message.jid
+   var admin = await isAdmin(message.jid, message.user, message.client);
+    if (!admin) return await message.reply("_I'm not admin_");
+    await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
+    return await message.client.sendMessage(message.jid, { text: `_@${user.split("@")[0]}, Kicked From The Group!_`, mentions: [user] })
   }
 );
 
