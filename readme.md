@@ -5,7 +5,7 @@
 > <b><s1> 2.sᴄᴀɴ ǫʀ ᴄᴏᴅᴇ </b></s1> 
 
   
- <a href='https://jsl-web-mbl3.onrender.com/server/scan](https://abu-web.onrender.com/server/scan)' target="_blank"><img alt='SCAN QR CODE' src='https://img.shields.io/badge/Scan_qr-code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+ <a href='https://abu-web.onrender.com/server/scan' target="_blank"><img alt='SCAN QR CODE' src='https://img.shields.io/badge/Scan_qr-code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 > <b><s1> 3.ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ ɪɴ ᴋᴏʏᴇʙ. ᴄʀᴇᴀᴛᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ. </b></s1>
