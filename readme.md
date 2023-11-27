@@ -40,7 +40,6 @@
 
 ###  about this bot
 - ✔️ | **Simple** 
-- ✔️ | **Button Template** 
 - ✔️ | **Insta,story,YouTube,spotify [Download]** 
 ---------
 
