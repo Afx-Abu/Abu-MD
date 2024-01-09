@@ -14,8 +14,10 @@ module.exports = {
 
   LOGS: toBool(process.env.LOGS) || true,
 
-  ALIVE_DATA : process.env.ALIVE_DATA || "_iam alive now &sender_",
-
+  AUDIO_DATA: process.env.AUDIO_DATA || 'Jsl;Abu;https://i.imgur.com/ep3UbBP.jpg',
+ 
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'Abu;Jsl',
+  
   DATABASE: DATABASE_URL === "./lib/database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
 
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
