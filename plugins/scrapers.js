@@ -2,7 +2,8 @@ const {
     Module,
     isPublic,
     TTS,
-    lang
+    lang,
+    TRT
 } = require('../lib');
 
 Module({
@@ -24,3 +25,22 @@ Module({
             ptt: false
         },'audio');
 }, {quoted: message });
+
+
+Module(
+	{
+		pattern: 'trt ?(.*)',
+		fromMe: isPublic,
+		desc: lang.TRT.DESC,
+		type: 'search',
+	},
+	async (message, match) => {
+		if (!message.reply_message.text)
+			return await message.reply(
+				lang.TRT.NEED
+			)
+                if(!match) return await message.reply(lang.TRT.NEED_LANG);
+                const {text} = await TRT(message.reply_message.text, match)
+		return await message.reply(text);
+	}
+)
