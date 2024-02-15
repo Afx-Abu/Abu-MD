@@ -5,6 +5,7 @@ const {
 	getString,
 	infoMessage,
 	lang,
+	groupDB,
 	config,
 	poll,
 	PREFIX
@@ -371,3 +372,25 @@ Module({
 		selectableCount: true
 	}, {}, 'poll');
 }, {quoted: message });
+
+
+Module({
+    pattern: 'pdm ?(.*)',
+    desc: 'promote, demote message',
+    type: 'manage',
+    onlyGroup: true,
+    fromMe: true
+}, async (message, match) => {
+    if (!match) return message.reply('_Pdm Message\non/off');
+    if (match != 'on' && match != 'off') return message.reply('pdm on');
+    const {pdm} = await groupDB(['pdm'], {jid: message.jid, content: {}}, 'get');
+    if (match == 'on') {
+        if (pdm == 'true') return message.reply('_Pdm Already activated_');
+        await groupDB(['pdm'], {jid: message.jid, content: 'true'}, 'set');
+        return await message.reply('_Pdm message activated_')
+    } else if (match == 'off') {
+        if (pdm == 'false') return message.reply('_Pdm Already Deactivated_');
+        await groupDB(['pdm'], {jid: message.jid, content: 'false'}, 'set');
+        return await message.reply('_Pdm message deactivated_')
+    }
+});
