@@ -182,7 +182,7 @@ Module({
 Module(
   {
     pattern: "sticker",
-    fromMe: Module,
+    fromMe: isPublic,
     desc: lang.STICKER.DESC,
     type : 'converter',
     usage : "to convert short video or image to sticker fromate, ex:- sticker[repleyed_msg]"
