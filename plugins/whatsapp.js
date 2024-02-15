@@ -5,7 +5,8 @@ const {
 	sleep,
 	lang,
 	config,
-	isAdmin
+	isAdmin,
+	isBotAdmin
 } = require('../lib');
 const {
 	WA_DEFAULT_EPHEMERAL
