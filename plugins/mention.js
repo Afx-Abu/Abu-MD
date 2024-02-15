@@ -19,19 +19,19 @@ Module({
                         return await message.send((mention.message|| 'there have no mention messages'));
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match.toLowerCase() == 'off') {
                     	const {mention} = await personalDB(['mention'], {content: {}}, 'get');
-                        if(!mention || mention.status == 'false') return await message.send(`_Mention message not set, visit ${config.BASE_URL}/info/mention for help_`);
+                        if(!mention || mention.status == 'false') return await message.send(`_Mention not set_`);
                         await personalDB(['mention'], {content: {status: 'false', message: mention.message }}, 'set');
-                        return await message.send('_mention deactivated_');
+                        return await message.send('_Mention deactivated_');
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match.toLowerCase() == 'on') {
                     	const {mention} = await personalDB(['mention'], {content: {}}, 'get');
-                        if(mention && mention.status == 'true') return await message.send(`_mention already activated_\n_visit ${config.BASE_URL}/info/mention for help_`);
+                        if(mention && mention.status == 'true') return await message.send(`_Mention already activated_`);
                         await personalDB(['mention'], {content: {status: 'true', message: mention?.message }}, 'set');
                         return await message.send('_mention activated_');
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match != ""){
                 	    const {mention} = await personalDB(['mention'], {content: {}}, 'get');
                         const status = mention && mention.status == 'true' ? 'true' : 'false';
                         await personalDB(['mention'], {content: {status, message : match }}, 'set');
-                        return await message.send('_mention updated_');
+                        return await message.send('_Mention Updated_');
                 }
         if (!message.mention.isOwner) return;
         const {mention: msg} = await personalDB(['mention'], {content: {}}, 'get');
