@@ -22,9 +22,10 @@ Module({
         }
         return await message.send(await TTS(match,lang),{
             mimetype: 'audio/ogg; codecs=opus',
-            ptt: false
+            ptt: false,
+            quoted: message
         },'audio');
-}, {quoted: message });
+});
 
 
 Module(
