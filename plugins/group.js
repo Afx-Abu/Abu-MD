@@ -371,7 +371,7 @@ Module({
 		participates: participants.map(a => a.id),
 		selectableCount: true
 	}, {}, 'poll');
-}, {quoted: message });
+});
 
 
 Module({
