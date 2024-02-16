@@ -15,23 +15,23 @@ Module({
 }, async (message, match) => {
         if (message.command && message.isCreator && !message.isBot && message.command.includes('mention') && match.toLowerCase() == 'get') {
                 const {mention} = await personalDB(['mention'], {content: {}}, 'get');
-                        if(!mention || mention.status == 'false') return await message.reply(`_*Example: mention on* to activates mention_`);
-                        return await message.reply((mention.message|| 'there have no mention messages'));
+                        if(!mention || mention.status == 'false') return await message.send(`_*Example: mention on* to activates mention_`);
+                        return await message.send((mention.message|| '_There have No Mention Messages_'));
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match.toLowerCase() == 'off') {
                     	const {mention} = await personalDB(['mention'], {content: {}}, 'get');
-                        if(!mention || mention.status == 'false') return await message.reply(`_Mention not set_`);
+                        if(!mention || mention.status == 'false') return await message.send(`_Mention message not set_`);
                         await personalDB(['mention'], {content: {status: 'false', message: mention.message }}, 'set');
-                        return await message.reply('_Mention deactivated_');
+                        return await message.send('_Mention Deactivated_');
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match.toLowerCase() == 'on') {
                     	const {mention} = await personalDB(['mention'], {content: {}}, 'get');
-                        if(mention && mention.status == 'true') return await message.reply(`_Mention already activated_`);
+                        if(mention && mention.status == 'true') return await message.send(`_Mention already activated__`);
                         await personalDB(['mention'], {content: {status: 'true', message: mention?.message }}, 'set');
-                        return await message.reply('_mention activated_');
+                        return await message.send('_Mention Activated_');
                 } else if (message.isCreator && !message.isBot && message.command && message.command.includes('mention') && match != ""){
                 	    const {mention} = await personalDB(['mention'], {content: {}}, 'get');
                         const status = mention && mention.status == 'true' ? 'true' : 'false';
                         await personalDB(['mention'], {content: {status, message : match }}, 'set');
-                        return await message.reply('_Mention Updated_');
+                        return await message.send('_Mention Updated_');
                 }
         if (!message.mention.isOwner) return;
         const {mention: msg} = await personalDB(['mention'], {content: {}}, 'get');
