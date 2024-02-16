@@ -15,7 +15,7 @@ Module({
     fromMe: true,
     onlyGroup: true
 }, async (message, match) => {
-    if (!match && !message.reply_message.sender) return await message.send(lang.WARN.METHODE.format('warn', 'warn', 'warn'));
+    if (!match && !message.reply_message.sender) return await message.reply(lang.WARN.METHODE.format('warn', 'warn', 'warn'));
     if (match == 'get') {
         const {
             warn
@@ -28,7 +28,7 @@ Module({
         for (const f in warn) {
             msg += `_*User:* @${f}_\n_*Count:* ${warn[f].count}_\n_*Remaining:* ${config.WARNCOUND - warn[f].count}`;
         }
-        return await message.send(msg, {mentions: [message.reply_message.sender]}, {quoted: message });
+        return await message.send(msg, {mentions: [message.reply_message.sender], quoted: message });
     } else if (match == 'reset') {
         if (!message.reply_message.sender) return await message.reply(lang.BASE.NEED.format('user'));
         const {
@@ -52,7 +52,7 @@ Module({
         if (!BotAdmin) return await message.reply(lang.GROUP.BOT_ADMIN);
         if (config.ADMIN_SUDO_ACCESS != 'true' && !message.isCreator) return await message.reply(lang.BASE.NOT_AUTHR)
         if (!admin && !message.isCreator) return await message.reply(lang.BASE.NOT_AUTHR)
-        if (!message.reply_message.sender) return await message.send(lang.BASE.NEED.format('user'));
+        if (!message.reply_message.sender) return await message.reply(lang.BASE.NEED.format('user'));
         const reason = match || 'warning';
         const {
             warn
@@ -78,8 +78,8 @@ Module({
 │ _*ʀᴇᴍᴀɪɴɪɴɢ : ${remains}*_
 ╰─❏`
         await message.send(warnmsg, {
-            mentions: [message.reply_message.sender]
-        }, {quoted: message })
+            mentions: [message.reply_message.sender], quoted: message
+        })
         if (remains <= 0) {
             await groupDB(['warn'], {
                 jid: message.jid,
