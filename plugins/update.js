@@ -21,34 +21,21 @@ Module({
 	desc: lang.HEROKU.DESC
 }, async (message) => {
 	if (!message.text) {
-		return await message.send({
-				name: "CLICK AN OPTION",
-				values: [{
-					name: 'update now',
-					id: 'update now'
-				}, {
-					name: 'update check',
-					id: 'update check'
-				}],
-			withPrefix: true,
-			onlyOnce: true,
-			participates: [message.sender],
-			selectableCount: true
-		}, {quoted: message }, 'poll');
+		return await message.reply(`_UPDATER CHECKER_\n_1.Update Now_\n_2.Update Check_\n\n_Send This Command & Update Your Bot_`);
 } else if (message.text.includes("now")) {
 	await git.fetch();
 	let commits = await git.log(['main' + '..origin/' + 'main']);
 	if (commits.total === 0) {
 		return await message.reply(lang.HEROKU.ALLREDY)
 	} else {
-		await message.reply("_*updating...*_");
+		await message.reply("_Starting Update..._");
 		let al
 		try {
 			await heroku.get('/apps/' + process.env.HEROKU_APP_NAME)
 		} catch {
 			await git.reset("hard", ["HEAD"])
 			await git.pull()
-			await message.reply("_Successfully updated. Please manually update npm modules if applicable!_")
+			await message.reply("_Successfully updated!_")
 			process.exit(0);
 		}
 		git.fetch('upstream', 'main');
@@ -61,7 +48,7 @@ Module({
 			console.log(e)
 		}
 		await git.push('heroku', 'main');
-		return await message.reply("_Successfully updated_");
+		return await message.reply("_Successfully Updated_");
 	}
 } else if (message.text.includes("check")) {
 	await git.fetch();
@@ -74,7 +61,7 @@ Module({
 			(commit) => {
 				updt += "```" + lang.HEROKU.COMMITS.format(commit.date.substring(0, 10), commit.message, commit.author_name) + "```\n\n";
 			});
-		return await message.send(updt, {quoted: message });
+		return await message.reply(updt);
 	}
 }
 });
