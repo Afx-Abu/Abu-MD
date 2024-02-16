@@ -1,6 +1,6 @@
 const {
 	Module,
-	mode,
+	isPublic,
 	getCompo,
 	sleep,
 	lang,
@@ -15,7 +15,6 @@ const {
 Module({
 	pattern: 'del',
 	desc: lang.WHATSAPP.DLT_DESC,
-	react: "⚒️",
 	type: 'whatsapp',
 	fromMe: true,
 	onlyGroup: true
@@ -28,8 +27,7 @@ Module({
 Module({
 	pattern: 'dlt',
 	desc: lang.WHATSAPP.DEL_DESC,
-	react: "🤌",
-	fromMe: mode,
+	fromMe: isPublic,
 	type: 'whatsapp',
 	onlyGroup: true
 }, async (message, match) => {
@@ -47,7 +45,7 @@ Module({
 
 Module({
 	pattern: '$iswa ?(.*)',
-	fromMe: mode,
+	fromMe: isPublic,
 	desc: lang.WHATSAPP.ISWA.ISWA_DISC,
 	type: 'search',
 }, async (m, match) => {
@@ -105,7 +103,7 @@ Module({
 
 Module({
 	pattern: '$nowa ?(.*)',
-	fromMe: mode,
+	fromMe: isPublic,
 	desc: lang.WHATSAPP.NOWA.DESC,
 	type: 'search',
 }, async (m, match) => {
@@ -133,9 +131,8 @@ Module({
 
 Module({
 	pattern: 'jid',
-	fromMe: mode,
+	fromMe: isPublic,
 	desc: lang.USER.JID,
-	react: "💯",
 	type: "general"
 }, async (message) => {
 	if (message.reply_message.sender) {
@@ -147,7 +144,6 @@ Module({
 Module({
 	pattern: 'block',
 	desc: lang.USER.BLOCK_DESC,
-	react: "💯",
 	type: "owner",
 	fromMe: true
 }, async (message) => {
@@ -160,7 +156,6 @@ Module({
 Module({
 	pattern: 'unblock',
 	desc: lang.USER.UNBLOCK_DESC,
-	react: "💯",
 	type: "owner",
 	fromMe: true
 }, async (message) => {
@@ -173,7 +168,6 @@ Module({
 Module({
 	pattern: "pp",
 	desc: lang.USER.PP.DESC,
-	react: "😁",
 	type: 'owner',
 	fromMe: true
 }, async (message, match) => {
@@ -185,7 +179,6 @@ Module({
 Module({
 	pattern: "fullpp",
 	desc: lang.USER.FULL_PP.DESC,
-	react: "🔥",
 	type: 'owner',
 	fromMe: true
 }, async (message, match) => {
