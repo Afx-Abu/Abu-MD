@@ -1,6 +1,6 @@
 const {
 	Module,
-	isPublic,
+	mode,
 	getCompo,
 	sleep,
 	lang,
@@ -15,6 +15,7 @@ const {
 Module({
 	pattern: 'del',
 	desc: lang.WHATSAPP.DLT_DESC,
+	react: "⚒️",
 	type: 'whatsapp',
 	fromMe: true,
 	onlyGroup: true
@@ -27,7 +28,8 @@ Module({
 Module({
 	pattern: 'dlt',
 	desc: lang.WHATSAPP.DEL_DESC,
-	fromMe: isPublic,
+	react: "🤌",
+	fromMe: mode,
 	type: 'whatsapp',
 	onlyGroup: true
 }, async (message, match) => {
@@ -45,19 +47,19 @@ Module({
 
 Module({
 	pattern: '$iswa ?(.*)',
-	fromMe: isPublic,
+	fromMe: mode,
 	desc: lang.WHATSAPP.ISWA.ISWA_DISC,
 	type: 'search',
 }, async (m, match) => {
 	match = match || m.reply_message.text
-	if (!match) return await m.reply(lang.WHATSAPP.ISWA.NO_NUMBER.format(".iswa 920000000x"));
-	if (!match.match('x')) return await m.reply(lang.WHATSAPP.ISWA.NOT_VALID.format(".iswa 920000000x"));
+	if (!match) return await m.send(lang.WHATSAPP.ISWA.NO_NUMBER.format(".iswa 920000000x"));
+	if (!match.match('x')) return await m.send(lang.WHATSAPP.ISWA.NOT_VALID.format(".iswa 920000000x"));
 	let xlength = match.replace(/[0-9]/gi, '')
-	if (xlength.length > 3) return await m.reply(lang.WHATSAPP.ISWA.X_LENGTH)
+	if (xlength.length > 3) return await m.send(lang.WHATSAPP.ISWA.X_LENGTH)
 	let count = xlength.length == 3 ? 1000 : xlength.length == 2 ? 100 : 10;
 	const {
 		key
-	} = await m.reply(lang.WHATSAPP.ISWA.WAIT);
+	} = await m.send(lang.WHATSAPP.ISWA.WAIT);
 	let ioo = await getCompo(match)
 	let bcs = [],
 		notFound = []
@@ -103,19 +105,19 @@ Module({
 
 Module({
 	pattern: '$nowa ?(.*)',
-	fromMe: isPublic,
+	fromMe: mode,
 	desc: lang.WHATSAPP.NOWA.DESC,
 	type: 'search',
 }, async (m, match) => {
 	match = match || m.reply_message.text
-	if (!match) return await m.reply(lang.WHATSAPP.NOWA.NO_NUMBER.format(".nowa 920000000x"));
-	if (!match.match('x')) return await m.reply(lang.WHATSAPP.NOWA.NOT_VALID.format(".nowa 920000000x"));
+	if (!match) return await m.send(lang.WHATSAPP.NOWA.NO_NUMBER.format(".nowa 920000000x"));
+	if (!match.match('x')) return await m.send(lang.WHATSAPP.NOWA.NOT_VALID.format(".nowa 920000000x"));
 	let xlength = match.replace(/[0-9]/gi, '')
-	if (xlength.length > 3) return await m.reply(lang.WHATSAPP.NOWA.X_LENGTH)
+	if (xlength.length > 3) return await m.send(lang.WHATSAPP.NOWA.X_LENGTH)
 	let count = xlength.length == 3 ? 1000 : xlength.length == 2 ? 100 : 10;
 	const {
 		key
-	} = await m.reply(lang.WHATSAPP.NOWA.WAIT);
+	} = await m.send(lang.WHATSAPP.NOWA.WAIT);
 	let ioo = await getCompo(match)
 	let bcs = lang.WHATSAPP.NOWA.LIST,
 		n = 1;
@@ -131,8 +133,9 @@ Module({
 
 Module({
 	pattern: 'jid',
-	fromMe: isPublic,
+	fromMe: mode,
 	desc: lang.USER.JID,
+	react: "💯",
 	type: "general"
 }, async (message) => {
 	if (message.reply_message.sender) {
@@ -144,6 +147,7 @@ Module({
 Module({
 	pattern: 'block',
 	desc: lang.USER.BLOCK_DESC,
+	react: "💯",
 	type: "owner",
 	fromMe: true
 }, async (message) => {
@@ -156,6 +160,7 @@ Module({
 Module({
 	pattern: 'unblock',
 	desc: lang.USER.UNBLOCK_DESC,
+	react: "💯",
 	type: "owner",
 	fromMe: true
 }, async (message) => {
@@ -168,6 +173,7 @@ Module({
 Module({
 	pattern: "pp",
 	desc: lang.USER.PP.DESC,
+	react: "😁",
 	type: 'owner',
 	fromMe: true
 }, async (message, match) => {
@@ -179,6 +185,7 @@ Module({
 Module({
 	pattern: "fullpp",
 	desc: lang.USER.FULL_PP.DESC,
+	react: "🔥",
 	type: 'owner',
 	fromMe: true
 }, async (message, match) => {
@@ -201,7 +208,7 @@ Module({
 			messageTimestamp: message.messageTimestamp
 		}]
 	}, message.jid)
-	await message.reply('_Chat Cleared_')
+	await message.reply('_Cleared_')
 })
 
 Module({
@@ -338,7 +345,7 @@ Module({
 		};
 	}
 	await message.send(img, {
-		caption: msg
+		caption: msg, quoted: message
 	}, 'image');
 })
 Module({
@@ -402,7 +409,7 @@ Module({
 	await message.reply(`_Privacy Updated to *${match}*_`);
 })
 Module({
-	pattern: 'gpadd ?(.*)',
+	pattern: 'groupadd ?(.*)',
 	fromMe: true,
 	desc: 'privacy for group add',
 	type: 'privacy'
@@ -413,4 +420,3 @@ Module({
 	await message.client.updateGroupsAddPrivacy(match)
 	await message.reply(`_Privacy Updated to *${match}*_`);
 })
-  
