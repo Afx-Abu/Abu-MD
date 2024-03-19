@@ -5,7 +5,7 @@
 ## <a href='https://github.com/Afx-Abu/Abu-MD/fork/' target="_blank"><img alt='FORK GIT' src='https://img.shields.io/badge/Frok_Github-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ## > <b><s1>2.sᴄᴀɴ ǫʀ ᴄᴏᴅᴇ ᴏʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ</b></s1> 
-## <a href='https://jsl-script.vercel.app/' target="_blank"><img alt='QR CODE' src='https://img.shields.io/badge/Scan_qr_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+## <a href='https://api-afx-abuba7cww6xna.koyeb.app/viwe/getqr' target="_blank"><img alt='QR CODE' src='https://img.shields.io/badge/Scan_qr_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ## > <b><s1>3.ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ ɪɴ ʜᴇʀᴏᴋᴜ. ᴄʀᴇᴀᴛᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ. </b></s1> 
 <a href='https://signup.heroku.com/' 
